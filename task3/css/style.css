@@ -60,7 +60,7 @@
     width: 64px;
     height: 64px;
     background-repeat: no-repeat;
-    background-image: url(/img/play.png);
+    background-image: url(../img/play.png);
     text-indent:-200px;
 }
 
@@ -70,7 +70,7 @@
     width: 64px;
     height: 64px;
     background-repeat: no-repeat;
-    background-image: url(/img/stop.png);
+    background-image: url(../img/stop.png);
     text-indent:-200px;
 }
 #list ul li{
