@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h1>Табло аэропорта</h1>
+   <div class="tab-head">
+       <div class="tb">
+           <a class="hrow nav">
+                <div class="tb-cell type-flight">тип рейса</div>
+                <div class="tb-cell numb-flight">номер рейса</div>
+                <div class="tb-cell name-airline">авиакомпания</div>
+                <div class="tb-cell logo-airline">логотип</div>
+                <div class="tb-cell type-aircraft">тип воздушного судна</div>
+                <div class="tb-cell type-aircraft-add">тип судна</div>
+                <div class="tb-cell name-place">аэропорт назначения/отправления</div>
+                <div class="tb-cell time-flight">плановое время вылета/прилёта</div>
+                <div class="tb-cell stat-flight">статус рейса</div>
+                <div class="tb-cell more-flight">примечание</div>
+            </a>
+       </div>
+   </div>
+    <div class="tb">
+        <input id="arr" type="checkbox">
+        <input id="dep" type="checkbox">
+        <a class="hrow row-fixed">
+            <div class="tb-cell type-flight">тип рейса</div>
+            <div class="tb-cell numb-flight">номер рейса</div>
+            <div class="tb-cell name-airline">авиакомпания</div>
+            <div class="tb-cell logo-airline">логотип</div>
+            <div class="tb-cell type-aircraft">тип воздушного судна</div>
+            <div class="tb-cell type-aircraft-add">тип судна</div>
+            <div class="tb-cell name-place">аэропорт назначения/отправления</div>
+            <div class="tb-cell time-flight">плановое время вылета/прилёта</div>
+            <div class="tb-cell stat-flight">статус рейса</div>
+            <div class="tb-cell more-flight">примечание</div>
+        </a>
+        <a href="#pop1" class="row arrival">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AA-111</div>
+            <div class="tb-cell name-airline">Aeroflot</div>
+            <div class="tb-cell logo-airline"><span class="aeroflot"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-321</div>
+            <div class="tb-cell type-aircraft-add">A-321</div>
+            <div class="tb-cell name-place">Барселона</div>
+            <div class="tb-cell time-flight">01 июл 05:00</div>
+            <div class="tb-cell stat-flight">Приземлился</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop2">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">UN-456</div>
+            <div class="tb-cell name-airline">Transaero</div>
+            <div class="tb-cell logo-airline"><span class="transaero"></span></div>
+            <div class="tb-cell type-aircraft">Туполев 214</div><div class="tb-cell type-aircraft-add">Ту-214</div>
+            <div class="tb-cell name-place">Минск</div>
+            <div class="tb-cell time-flight">01 июл 05:10</div>
+            <div class="tb-cell stat-flight">Вылетел</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop3">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">S7-297</div>
+            <div class="tb-cell name-airline">S7</div>
+            <div class="tb-cell logo-airline"><span class="s7"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 787-300</div><div class="tb-cell type-aircraft-add">B-787</div>
+            <div class="tb-cell name-place">Сочи</div>
+            <div class="tb-cell time-flight">01 июл 05:20</div>
+            <div class="tb-cell stat-flight">Приземлился</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop4">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AB-154</div>
+            <div class="tb-cell name-airline">Airberlin</div>
+            <div class="tb-cell logo-airline"><span class="airberlin"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-320</div><div class="tb-cell type-aircraft-add">A-320</div>
+            <div class="tb-cell name-place">Берлин</div>
+            <div class="tb-cell time-flight">01 июл 05:30</div>
+            <div class="tb-cell stat-flight">Отменен</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop5">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AС-155</div>
+            <div class="tb-cell name-airline">Air China</div>
+            <div class="tb-cell logo-airline"><span class="airchina"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-300</div><div class="tb-cell type-aircraft-add">A-300</div>
+            <div class="tb-cell name-place">Пекин</div>
+            <div class="tb-cell time-flight">01 июл 05:40</div>
+            <div class="tb-cell stat-flight">Задерживается до 09:40</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop6">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AF-1466</div>
+            <div class="tb-cell name-airline">Airfrance</div>
+            <div class="tb-cell logo-airline"><span class="airfrance"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 777-300</div><div class="tb-cell type-aircraft-add">B-777</div>
+            <div class="tb-cell name-place">Париж</div>
+            <div class="tb-cell time-flight">01 июл 05:50</div>
+            <div class="tb-cell stat-flight">Вылетел</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop7">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">UA-241</div>
+            <div class="tb-cell name-airline">American Airlines</div>
+            <div class="tb-cell logo-airline"><span class="americairlines"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-380</div><div class="tb-cell type-aircraft-add">A-380</div>
+            <div class="tb-cell name-place">Нью-йорк</div>
+            <div class="tb-cell time-flight">01 июл 06:00</div>
+            <div class="tb-cell stat-flight">Вылетел</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop8">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">BA-633</div>
+            <div class="tb-cell name-airline">British Airways</div>
+            <div class="tb-cell logo-airline"><span class="britishair"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-319</div><div class="tb-cell type-aircraft-add">A-319</div>
+            <div class="tb-cell name-place">Лондон</div>
+            <div class="tb-cell time-flight">01 июл 06:10</div>
+            <div class="tb-cell stat-flight">Задерживается до 08:40</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop9">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">DB-24</div>
+            <div class="tb-cell name-airline">Добролёт</div>
+            <div class="tb-cell logo-airline"><span class="dobrolet"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 767-300</div><div class="tb-cell type-aircraft-add">B-767</div>
+            <div class="tb-cell name-place">Симферополь</div>
+            <div class="tb-cell time-flight">01 июл 06:20</div>
+            <div class="tb-cell stat-flight">Приземлился</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop10">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AA-111</div>
+            <div class="tb-cell name-airline">Emirates</div>
+            <div class="tb-cell logo-airline"><span class="emirates"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-340</div><div class="tb-cell type-aircraft-add">A-340</div>
+            <div class="tb-cell name-place">Дубай</div>
+            <div class="tb-cell time-flight">01 июл 06:30</div>
+            <div class="tb-cell stat-flight">Приземлился</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop11">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">FA-334</div>
+            <div class="tb-cell name-airline">Finnair</div>
+            <div class="tb-cell logo-airline"><span class="finnair"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 747-200</div><div class="tb-cell type-aircraft-add">B-747</div>
+            <div class="tb-cell name-place">Хельсинки</div>
+            <div class="tb-cell time-flight">01 июл 06:40</div>
+            <div class="tb-cell stat-flight">Отменен</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop12">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">IB-121</div>
+            <div class="tb-cell name-airline">Iberia</div>
+            <div class="tb-cell logo-airline"><span class="iberia"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-330</div><div class="tb-cell type-aircraft-add">A-330</div>
+            <div class="tb-cell name-place">Барселона</div>
+            <div class="tb-cell time-flight">01 июл 06:50</div>
+            <div class="tb-cell stat-flight">Приземлился</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop13">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">KA-245</div>
+            <div class="tb-cell name-airline">Korean Air</div>
+            <div class="tb-cell logo-airline"><span class="koreanair"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-321</div><div class="tb-cell type-aircraft-add">A-321</div>
+            <div class="tb-cell name-place">Сеул</div>
+            <div class="tb-cell time-flight">01 июл 07:00</div>
+            <div class="tb-cell stat-flight">Задерживается до 09:00</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop14">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">LH-1221</div>
+            <div class="tb-cell name-airline">Lufthansa</div>
+            <div class="tb-cell logo-airline"><span class="lufthansa"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 737</div><div class="tb-cell type-aircraft-add">B-737</div>
+            <div class="tb-cell name-place">Мюнхен</div>
+            <div class="tb-cell time-flight">01 июл 07:10</div>
+            <div class="tb-cell stat-flight">Вылетел</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop15">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AA-111</div>
+            <div class="tb-cell name-airline">Qatar Airways</div>
+            <div class="tb-cell logo-airline"><span class="qatar"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-321</div><div class="tb-cell type-aircraft-add">A-321</div>
+            <div class="tb-cell name-place">Доха</div>
+            <div class="tb-cell time-flight">01 июл 07:20</div>
+            <div class="tb-cell stat-flight">Приземлился</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop16">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">SW-214</div>
+            <div class="tb-cell name-airline">Swiss</div>
+            <div class="tb-cell logo-airline"><span class="swiss"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-318</div><div class="tb-cell type-aircraft-add">A-318</div>
+            <div class="tb-cell name-place">Женева</div>
+            <div class="tb-cell time-flight">01 июл 07:30</div>
+            <div class="tb-cell stat-flight">Посадка закончена</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop17">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">NN-335</div>
+            <div class="tb-cell name-airline">Вим-авиа</div>
+            <div class="tb-cell logo-airline"><span class="vimairlines"></span></div>
+            <div class="tb-cell type-aircraft">Туполев 214</div><div class="tb-cell type-aircraft-add">Ту-214</div>
+            <div class="tb-cell name-place">Симферополь</div>
+            <div class="tb-cell time-flight">01 июл 07:40</div>
+            <div class="tb-cell stat-flight">Приземлился</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop18">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">IV-452</div>
+            <div class="tb-cell name-airline">Vueling</div>
+            <div class="tb-cell logo-airline"><span class="vueling"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-320</div><div class="tb-cell type-aircraft-add">A-320</div>
+            <div class="tb-cell name-place">Мадрид</div>
+            <div class="tb-cell time-flight">01 июл 07:50</div>
+            <div class="tb-cell stat-flight">Приземлился</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop19">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">UT-221</div>
+            <div class="tb-cell name-airline">Ютейр</div>
+            <div class="tb-cell logo-airline"><span class="utair"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 777-300</div><div class="tb-cell type-aircraft-add">B-777</div>
+            <div class="tb-cell name-place">Красноярск</div>
+            <div class="tb-cell time-flight">01 июл 07:50</div>
+            <div class="tb-cell stat-flight">Посадка закончена</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop20">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AA-222</div>
+            <div class="tb-cell name-airline">Аэрофлот</div>
+            <div class="tb-cell logo-airline"><span class="aeroflot"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-310</div><div class="tb-cell type-aircraft-add">A-310</div>
+            <div class="tb-cell name-place">Белград</div>
+            <div class="tb-cell time-flight">01 июл 08:00</div>
+            <div class="tb-cell stat-flight">Ожидание посадки</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop21">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">UN-223</div>
+            <div class="tb-cell name-airline">Трансаэро</div>
+            <div class="tb-cell logo-airline"><span class="transaero"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 767-200</div><div class="tb-cell type-aircraft-add">B-767</div>
+            <div class="tb-cell name-place">Калининград</div>
+            <div class="tb-cell time-flight">01 июл 08:10</div>
+            <div class="tb-cell stat-flight">Ожидание посадки</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop22">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">S7-275</div>
+            <div class="tb-cell name-airline">S7</div>
+            <div class="tb-cell logo-airline"><span class="s7"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-330</div><div class="tb-cell type-aircraft-add">A-330</div>
+            <div class="tb-cell name-place">Екатеринбург</div>
+            <div class="tb-cell time-flight">01 июл 08:20</div>
+            <div class="tb-cell stat-flight">Приземлился</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop23">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AB-141</div>
+            <div class="tb-cell name-airline">Airberlin</div>
+            <div class="tb-cell logo-airline"><span class="airberlin"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 747-200</div><div class="tb-cell type-aircraft-add">B-747</div>
+            <div class="tb-cell name-place">Берлин</div>
+            <div class="tb-cell time-flight">01 июл 08:30</div>
+            <div class="tb-cell stat-flight">Летит</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop38">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AC-221</div>
+            <div class="tb-cell name-airline">Air China</div>
+            <div class="tb-cell logo-airline"><span class="airchina"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-319</div><div class="tb-cell type-aircraft-add">A-319</div>
+            <div class="tb-cell name-place">Гуанчжоу</div>
+            <div class="tb-cell time-flight">01 июл 08:40</div>
+            <div class="tb-cell stat-flight">Летит</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop24">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AF-131</div>
+            <div class="tb-cell name-airline">Airfrance</div>
+            <div class="tb-cell logo-airline"><span class="airfrance"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-321</div><div class="tb-cell type-aircraft-add">A-321</div>
+            <div class="tb-cell name-place">Париж</div>
+            <div class="tb-cell time-flight">01 июл 08:50</div>
+            <div class="tb-cell stat-flight">Регистрация</div>
+            <div class="tb-cell more-flight">Совмещен с UN-777</div>
+        </a>
+        <a class="row departure" href="#pop25">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">UN-321</div>
+            <div class="tb-cell name-airline">American Airlines</div>
+            <div class="tb-cell logo-airline"><span class="americairlines"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 777-200</div><div class="tb-cell type-aircraft-add">B-777</div>
+            <div class="tb-cell name-place">Вашингтон</div>
+            <div class="tb-cell time-flight">01 июл 09:00</div>
+            <div class="tb-cell stat-flight">Регистрация</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop26">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">BA-111</div>
+            <div class="tb-cell name-airline">British Airways</div>
+            <div class="tb-cell logo-airline"><span class="britishair"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-350</div><div class="tb-cell type-aircraft-add">A-350</div>
+            <div class="tb-cell name-place">Лондон</div>
+            <div class="tb-cell time-flight">01 июл 09:10</div>
+            <div class="tb-cell stat-flight">Регистрация</div>
+            <div class="tb-cell more-flight">Совмещен с UK-555</div>
+        </a>
+        <a class="row arrival" href="#pop27">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">DB-101</div>
+            <div class="tb-cell name-airline">Добролёт</div>
+            <div class="tb-cell logo-airline"><span class="dobrolet"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-318</div><div class="tb-cell type-aircraft-add">A-318</div>
+            <div class="tb-cell name-place">Краснодар</div>
+            <div class="tb-cell time-flight">01 июл 09:20</div>
+            <div class="tb-cell stat-flight">Отменен</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop28">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">AE-777</div>
+            <div class="tb-cell name-airline">Emirates</div>
+            <div class="tb-cell logo-airline"><span class="emirates"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-380</div><div class="tb-cell type-aircraft-add">A-380</div>
+            <div class="tb-cell name-place">Дубай</div>
+            <div class="tb-cell time-flight">01 июл 09:30</div>
+            <div class="tb-cell stat-flight">Летит</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop29">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">FA-111</div>
+            <div class="tb-cell name-airline">Finnair</div>
+            <div class="tb-cell logo-airline"><span class="finnair"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-319</div><div class="tb-cell type-aircraft-add">A-319</div>
+            <div class="tb-cell name-place">Хельсинки</div>
+            <div class="tb-cell time-flight">01 июл 09:40</div>
+            <div class="tb-cell stat-flight">Летит</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop30">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">IB-341</div>
+            <div class="tb-cell name-airline">Iberia</div>
+            <div class="tb-cell logo-airline"><span class="iberia"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 737-200</div><div class="tb-cell type-aircraft-add">B-737</div>
+            <div class="tb-cell name-place">Барселона</div>
+            <div class="tb-cell time-flight">01 июл 09:50</div>
+            <div class="tb-cell stat-flight">Летит</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop31">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">KA-543</div>
+            <div class="tb-cell name-airline">Korean Air</div>
+            <div class="tb-cell logo-airline"><span class="koreanair"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-321</div><div class="tb-cell type-aircraft-add">A-321</div>
+            <div class="tb-cell name-place">Сеул</div>
+            <div class="tb-cell time-flight">01 июл 10:00</div>
+            <div class="tb-cell stat-flight">Отменен</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop32">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">LH-361</div>
+            <div class="tb-cell name-airline">Lufthansa</div>
+            <div class="tb-cell logo-airline"><span class="lufthansa"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-330</div><div class="tb-cell type-aircraft-add">A-330</div>
+            <div class="tb-cell name-place">Берлин</div>
+            <div class="tb-cell time-flight">01 июл 10:10</div>
+            <div class="tb-cell stat-flight">Задерживается до 12:30</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop33">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">QA-581</div>
+            <div class="tb-cell name-airline">Qatar Airways</div>
+            <div class="tb-cell logo-airline"><span class="qatar"></span></div>
+            <div class="tb-cell type-aircraft">Boeing 777-300</div><div class="tb-cell type-aircraft-add">B-777</div>
+            <div class="tb-cell name-place">Доха</div>
+            <div class="tb-cell time-flight">01 июл 10:20</div>
+            <div class="tb-cell stat-flight">Летит</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row departure" href="#pop34">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">SW-684</div>
+            <div class="tb-cell name-airline">Swiss</div>
+            <div class="tb-cell logo-airline"><span class="swiss"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-320</div><div class="tb-cell type-aircraft-add">A-320</div>
+            <div class="tb-cell name-place">Цюрих</div>
+            <div class="tb-cell time-flight">01 июл 10:30</div>
+            <div class="tb-cell stat-flight">Регистрация</div>
+            <div class="tb-cell more-flight">Совмещен с AA-444</div>
+        </a>
+        <a class="row arrival" href="#pop35">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">NN-333</div>
+            <div class="tb-cell name-airline">Вим-авиа</div>
+            <div class="tb-cell logo-airline"><span class="vimairlines"></span></div>
+            <div class="tb-cell type-aircraft">Туполев 214</div><div class="tb-cell type-aircraft-add">Ту-214</div>
+            <div class="tb-cell name-place">Владивосток</div>
+            <div class="tb-cell time-flight">01 июл 10:40</div>
+            <div class="tb-cell stat-flight">Летит</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop36">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">IV-445</div>
+            <div class="tb-cell name-airline">Vueling</div>
+            <div class="tb-cell logo-airline"><span class="vueling"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-321</div><div class="tb-cell type-aircraft-add">A-321</div>
+            <div class="tb-cell name-place">Мадрид</div>
+            <div class="tb-cell time-flight">01 июл 10:50</div>
+            <div class="tb-cell stat-flight">Летит</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+        <a class="row arrival" href="#pop37">
+            <div class="tb-cell type-flight"></div>
+            <div class="tb-cell numb-flight">UT-841</div>
+            <div class="tb-cell name-airline">Ютейр</div>
+            <div class="tb-cell logo-airline"><span class="utair"></span></div>
+            <div class="tb-cell type-aircraft">Airbus A-330</div><div class="tb-cell type-aircraft-add">A-330</div>
+            <div class="tb-cell name-place">Санкт-Петербург</div>
+            <div class="tb-cell time-flight">01 июл 11:00</div>
+            <div class="tb-cell stat-flight">По расписанию</div>
+            <div class="tb-cell more-flight"></div>
+        </a>
+    </div>
+    
+    
+    
+    <!------------POPUPS------------>
+    <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop1"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+        <div class="popup-box numb-flight">AA-111</div>
+        <div class="popup-box name-airline">Aeroflot</div>
+        <div class="popup-box logo-airline"><span class="aeroflot"></span></div>
+        <div class="popup-box type-aircraft">Airbus A-321</div>
+        <div class="popup-box name-place">Барселона</div>
+        <div class="popup-box time-flight">01 июл 05:00</div>
+        <div class="popup-box stat-flight">Приземлился</div>
+        <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop2"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+        <div class="popup-box numb-flight">UN-456</div>
+        <div class="popup-box name-airline">Transaero</div>
+        <div class="popup-box logo-airline"><span class="transaero"></span></div>
+        <div class="popup-box type-aircraft">Airbus A321</div>
+        <div class="popup-box name-place">Минск</div>
+        <div class="popup-box time-flight">01 июл 05:10</div>
+        <div class="popup-box stat-flight">Вылетел</div>
+        <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop3"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+        <div class="popup-box numb-flight">S7-297</div>
+        <div class="popup-box name-airline">S7</div>
+        <div class="popup-box logo-airline"><span class="s7"></span></div>
+        <div class="popup-box type-aircraft">Boeing 787-300</div>
+        <div class="popup-box name-place">Сочи</div>
+        <div class="popup-box time-flight">01 июл 05:20</div>
+        <div class="popup-box stat-flight">Приземлился</div>
+        <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop4"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">AB-154</div>
+            <div class="popup-box name-airline">Airberlin</div>
+            <div class="popup-box logo-airline"><span class="airberlin"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-320</div>
+            <div class="popup-box name-place">Берлин</div>
+            <div class="popup-box time-flight">01 июл 05:30</div>
+            <div class="popup-box stat-flight">Отменен</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop5"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">AС-155</div>
+            <div class="popup-box name-airline">Air China</div>
+            <div class="popup-box logo-airline"><span class="airchina"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-300</div>
+            <div class="popup-box name-place">Пекин</div>
+            <div class="popup-box time-flight">01 июл 05:40</div>
+            <div class="popup-box stat-flight">Задерживается до 09:40</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop6"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">AF-1466</div>
+            <div class="popup-box name-airline">Airfrance</div>
+            <div class="popup-box logo-airline"><span class="airfrance"></span></div>
+            <div class="popup-box type-aircraft">Boeing 777-300</div>
+            <div class="popup-box name-place">Париж</div>
+            <div class="popup-box time-flight">01 июл 05:50</div>
+            <div class="popup-box stat-flight">Вылетел</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop7"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">UA-241</div>
+            <div class="popup-box name-airline">American Airlines</div>
+            <div class="popup-box logo-airline"><span class="americairlines"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-380</div>
+            <div class="popup-box name-place">Нью-йорк</div>
+            <div class="popup-box time-flight">01 июл 06:00</div>
+            <div class="popup-box stat-flight">Вылетел</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop8"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">BA-633</div>
+            <div class="popup-box name-airline">British Airways</div>
+            <div class="popup-box logo-airline"><span class="britishair"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-319</div>
+            <div class="popup-box name-place">Лондон</div>
+            <div class="popup-box time-flight">01 июл 06:10</div>
+            <div class="popup-box stat-flight">Задерживается до 08:40</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop9"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">DB-24</div>
+            <div class="popup-box name-airline">Добролёт</div>
+            <div class="popup-box logo-airline"><span class="dobrolet"></span></div>
+            <div class="popup-box type-aircraft">Boeing 767-300</div>
+            <div class="popup-box name-place">Симферополь</div>
+            <div class="popup-box time-flight">01 июл 06:20</div>
+            <div class="popup-box stat-flight">Приземлился</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop10"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">AA-111</div>
+            <div class="popup-box name-airline">Emirates</div>
+            <div class="popup-box logo-airline"><span class="emirates"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-340</div>
+            <div class="popup-box name-place">Дубай</div>
+            <div class="popup-box time-flight">01 июл 06:30</div>
+            <div class="popup-box stat-flight">Приземлился</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop11"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">FA-334</div>
+            <div class="popup-box name-airline">Finnair</div>
+            <div class="popup-box logo-airline"><span class="finnair"></span></div>
+            <div class="popup-box type-aircraft">Boeing 747-200</div>
+            <div class="popup-box name-place">Хельсинки</div>
+            <div class="popup-box time-flight">01 июл 06:40</div>
+            <div class="popup-box stat-flight">Отменен</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop12"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">IB-121</div>
+            <div class="popup-box name-airline">Iberia</div>
+            <div class="popup-box logo-airline"><span class="iberia"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-330</div>
+            <div class="popup-box name-place">Барселона</div>
+            <div class="popup-box time-flight">01 июл 06:50</div>
+            <div class="popup-box stat-flight">Приземлился</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop13"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">KA-245</div>
+            <div class="popup-box name-airline">Korean Air</div>
+            <div class="popup-box logo-airline"><span class="koreanair"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-321</div>
+            <div class="popup-box name-place">Сеул</div>
+            <div class="popup-box time-flight">01 июл 07:00</div>
+            <div class="popup-box stat-flight">Задерживается до 09:00</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop14"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">LH-1221</div>
+            <div class="popup-box name-airline">Lufthansa</div>
+            <div class="popup-box logo-airline"><span class="lufthansa"></span></div>
+            <div class="popup-box type-aircraft">Boeing 737</div>
+            <div class="popup-box name-place">Мюнхен</div>
+            <div class="popup-box time-flight">01 июл 07:10</div>
+            <div class="popup-box stat-flight">Вылетел</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop15"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">AA-111</div>
+            <div class="popup-box name-airline">Qatar Airways</div>
+            <div class="popup-box logo-airline"><span class="qatar"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-321</div>
+            <div class="popup-box name-place">Доха</div>
+            <div class="popup-box time-flight">01 июл 07:20</div>
+            <div class="popup-box stat-flight">Приземлился</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop16"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">SW-214</div>
+            <div class="popup-box name-airline">Swiss</div>
+            <div class="popup-box logo-airline"><span class="swiss"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-318</div>
+            <div class="popup-box name-place">Женева</div>
+            <div class="popup-box time-flight">01 июл 07:30</div>
+            <div class="popup-box stat-flight">Посадка закончена</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop17"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">NN-335</div>
+            <div class="popup-box name-airline">Вим-авиа</div>
+            <div class="popup-box logo-airline"><span class="vimairlines"></span></div>
+            <div class="popup-box type-aircraft">Туполев 214</div>
+            <div class="popup-box name-place">Симферополь</div>
+            <div class="popup-box time-flight">01 июл 07:40</div>
+            <div class="popup-box stat-flight">Приземлился</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop18"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">IV-452</div>
+            <div class="popup-box name-airline">Vueling</div>
+            <div class="popup-box logo-airline"><span class="vueling"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-320</div>
+            <div class="popup-box name-place">Мадрид</div>
+            <div class="popup-box time-flight">01 июл 07:50</div>
+            <div class="popup-box stat-flight">Приземлился</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop19"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">UT-221</div>
+            <div class="popup-box name-airline">Ютейр</div>
+            <div class="popup-box logo-airline"><span class="utair"></span></div>
+            <div class="popup-box type-aircraft">Boeing 777-300</div>
+            <div class="popup-box name-place">Красноярск</div>
+            <div class="popup-box time-flight">01 июл 07:50</div>
+            <div class="popup-box stat-flight">Посадка закончена</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop20"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">AA-222</div>
+            <div class="popup-box name-airline">Аэрофлот</div>
+            <div class="popup-box logo-airline"><span class="aeroflot"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-310</div>
+            <div class="popup-box name-place">Белград</div>
+            <div class="popup-box time-flight">01 июл 08:00</div>
+            <div class="popup-box stat-flight">Ожидание посадки</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop21"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">UN-223</div>
+            <div class="popup-box name-airline">Трансаэро</div>
+            <div class="popup-box logo-airline"><span class="transaero"></span></div>
+            <div class="popup-box type-aircraft">Boeing 767-200</div>
+            <div class="popup-box name-place">Калининград</div>
+            <div class="popup-box time-flight">01 июл 08:10</div>
+            <div class="popup-box stat-flight">Ожидание посадки</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop22"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">S7-275</div>
+            <div class="popup-box name-airline">S7</div>
+            <div class="popup-box logo-airline"><span class="s7"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-330</div>
+            <div class="popup-box name-place">Екатеринбург</div>
+            <div class="popup-box time-flight">01 июл 08:20</div>
+            <div class="popup-box stat-flight">Приземлился</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop23"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">AB-141</div>
+            <div class="popup-box name-airline">Airberlin</div>
+            <div class="popup-box logo-airline"><span class="airberlin"></span></div>
+            <div class="popup-box type-aircraft">Boeing 747-200</div>
+            <div class="popup-box name-place">Берлин</div>
+            <div class="popup-box time-flight">01 июл 08:30</div>
+            <div class="popup-box stat-flight">Летит</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop38"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">AC-221</div>
+            <div class="popup-box name-airline">Air China</div>
+            <div class="popup-box logo-airline"><span class="airchina"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-319</div>
+            <div class="popup-box name-place">Гуанчжоу</div>
+            <div class="popup-box time-flight">01 июл 08:40</div>
+            <div class="popup-box stat-flight">Летит</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop24"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">AF-131</div>
+            <div class="popup-box name-airline">Airfrance</div>
+            <div class="popup-box logo-airline"><span class="airfrance"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-321</div>
+            <div class="popup-box name-place">Париж</div>
+            <div class="popup-box time-flight">01 июл 08:50</div>
+            <div class="popup-box stat-flight">Регистрация</div>
+            <div class="popup-box more-flight">Совмещен с UN-777</div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop25"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">UN-321</div>
+            <div class="popup-box name-airline">American Airlines</div>
+            <div class="popup-box logo-airline"><span class="americairlines"></span></div>
+            <div class="popup-box type-aircraft">Boeing 777-200</div>
+            <div class="popup-box name-place">Вашингтон</div>
+            <div class="popup-box time-flight">01 июл 09:00</div>
+            <div class="popup-box stat-flight">Регистрация</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop26"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">BA-111</div>
+            <div class="popup-box name-airline">British Airways</div>
+            <div class="popup-box logo-airline"><span class="britishair"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-350</div>
+            <div class="popup-box name-place">Лондон</div>
+            <div class="popup-box time-flight">01 июл 09:10</div>
+            <div class="popup-box stat-flight">Регистрация</div>
+            <div class="popup-box more-flight">Совмещен с UK-555</div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop27"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">DB-101</div>
+            <div class="popup-box name-airline">Добролёт</div>
+            <div class="popup-box logo-airline"><span class="dobrolet"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-318</div>
+            <div class="popup-box name-place">Краснодар</div>
+            <div class="popup-box time-flight">01 июл 09:20</div>
+            <div class="popup-box stat-flight">Отменен</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop28"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">AE-777</div>
+            <div class="popup-box name-airline">Emirates</div>
+            <div class="popup-box logo-airline"><span class="emirates"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-380</div>
+            <div class="popup-box name-place">Дубай</div>
+            <div class="popup-box time-flight">01 июл 09:30</div>
+            <div class="popup-box stat-flight">Летит</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop29"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">FA-111</div>
+            <div class="popup-box name-airline">Finnair</div>
+            <div class="popup-box logo-airline"><span class="finnair"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-319</div>
+            <div class="popup-box name-place">Хельсинки</div>
+            <div class="popup-box time-flight">01 июл 09:40</div>
+            <div class="popup-box stat-flight">Летит</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop30"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">IB-341</div>
+            <div class="popup-box name-airline">Iberia</div>
+            <div class="popup-box logo-airline"><span class="iberia"></span></div>
+            <div class="popup-box type-aircraft">Boeing 737-200</div>
+            <div class="popup-box name-place">Барселона</div>
+            <div class="popup-box time-flight">01 июл 09:50</div>
+            <div class="popup-box stat-flight">Летит</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop31"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">KA-543</div>
+            <div class="popup-box name-airline">Korean Air</div>
+            <div class="popup-box logo-airline"><span class="koreanair"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-321</div>
+            <div class="popup-box name-place">Сеул</div>
+            <div class="popup-box time-flight">01 июл 10:00</div>
+            <div class="popup-box stat-flight">Отменен</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop32"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">LH-361</div>
+            <div class="popup-box name-airline">Lufthansa</div>
+            <div class="popup-box logo-airline"><span class="lufthansa"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-330</div>
+            <div class="popup-box name-place">Берлин</div>
+            <div class="popup-box time-flight">01 июл 10:10</div>
+            <div class="popup-box stat-flight">Задерживается до 12:30</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop33"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">QA-581</div>
+            <div class="popup-box name-airline">Qatar Airways</div>
+            <div class="popup-box logo-airline"><span class="qatar"></span></div>
+            <div class="popup-box type-aircraft">Boeing 777-300</div>
+            <div class="popup-box name-place">Доха</div>
+            <div class="popup-box time-flight">01 июл 10:20</div>
+            <div class="popup-box stat-flight">Летит</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop34"></a>
+   <div class="popup departure">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">SW-684</div>
+            <div class="popup-box name-airline">Swiss</div>
+            <div class="popup-box logo-airline"><span class="swiss"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-320</div>
+            <div class="popup-box name-place">Цюрих</div>
+            <div class="popup-box time-flight">01 июл 10:30</div>
+            <div class="popup-box stat-flight">Регистрация</div>
+            <div class="popup-box more-flight">Совмещен с AA-444</div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop35"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">NN-333</div>
+            <div class="popup-box name-airline">Вим-авиа</div>
+            <div class="popup-box logo-airline"><span class="vimairlines"></span></div>
+            <div class="popup-box type-aircraft">Туполев 214</div>
+            <div class="popup-box name-place">Владивосток</div>
+            <div class="popup-box time-flight">01 июл 10:40</div>
+            <div class="popup-box stat-flight">Летит</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop36"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+            <div class="popup-box numb-flight">IV-445</div>
+            <div class="popup-box name-airline">Vueling</div>
+            <div class="popup-box logo-airline"><span class="vueling"></span></div>
+            <div class="popup-box type-aircraft">Airbus A-321</div>
+            <div class="popup-box name-place">Мадрид</div>
+            <div class="popup-box time-flight">01 июл 10:50</div>
+            <div class="popup-box stat-flight">Летит</div>
+            <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+   <!-------------------------------------------------------->
+   <a href="#x" class="overlay" id="pop37"></a>
+   <div class="popup arrival">
+        <div class="popup-box type-flight"></div>
+        <div class="popup-box numb-flight">UT-841</div>
+        <div class="popup-box name-airline">Ютейр</div>
+        <div class="popup-box logo-airline"><span class="utair"></span></div>
+        <div class="popup-box type-aircraft">Airbus A-330</div>
+        <div class="popup-box name-place">Санкт-Петербург</div>
+        <div class="popup-box time-flight">01 июл 11:00</div>
+        <div class="popup-box stat-flight">По расписанию</div>
+        <div class="popup-box more-flight"></div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+</body>
+</html>

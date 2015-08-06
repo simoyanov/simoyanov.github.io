@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Exo 2', sans-serif;
+    color: #333434;
+}
+.tb {
+  border-collapse: collapse;
+  margin: 0 auto;
+  position: relative;
+    display: table;
+}
+.row:nth-child(2n+1){
+   background-color: rgba(170, 170, 170, 0.24);
+}
+.hrow {
+    background-color: #7fc9ff !important;
+    text-align: center;
+}
+.arrival .tb-cell:first-child{
+    background: url(/img/plane24.png) center no-repeat;
+    background-size: contain;
+}
+.departure .tb-cell:first-child{
+    background: url(/img/plane7.png) center no-repeat;
+    background-size: contain;
+}
+.row .tb-cell:hover::before {
+    background-color: #FFE581;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: inherit;
+    z-index: -1;
+    margin-left: -5px;
+    padding-right: 5px;
+}
+.row:hover, .tb #arr:checked ~ .row:nth-child(2n+1):hover, .tb #dep:checked ~ .row:nth-child(2n+1):hover {
+  background-color: #FFE581;
+}
+a {
+    display: table-row;
+        text-decoration: none;
+}
+.tb-cell {
+  cursor: pointer;
+  width: 100px;
+    padding-left: 5px;
+    display: table-cell;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.tb-cell.logo-airline {
+   width: 120px;
+}
+.row .tb-cell:hover {
+  background-color: #ff8000;
+    
+}
+.tb-cell:hover::after {
+  background-color: black;
+}
+.logo-airline span{
+    display: block;
+    width: 110px;
+    height: 40px;
+    margin-left: 2px;
+}
+.s7 {background:url('/img/logo-sprite.png') 0 0;}
+.transaero {background:url('/img/logo-sprite.png') -110px 0;}
+.aeroflot {background:url('/img/logo-sprite.png') -220px 0;}
+.airberlin {background:url('/img/logo-sprite.png') -330px 0;}
+.airchina {background:url('/img/logo-sprite.png') -440px 0;}
+.airfrance {background:url('/img/logo-sprite.png') 0px -40px;}
+.americairlines {background:url('/img/logo-sprite.png') -110px -40px;}
+.britishair {background:url('/img/logo-sprite.png') -220px -40px;}
+.dobrolet {background:url('/img/logo-sprite.png') -330px -40px;}
+.emirates {background:url('/img/logo-sprite.png') -440px -40px;}
+.finnair {background:url('/img/logo-sprite.png') 0px -80px;}
+.iberia {background:url('/img/logo-sprite.png') -110px -80px;}
+.koreanair {background:url('/img/logo-sprite.png') -220px -80px;}
+.lufthansa {background:url('/img/logo-sprite.png') -330px -80px;}
+.qatar {background:url('/img/logo-sprite.png') -440px -80px;}
+.swiss {background:url('/img/logo-sprite.png') 0px -120px;}
+.vimairlines {background:url('/img/logo-sprite.png') -110px -120px;}
+.vueling {background:url('/img/logo-sprite.png') -220px -120px;}
+.utair {background:url('/img/logo-sprite.png') -330px -120px;}
+
+@media screen and (max-width:700px) {
+  /* убрать примечание */
+    .name-airline{display: none;}
+    .type-aircraft{display: none;}
+    .type-aircraft-add{display: table-cell !important;}
+    .logo-airline{display: none;}
+    .more-flight{display: none;}
+    .popup-box.name-airline{display: block;}
+    .popup-box.type-aircraft{display: block;}
+    .popup-box.type-aircraft-add{display: block!important;}
+    .popup-box.logo-airline{display: block;}
+    .popup-box.more-flight{display: block;}
+}
+@media screen and (min-width:700px) and (max-width:800px) {
+  /* убрать логотип */
+    .name-airline{display: none;}
+    .type-aircraft{display: none;}
+    .type-aircraft-add{display: table-cell !important;}
+    .logo-airline{display: none;}
+    .popup-box.name-airline{display: block;}
+    .popup-box.type-aircraft{display: block;}
+    .popup-box.type-aircraft-add{display: block!important;}
+    .popup-box.logo-airline{display: block;}
+}
+
+@media screen and (min-width:800px) and (max-width:900px) {
+  /* выключить полное название воздушного судна, включить сокращения */
+    .name-airline{display: none;}
+    .type-aircraft{display: none;}
+    .type-aircraft-add{display: table-cell !important;}
+    .popup-box.name-airline{display: block;}
+    .popup-box.type-aircraft{display: block;}
+    .popup-box.type-aircraft-add{display: block!important;}
+}
+@media screen and (min-width:900px) and (max-width:1000px) {
+  /* убрать имя авиакомпании */
+    .name-airline{display: none;}
+    .popup-box.name-airline{display: block;}
+}
+.popup-box.logo-airline{display: block; position: absolute; top: 15px; right: 15px;}
+.arrival .popup-box:first-child{
+    background: url(/img/plane24.png) center no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 42px;
+}
+.departure .popup-box:first-child{
+    background: url(/img/plane7.png) center no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 42px;
+}
+
+.popup-box.numb-flight:before{content:'номер рейса'; display: block; width: 200px; font-weight: bold;}
+.popup-box.name-airline:before{content:'авиакомпания'; display: block; width: 200px; font-weight: bold;}
+.popup-box.type-aircraft:before{content:'тип воздушного судна'; display: block; width: 200px; font-weight: bold;}
+.popup-box.name-place:before{content:'аэропорт назначения/отправления'; display: block; width: 300px; font-weight: bold;}
+.popup-box.time-flight:before{content:'плановое время вылета/прилёта'; display: block; width: 300px; font-weight: bold;}
+.popup-box.stat-flight:before{content:'статус рейса'; display: block;  width: 200px; font-weight: bold;}
+.popup-box.more-flight:before{content:'примечание'; display: block; font-weight: bold;}
+
+.type-aircraft-add {display: none; width: 50px;}
+.type-flight {width: 60px;}
+.numb-flight {width: 70px;}
+.name-airline {width: 150px;}
+.type-aircraft {width: 120px;}
+.name-place {width: 120px;}
+.time-flight {width: 110px;}
+.stat-flight {width: 130px;}
+
+h1 {
+    text-align: center;
+    z-index: 101;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    border-top: 10px solid white;
+    border-bottom: 15px solid white;
+}
+
+.row-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    background-color: #7fc9ff !important;
+}
+
+.tab-head {
+    display: block;
+    z-index: 100;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+}
+
+.row{
+    height: 42px;
+    display: table-row;
+    color: #333434;
+}
+
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 110;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed; 
+    cursor: default; 
+}
+.overlay:target {
+    display: block;
+}
+.popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    font-size: 14px;
+    z-index: 120;
+    margin: 0;
+    width: 350px;
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    font: 14px/18px 'Tahoma', Arial, sans-serif;
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.6s ease-out;
+    -moz-transition: -moz-transform 0.6s ease-out;
+    -o-transition: -o-transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+}
+.overlay:target+.popup {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+.close {
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding: 0;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    background-color: rgba(61, 61, 61, 0.8);
+    -webkit-box-shadow: 0px 0px 10px #000;
+    -moz-box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+    text-decoration: none;
+    font: 13px/20px 'Tahoma', Arial, sans-serif;
+    font-weight: bold;
+    -webkit-transition: all ease .8s;
+    -moz-transition: all ease .8s;
+    -ms-transition: all ease .8s;
+    -o-transition: all ease .8s;
+    transition: all ease .8s;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+}
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);    
+}
+
+.input-box {
+    display: table-caption;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 10px solid transparent;
+}
+#arr{left: 75px;}
+#arr:after{content: 'вылет';}
+#dep:after{content: 'прилет';}
+input[type="checkbox"]{
+    display: block;
+    position: absolute;
+    top: -75px;
+    z-index: 102;
+    text-transform: uppercase;
+}
+input[type="checkbox"]:after{
+    display: block;
+    width: 50px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.tb #arr:checked ~ .arrival {display: none;}
+.tb #arr:checked ~ .row:nth-child(2n+1){background-color: rgba(255, 255, 255, 0);}
+.tb #arr:checked ~ a.row.departure:nth-child(2n+1){background-color: none;}
+
+#dep:checked ~ .departure {display: none;}
+.tb #dep:checked ~ .row:nth-child(2n+1){background-color: rgba(255, 255, 255, 0);}
+.tb #dep:checked ~ a.row.arrival:nth-child(2n+1){background-color: none;}
