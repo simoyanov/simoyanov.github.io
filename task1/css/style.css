@@ -19,11 +19,11 @@ body {
     text-align: center;
 }
 .arrival .tb-cell:first-child{
-    background: url(/img/plane24.png) center no-repeat;
+    background: url(../img/plane24.png) center no-repeat;
     background-size: contain;
 }
 .departure .tb-cell:first-child{
-    background: url(/img/plane7.png) center no-repeat;
+    background: url(../img/plane7.png) center no-repeat;
     background-size: contain;
 }
 .row .tb-cell:hover::before {
@@ -68,25 +68,25 @@ a {
     height: 40px;
     margin-left: 2px;
 }
-.s7 {background:url('/img/logo-sprite.png') 0 0;}
-.transaero {background:url('/img/logo-sprite.png') -110px 0;}
-.aeroflot {background:url('/img/logo-sprite.png') -220px 0;}
-.airberlin {background:url('/img/logo-sprite.png') -330px 0;}
-.airchina {background:url('/img/logo-sprite.png') -440px 0;}
-.airfrance {background:url('/img/logo-sprite.png') 0px -40px;}
-.americairlines {background:url('/img/logo-sprite.png') -110px -40px;}
-.britishair {background:url('/img/logo-sprite.png') -220px -40px;}
-.dobrolet {background:url('/img/logo-sprite.png') -330px -40px;}
-.emirates {background:url('/img/logo-sprite.png') -440px -40px;}
-.finnair {background:url('/img/logo-sprite.png') 0px -80px;}
-.iberia {background:url('/img/logo-sprite.png') -110px -80px;}
-.koreanair {background:url('/img/logo-sprite.png') -220px -80px;}
-.lufthansa {background:url('/img/logo-sprite.png') -330px -80px;}
-.qatar {background:url('/img/logo-sprite.png') -440px -80px;}
-.swiss {background:url('/img/logo-sprite.png') 0px -120px;}
-.vimairlines {background:url('/img/logo-sprite.png') -110px -120px;}
-.vueling {background:url('/img/logo-sprite.png') -220px -120px;}
-.utair {background:url('/img/logo-sprite.png') -330px -120px;}
+.s7 {background:url('../img/logo-sprite.png') 0 0;}
+.transaero {background:url('../img/logo-sprite.png') -110px 0;}
+.aeroflot {background:url('../img/logo-sprite.png') -220px 0;}
+.airberlin {background:url('../img/logo-sprite.png') -330px 0;}
+.airchina {background:url('../img/logo-sprite.png') -440px 0;}
+.airfrance {background:url('../img/logo-sprite.png') 0px -40px;}
+.americairlines {background:url('../img/logo-sprite.png') -110px -40px;}
+.britishair {background:url('../img/logo-sprite.png') -220px -40px;}
+.dobrolet {background:url('../img/logo-sprite.png') -330px -40px;}
+.emirates {background:url('../img/logo-sprite.png') -440px -40px;}
+.finnair {background:url('../img/logo-sprite.png') 0px -80px;}
+.iberia {background:url('../img/logo-sprite.png') -110px -80px;}
+.koreanair {background:url('../img/logo-sprite.png') -220px -80px;}
+.lufthansa {background:url('../img/logo-sprite.png') -330px -80px;}
+.qatar {background:url('../img/logo-sprite.png') -440px -80px;}
+.swiss {background:url('../img/logo-sprite.png') 0px -120px;}
+.vimairlines {background:url('../img/logo-sprite.png') -110px -120px;}
+.vueling {background:url('../img/logo-sprite.png') -220px -120px;}
+.utair {background:url('../img/logo-sprite.png') -330px -120px;}
 
 @media screen and (max-width:700px) {
   /* убрать примечание */
@@ -129,13 +129,13 @@ a {
 }
 .popup-box.logo-airline{display: block; position: absolute; top: 15px; right: 15px;}
 .arrival .popup-box:first-child{
-    background: url(/img/plane24.png) center no-repeat;
+    background: url(../img/plane24.png) center no-repeat;
     background-size: contain;
     width: 60px;
     height: 42px;
 }
 .departure .popup-box:first-child{
-    background: url(/img/plane7.png) center no-repeat;
+    background: url(../img/plane7.png) center no-repeat;
     background-size: contain;
     width: 60px;
     height: 42px;
