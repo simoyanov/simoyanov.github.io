@@ -1,3 +1,4 @@
+
 .play {
     
 }
@@ -28,14 +29,14 @@
   border: 2px dashed #000;
 }
 #drop_zone {
-    border: 3px dashed #333;
+    border: 2px dashed #333;
     display: block;
     width: 100%;
     height: 200px;
     line-height: 200px;
     text-align: center;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 10px;
 }
  
 #drop_zone span{
@@ -80,9 +81,9 @@ button {
     display: block;
     width: 500px;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 20px;
     border: none;
-    background-color: aquamarine;
+    background-color: #ffd138;
     text-transform: uppercase;
     font-weight: bolder;
     margin: 10px auto;
@@ -90,9 +91,12 @@ button {
     cursor: pointer;
 }
 button:hover{
-    background-color: #3ac798;    
+    background-color: #f7c10e;    
 }
-
+p{
+    color: #ff2626;
+    font-weight: bold;
+}
 .wrap {
     display: block;
     position: relative;
@@ -104,9 +108,8 @@ button:hover{
     margin: 0 auto;
     width: 500px;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
 }
-
 
 body {
     margin: 0;
@@ -125,4 +128,9 @@ body {
     display: none;
     margin: 15px auto;
     width: 350px;
+}
+.equalizer input, .equalizer label{cursor: pointer;}
+
+.visualizer {
+    border-radius: 75px;
 }

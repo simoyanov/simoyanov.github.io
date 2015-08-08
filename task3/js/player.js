@@ -1,7 +1,3 @@
-///**********PLAYER WEB AUDIO API**********/
-
-
-    var ggvv = 5;
 
     if (window.File && window.FileReader && window.FileList && window.Blob) {
     } else {
@@ -12,19 +8,23 @@
         var files = evt.target.files; // FileList object
         var output = [];
         for (var i = 0, f; f = files[i]; i++) {
-            output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ', 'Файл загружен </li>');
+            output.push('<li><strong>', escape(f.name), '</strong>', '</li>');
             var reader = new FileReader();
             reader.onload = (function(theFile) {
                 return function(e) {
                     var span = document.createElement('span');
-                    span.innerHTML = ['<audio src="', e.target.result, '" controls/>'].join('');
+                    span.innerHTML = ['<audio src="', e.target.result, '"/>'].join('');
                     document.getElementById('list').insertBefore(span, null);
-                    ggvv = 6;
+                    var succes = document.createElement('span');
+                    succes.innerHTML = ['<p>Файл загружен </p>'].join('');
+                    document.getElementById('list').insertBefore(succes, null);
                     ID3.loadTags(e.target.result, function() {
                         var tags = ID3.getAllTags(e.target.result);
-                        alert(tags.artist + " - " + tags.title + ", " + tags.album);
+                        var tagToSpan = document.createElement('div');
+                        tagToSpan.className = "meta-data";
+                        tagToSpan.innerHTML = "Исполнитель: " + tags.artist + "<br> Название: " + tags.title + "<br> Альбом: " + tags.album;
+                        document.getElementById('list').appendChild(tagToSpan);
                     });
-
                 };
             })(f);
             reader.readAsDataURL(f);
@@ -45,21 +45,21 @@
             if (!f.type.match('audio.*')) {
                 continue;
             }
-            output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ', 'Файл загружен </li>');
+            output.push('<li><strong>', escape(f.name), '</strong>', '</li>');
             var reader = new FileReader();
             reader.onload = (function(theFile) {
                 return function(e) {
                     var span = document.createElement('span');
-                    span.innerHTML = ['<audio src="', e.target.result, '" controls/>'].join('');
+                    span.innerHTML = ['<audio src="', e.target.result, '"/>'].join('');
                     document.getElementById('list').insertBefore(span, null);
-                    ggvv = 6;
-                    
-                    
+                    var succes = document.createElement('span');
+                    succes.innerHTML = ['<p>Файл загружен </p>'].join('');
+                    document.getElementById('list').insertBefore(succes, null);
                     ID3.loadTags(e.target.result, function() {
                         var tags = ID3.getAllTags(e.target.result);
                         var tagToSpan = document.createElement('div');
                         tagToSpan.className = "meta-data";
-                        tagToSpan.innerHTML = tags.artist + " - " + tags.title + ", " + tags.album;
+                        tagToSpan.innerHTML = "Исполнитель: " + tags.artist + "<br> Название: " + tags.title + "<br> Альбом: " + tags.album;
                         document.getElementById('list').appendChild(tagToSpan);
                     });
 
@@ -75,7 +75,7 @@
     function handleDragOver(evt) {
         evt.stopPropagation();
         evt.preventDefault();
-        evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+        evt.dataTransfer.dropEffect = 'copy';
     }
 
     var dropZone = document.getElementById('drop_zone');
@@ -84,8 +84,6 @@
 
 
     var localAudioPlayer = function () {
-        console.log(ggvv);
-
         window.AudioContext = window.AudioContext||window.webkitAudioContext;
         var audioContext = new AudioContext();
         console.log(document.querySelector('audio'));
@@ -142,11 +140,6 @@
         var createFilters = function () {
             var frequencies = [60, 170, 310, 600, 1000, 3000, 6000, 12000, 14000, 16000],
             filters = frequencies.map(createFilter);
-
-//            filters.reduce(function (prev, curr) {
-//                prev.connect(curr);
-//                return curr;
-//            });
             var connectGraph = function(){
                 source.connect(analyser);
                 analyser.connect(distortion);
@@ -241,12 +234,9 @@
             }
             for(i=0;i<document.getElementsByName('eq').length;i++){
                 document.getElementsByName('eq').item(i).addEventListener('change', changeFilter);
-            }
-            
-             
+            } 
             connectGraph();
             console.log(filters);
-
         };
 
         createFilters();
@@ -269,11 +259,11 @@
 
                 analyser.getByteTimeDomainData(dataArray);
 
-                canvasCtx.fillStyle = 'rgb(247, 255, 145)';
+                canvasCtx.fillStyle = 'rgb(249, 255, 170)';
                 canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
 
                 canvasCtx.lineWidth = 2;
-                canvasCtx.strokeStyle = 'rgb(170, 0, 0)';
+                canvasCtx.strokeStyle = 'rgb(244, 48, 48)';
 
                 canvasCtx.beginPath();
 
@@ -293,20 +283,12 @@
 
                     x += sliceWidth;
                 }
-
                 canvasCtx.lineTo(canvas.width, canvas.height/2);
                 canvasCtx.stroke();
             };
-
             draw();
             console.log('Проброс выполнен');
         }
     };
-    window.onload = function(){
-        var proverka = document.querySelector('audio');
-        console.log(proverka);
-        if (proverka !== null){
-            localAudioPlayer();
-        } else (alert('UPS!'))  
-    };
+
 
