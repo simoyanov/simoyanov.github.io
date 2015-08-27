@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Exo 2', sans-serif;
+    color: #333434;
+}
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+    text-align: center;
+}
+.block, #id, p {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    font-size: 40px;
+    line-height: 4.9;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    color: #ffd800;
+}
+button {
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #ffef97;
+    cursor: pointer;
+}
+.weight {
+    font-weight: bold;
+}
+.border1 {
+    border: 5px dashed #333;
+}
+.border2 {
+    border: 5px solid #333;
+}

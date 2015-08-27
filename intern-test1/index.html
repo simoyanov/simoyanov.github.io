@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="block1">
+      <div class="wrap">
+         <form action="" class="form">
+<!--{type: 'flight',from: 'London City Airport',to: 'Paris Orly Airport',seat: '1A',gate: '26',baggage: 'YVCK', flight: 'UN556'},-->
+             <span>type</span>
+             <select id='type'>
+                  <option value="flight">flight</option>
+                  <option value="train">train</option>
+                  <option value="airport bus">airport bus</option>
+                  <option value="bus">bus</option>
+                  <option value="boat">boat</option>
+             </select>
+             <span>from</span>
+             <input id="from" type="text">
+             <span>to</span>
+             <input id="to" type="text">
+             <span>seat</span>
+             <input id="seat" type="text">
+             <span>gate</span>
+             <input id="gate" type="text">
+             <span>baggage</span>
+             <input  id="baggage" type="text">
+             <span>№</span>
+             <input  id="numb" type="text">
+             <div class="buts">
+                 <button id="addcard" type="button">Add card</button>
+                 <button id="createtrip" type="button">Make trip</button>
+                 <button id="delcards" type="button">Remove cards</button>
+             </div>
+          
+          </form>
+          <div class="cards" id="cards">
+<!--
+              <div class="card">
+                  <div class="type">flight</div>
+                  <div class="from">London City Airport</div>
+                  <div class="to">Paris Orly Airport</div>
+                  <div class="seat">1A</div>
+                  <div class="gate">26</div>
+                  <div class="baggage">YVCK</div>
+                  <div class="numb">UN556</div>
+              </div>
+-->
+          </div>
+          <h1>Your trip:</h1>
+          <ol id="way"></ol>
+      </div>
+  </div>
+   
+    <script src="trip-api.js"></script>
+    
+</body>
+</html>

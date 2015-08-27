@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="wrap">
+        <div class="block border1 test weight">class</div>
+        <button type="button" onclick="Mini.init({type: 'add', obj: '.block', val: 'red'});">add .red</button>
+        <button type="button" onclick="Mini.init({type: 'remove', obj: '.block', val: 'weight'});">remove .weight</button>
+        <button type="button" onclick="Mini.init({type: 'change', obj: '.border1', val: 'border2'});">change .border1 on .border2</button>
+        <button type="button" onclick="Mini.init({type: 'check', obj: '.block', val: 'test'});alert(Mini.checkClass());">check .test</button>
+
+        <div id="id" class="weight border1">id</div>
+        <button type="button" onclick="Mini.init({type: 'add', obj: '#id', val: ['red','yellow']});">add .red and .yellow</button>
+        <button type="button" onclick="Mini.init({type: 'remove', obj: '#id', val: 'weight'});">remove .weight</button>
+        <button type="button" onclick="Mini.init({type: 'check', obj: '#id', val: 'test'});alert(Mini.checkClass());">check .test</button>
+
+        <p class="weight border1">teg "p"</p>
+        <button type="button" onclick="Mini.init({ obj: 'p', val: 'red'});Mini.addClass();">add .red</button>
+        <button type="button" onclick="Mini.init({type: 'remove', obj: 'p', val: 'weight'});">remove .weight</button>
+        <button type="button" onclick="Mini.init({type: 'check', obj: 'p', val: 'test'});alert(Mini.checkClass());">check .test</button>
+    </div>
+    <script src="mini.js"></script>
+</body>
+</html>
