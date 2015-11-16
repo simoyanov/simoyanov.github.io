@@ -30,7 +30,7 @@ body {
     position: absolute;
     width: 1372px;
     height: 58px;
-    background: url(/img/head_1.png) center no-repeat;
+    background: url(../img/head_1.png) center no-repeat;
     top: 70px;
     left: 185px;
 }
@@ -40,7 +40,7 @@ body {
     position: absolute;
     width: 1721px;
     height: 63px;
-    background: url(/img/head_2.png) center no-repeat;
+    background: url(../img/head_2.png) center no-repeat;
     top: 145px;
     left: 185px;
 }
@@ -75,20 +75,20 @@ body {
     margin: 0 auto;
 }
 
-.year2001 .hexagon {background: url(/img/hexagon_sprite.png) 0 -5px;}
-.year2002 .hexagon {background: url(/img/hexagon_sprite.png) 0 -157px;}
-.year2003 .hexagon {background: url(/img/hexagon_sprite.png) 0 -308px;}
-.year2004 .hexagon {background: url(/img/hexagon_sprite.png) 0 -459px;}
-.year2005 .hexagon {background: url(/img/hexagon_sprite.png) 0 -610px;}
-.year2006 .hexagon {background: url(/img/hexagon_sprite.png) 0 -761px;}
-.year2007 .hexagon {background: url(/img/hexagon_sprite.png) 0 -912px;}
-.year2008 .hexagon {background: url(/img/hexagon_sprite.png) 0 -1063px;}
-.year2009 .hexagon {background: url(/img/hexagon_sprite.png) 0 -1214px;}
-.year2010 .hexagon {background: url(/img/hexagon_sprite.png) 0 -1365px;}
-.year2011 .hexagon {background: url(/img/hexagon_sprite.png) 0 -1516px;}
-.year2012 .hexagon {background: url(/img/hexagon_sprite.png) 0 -1667px;}
-.year2013 .hexagon {background: url(/img/hexagon_sprite.png) 0 -1818px;}
-.year2014 .hexagon {background: url(/img/hexagon_sprite.png) 0 -1969px;}
+.year2001 .hexagon {background: url(../img/hexagon_sprite.png) 0 -5px;}
+.year2002 .hexagon {background: url(../img/hexagon_sprite.png) 0 -157px;}
+.year2003 .hexagon {background: url(../img/hexagon_sprite.png) 0 -308px;}
+.year2004 .hexagon {background: url(../img/hexagon_sprite.png) 0 -459px;}
+.year2005 .hexagon {background: url(../img/hexagon_sprite.png) 0 -610px;}
+.year2006 .hexagon {background: url(../img/hexagon_sprite.png) 0 -761px;}
+.year2007 .hexagon {background: url(../img/hexagon_sprite.png) 0 -912px;}
+.year2008 .hexagon {background: url(../img/hexagon_sprite.png) 0 -1063px;}
+.year2009 .hexagon {background: url(../img/hexagon_sprite.png) 0 -1214px;}
+.year2010 .hexagon {background: url(../img/hexagon_sprite.png) 0 -1365px;}
+.year2011 .hexagon {background: url(../img/hexagon_sprite.png) 0 -1516px;}
+.year2012 .hexagon {background: url(../img/hexagon_sprite.png) 0 -1667px;}
+.year2013 .hexagon {background: url(../img/hexagon_sprite.png) 0 -1818px;}
+.year2014 .hexagon {background: url(../img/hexagon_sprite.png) 0 -1969px;}
 
 .timeline_canvas_year:nth-child(odd) {margin-top: 387px;height: 533px;}
 .timeline_canvas_year:nth-child(even) {margin-bottom: 387px;}
@@ -98,37 +98,37 @@ body {
     display: block;
 }
 
-.year2001 .box:nth-last-child(3) {background: url(/img/boxes_sprite.png) 0 0px; height: 90px;}
-.year2001 .box:nth-last-child(2) {background: url(/img/boxes_sprite.png) 0 -94px; height: 90px;}
-.year2001 .box:nth-last-child(1) {background: url(/img/boxes_sprite.png) 0 -188px; height: 116px;}
-.year2002 .box:nth-child(1) {background: url(/img/boxes_sprite.png) 0 -306px; height: 90px;}
-.year2003 .box:nth-last-child(1) {background: url(/img/boxes_sprite.png) 0 -401px; height: 151px;}
-.year2004 .box:nth-child(1) {background: url(/img/boxes_sprite.png) 0 -555px; height: 90px;}
-.year2004 .box:nth-child(2) {background: url(/img/boxes_sprite.png) 0 -649px; height: 90px;}
-.year2004 .box:nth-child(3) {background: url(/img/boxes_sprite.png) 0 -743px; height: 89px;}
-.year2005 .box:nth-last-child(2) {background: url(/img/boxes_sprite.png) 0 -837px; height: 90px;}
-.year2005 .box:nth-last-child(1) {background: url(/img/boxes_sprite.png) 0 -931px; height: 115px;}
-.year2006 .box:nth-child(1) {background: url(/img/boxes_sprite.png) 0 -1049px; height: 125px;}
-.year2006 .box:nth-child(2) {background: url(/img/boxes_sprite.png) 0 -1176px; height: 123px;}
-.year2007 .box:nth-last-child(2) {background: url(/img/boxes_sprite.png) 0 -1303px; height: 90px;}
-.year2007 .box:nth-last-child(1) {background: url(/img/boxes_sprite.png) 0 -1396px; height: 115px;}
-.year2008 .box:nth-child(1) {background: url(/img/boxes_sprite.png) 0 -1516px; height: 125px;}
-.year2008 .box:nth-child(2) {background: url(/img/boxes_sprite.png) 0 -1643px; height: 89px;}
-.year2009 .box:nth-last-child(2) {background: url(/img/boxes_sprite.png) 0 -1737px; height: 90px;}
-.year2009 .box:nth-last-child(1) {background: url(/img/boxes_sprite.png) 0 -1831px; height: 115px;}
-.year2010 .box:nth-child(1) {background: url(/img/boxes_sprite.png) 0 -1950px; height: 90px;}
-.year2010 .box:nth-child(2) {background: url(/img/boxes_sprite.png) 0 -2044px; height: 115px;}
-.year2010 .box:nth-child(3) {background: url(/img/boxes_sprite.png) 0 -2162px; height: 89px;}
-.year2011 .box:nth-last-child(3) {background: url(/img/boxes_sprite.png) 0 -2256px; height: 90px;}
-.year2011 .box:nth-last-child(2) {background: url(/img/boxes_sprite.png) 0 -2350px; height: 90px;}
-.year2011 .box:nth-last-child(1) {background: url(/img/boxes_sprite.png) 0 -2444px; height: 90px;}
-.year2012 .box:nth-child(1) {background: url(/img/boxes_sprite.png) 0 -2538px; height: 89px;}
-.year2012 .box:nth-child(2) {background: url(/img/boxes_sprite.png) 0 -2632px; height: 89px;}
-.year2012 .box:nth-child(3) {background: url(/img/boxes_sprite.png) 0 -2726px; height: 122px;}
-.year2013 .box:nth-last-child(2) {background: url(/img/boxes_sprite.png) 0 -2853px; height: 90px;}
-.year2013 .box:nth-last-child(1) {background: url(/img/boxes_sprite.png) 0 -2947px; height: 90px;}
-.year2014 .box:nth-child(2) {background: url(/img/boxes_sprite.png) 0 -3041px; height: 89px;}
-.year2014 .box:nth-child(3) {background: url(/img/boxes_sprite.png) 0 -3135px; height: 90px;}
+.year2001 .box:nth-last-child(3) {background: url(../img/boxes_sprite.png) 0 0px; height: 90px;}
+.year2001 .box:nth-last-child(2) {background: url(../img/boxes_sprite.png) 0 -94px; height: 90px;}
+.year2001 .box:nth-last-child(1) {background: url(../img/boxes_sprite.png) 0 -188px; height: 116px;}
+.year2002 .box:nth-child(1) {background: url(../img/boxes_sprite.png) 0 -306px; height: 90px;}
+.year2003 .box:nth-last-child(1) {background: url(../img/boxes_sprite.png) 0 -401px; height: 151px;}
+.year2004 .box:nth-child(1) {background: url(../img/boxes_sprite.png) 0 -555px; height: 90px;}
+.year2004 .box:nth-child(2) {background: url(../img/boxes_sprite.png) 0 -649px; height: 90px;}
+.year2004 .box:nth-child(3) {background: url(../img/boxes_sprite.png) 0 -743px; height: 89px;}
+.year2005 .box:nth-last-child(2) {background: url(../img/boxes_sprite.png) 0 -837px; height: 90px;}
+.year2005 .box:nth-last-child(1) {background: url(../img/boxes_sprite.png) 0 -931px; height: 115px;}
+.year2006 .box:nth-child(1) {background: url(../img/boxes_sprite.png) 0 -1049px; height: 125px;}
+.year2006 .box:nth-child(2) {background: url(../img/boxes_sprite.png) 0 -1176px; height: 123px;}
+.year2007 .box:nth-last-child(2) {background: url(../img/boxes_sprite.png) 0 -1303px; height: 90px;}
+.year2007 .box:nth-last-child(1) {background: url(../img/boxes_sprite.png) 0 -1396px; height: 115px;}
+.year2008 .box:nth-child(1) {background: url(../img/boxes_sprite.png) 0 -1516px; height: 125px;}
+.year2008 .box:nth-child(2) {background: url(../img/boxes_sprite.png) 0 -1643px; height: 89px;}
+.year2009 .box:nth-last-child(2) {background: url(../img/boxes_sprite.png) 0 -1737px; height: 90px;}
+.year2009 .box:nth-last-child(1) {background: url(../img/boxes_sprite.png) 0 -1831px; height: 115px;}
+.year2010 .box:nth-child(1) {background: url(../img/boxes_sprite.png) 0 -1950px; height: 90px;}
+.year2010 .box:nth-child(2) {background: url(../img/boxes_sprite.png) 0 -2044px; height: 115px;}
+.year2010 .box:nth-child(3) {background: url(../img/boxes_sprite.png) 0 -2162px; height: 89px;}
+.year2011 .box:nth-last-child(3) {background: url(../img/boxes_sprite.png) 0 -2256px; height: 90px;}
+.year2011 .box:nth-last-child(2) {background: url(../img/boxes_sprite.png) 0 -2350px; height: 90px;}
+.year2011 .box:nth-last-child(1) {background: url(../img/boxes_sprite.png) 0 -2444px; height: 90px;}
+.year2012 .box:nth-child(1) {background: url(../img/boxes_sprite.png) 0 -2538px; height: 89px;}
+.year2012 .box:nth-child(2) {background: url(../img/boxes_sprite.png) 0 -2632px; height: 89px;}
+.year2012 .box:nth-child(3) {background: url(../img/boxes_sprite.png) 0 -2726px; height: 122px;}
+.year2013 .box:nth-last-child(2) {background: url(../img/boxes_sprite.png) 0 -2853px; height: 90px;}
+.year2013 .box:nth-last-child(1) {background: url(../img/boxes_sprite.png) 0 -2947px; height: 90px;}
+.year2014 .box:nth-child(2) {background: url(../img/boxes_sprite.png) 0 -3041px; height: 89px;}
+.year2014 .box:nth-child(3) {background: url(../img/boxes_sprite.png) 0 -3135px; height: 90px;}
 
 .timeline_canvas_year:nth-child(odd) .box:not(:last-child){margin-bottom: 24px;}
 .timeline_canvas_year:nth-child(even) .box:not(:first-child){margin-top: 24px;}
@@ -165,7 +165,7 @@ body {
     margin-left: 185px;
     margin-top: 25px;
     margin-bottom: 54px;
-    background: url(/img/foote_text.png) center no-repeat;
+    background: url(../img/foote_text.png) center no-repeat;
 }
 
 .footer_link {
@@ -173,7 +173,7 @@ body {
     width: 286px;
     height: 93px;
     margin: 0 auto;
-    background: url(/img/link.png) center no-repeat;
+    background: url(../img/link.png) center no-repeat;
 }
 
 #slider {
@@ -188,7 +188,7 @@ body {
     height: 117px;
     margin: 0 auto;
     margin-top: 20px;
-    background: url(/img/slider.png) center no-repeat;
+    background: url(../img/slider.png) center no-repeat;
     display: none;
 }
 
@@ -204,7 +204,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 100;
-    background: url(/img/popup.png) 63px 65px no-repeat, rgba(0, 0, 0, 0.5);
+    background: url(../img/popup.png) 63px 65px no-repeat, rgba(0, 0, 0, 0.5);
 }
 
 .line {
