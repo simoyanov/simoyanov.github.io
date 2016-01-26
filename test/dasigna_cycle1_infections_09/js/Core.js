@@ -20,7 +20,7 @@ function Boot() {
 		var slide = new Slide9();
 		slide.activate();
     
-    document.ontouchmove = function(e) {
+    document.getElementById("display").ontouchmove = function(e) {
         var target = e.currentTarget;
         while(target) {
             if(checkIfElementShouldScroll(target))
