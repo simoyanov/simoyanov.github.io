@@ -8,6 +8,7 @@ if  ("ontouchstart" in window || window.DocumentTouch && document instanceof Doc
 	MOUSE_DOWN = "touchstart";
 	MOUSE_UP = "touchend";
 	isTouch = true;
+alert('touch!');
 }	
 
 window.onload = Boot;
