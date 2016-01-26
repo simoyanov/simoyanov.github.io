@@ -34,14 +34,14 @@ function Slide7(){
                 elements[i].delay(100*i).transition({opacity: 1, y: 0}, 500);
             }
         }
-        $("#box1").on(MOUSE_CLICK,function(){
+        $("#group1").on(MOUSE_CLICK,function(){
             if($(this).attr('resize') == 0){
-                $("#group1").transition({scale:1.2, y: -20, x: -5}, 500);
+                $("#group1").transition({scale:1.18, y: -20}, 500);
                 $("#group3").transition({scale:0.9, y: 160}, 500);
                 $("#group2").transition({scale:0.9, y: 170}, 500);
                 $(this).attr('resize',1);
             } else {
-                $("#group1").transition({scale:1, y: 0, x: 0}, 500);
+                $("#group1").transition({scale:1, y: 0}, 500);
                 $("#group3").transition({scale:1, y: 0}, 500);
                 $("#group2").transition({scale:1, y: 0}, 500);
                 $(this).attr('resize',0);
@@ -49,28 +49,28 @@ function Slide7(){
         });
         
         
-        $("#box2").on(MOUSE_CLICK,function(){
+        $("#group2").on(MOUSE_CLICK,function(){
             if($(this).attr('resize') == 0){
-                $("#group2").transition({scale:1.2, y: -150, x: -5}, 500);
+                $("#group2").transition({scale:1.18, y: -150}, 500);
                 $("#group3").transition({scale:0.9, y: 160}, 500);
                 $("#group1").transition({scale:0.9, y: 0}, 500);
                 $(this).attr('resize',1);
             } else {
-                $("#group2").transition({scale:1, y: 0, x: 0}, 500);
+                $("#group2").transition({scale:1, y: 0}, 500);
                 $("#group3").transition({scale:1, y: 0}, 500);
                 $("#group1").transition({scale:1, y: 0}, 500);
                 $(this).attr('resize',0);
             }
         });
         
-        $("#box3").on(MOUSE_CLICK,function(){
+        $("#group3").on(MOUSE_CLICK,function(){
             if($(this).attr('resize') == 0){
-                $("#group3").transition({scale:1.2, y: -280, x: -5}, 500);
+                $("#group3").transition({scale:1.18, y: -280}, 500);
                 $("#group2").transition({scale:0.9, y: -20}, 500);
                 $("#group1").transition({scale:0.9, y: 0}, 500);
                 $(this).attr('resize',1);
             } else {
-                $("#group3").transition({scale:1, y: 0, x: 0}, 500);
+                $("#group3").transition({scale:1, y: 0}, 500);
                 $("#group2").transition({scale:1, y: 0}, 500);
                 $("#group1").transition({scale:1, y: 0}, 500);
                 $(this).attr('resize',0);

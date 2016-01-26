@@ -88,7 +88,7 @@ body {
 #title1 {
   background-image: url("../images/title1.png");
   position: absolute;
-  left: 843px;
+  left: 818px;
   top: 295px;
   width: 433px;
   height: 30px;
@@ -98,7 +98,7 @@ body {
   background-image: url("../images/line1.png");
   opacity: 0.2;
   position: absolute;
-  left: 190px;
+  left: 165px;
   top: 283px;
   width: 1726px;
   height: 63px;
@@ -107,7 +107,7 @@ body {
 #box1 {
   background-image: url("../images/box1.png");
   position: absolute;
-  left: 190px;
+  left: 165px;
   top: 352px;
   width: 1723px;
   height: 339px;
@@ -116,7 +116,7 @@ body {
 #title2 {
   background-image: url("../images/title2.png");
   position: absolute;
-  left: 822px;
+  left: 797px;
   top: 780px;
   width: 478px;
   height: 35px;
@@ -126,7 +126,7 @@ body {
   background-image: url("../images/line2.png");
   opacity: 0.2;
   position: absolute;
-  left: 190px;
+  left: 165px;
   top: 767px;
   width: 1726px;
   height: 64px;
@@ -135,7 +135,7 @@ body {
 #box2 {
   background-image: url("../images/box2.png");
   position: absolute;
-  left: 190px;
+  left: 165px;
   top: 837px;
   width: 1723px;
   height: 526px;

@@ -32,26 +32,26 @@ function Slide7(){
                 elements[i].delay(100*i).transition({opacity: 1, y: 0}, 500);
             }
         }
-        $("#box1").click(function(){
+        $("#group1").on(MOUSE_CLICK,function(){
             if($(this).attr('resize') == 0){
-                $("#group1").transition({scale:1.17, y: -20, x: -30}, 500);
+                $("#group1").transition({scale:1.17, y: -20}, 500);
                 $("#group2").transition({scale:0.9, y: 170}, 500);
                 $(this).attr('resize',1);
             } else {
-                $("#group1").transition({scale:1, y: 0, x: 0}, 500);
+                $("#group1").transition({scale:1, y: 0}, 500);
                 $("#group2").transition({scale:1, y: 0}, 500);
                 $(this).attr('resize',0);
             }
         });
         
         
-        $("#box2").click(function(){
+        $("#group2").on(MOUSE_CLICK,function(){
             if($(this).attr('resize') == 0){
-                $("#group2").transition({scale:1.17, y: -200, x: -30}, 500);
+                $("#group2").transition({scale:1.17, y: -200}, 500);
                 $("#group1").transition({scale:0.9, y: 0}, 500);
                 $(this).attr('resize',1);
             } else {
-                $("#group2").transition({scale:1, y: 0, x: 0}, 500);
+                $("#group2").transition({scale:1, y: 0}, 500);
                 $("#group1").transition({scale:1, y: 0}, 500);
                 $(this).attr('resize',0);
             }
@@ -60,7 +60,7 @@ function Slide7(){
         
         
         
-        $('#logo').click(function(){
+        $('#logo').on(MOUSE_CLICK,function(){
             openSlide("dasigna_cycle1_cardio_01");
         });
 		 

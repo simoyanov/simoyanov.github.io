@@ -49,21 +49,21 @@ function Slide1(){
                 elements[i].delay(50*i).transition({opacity: 1}, 500);
             }
         }
-        $('#logo').click(function(){
+        $('#logo').on(MOUSE_CLICK,function(){
             openSlide("dasigna_cycle1_cardio_01");
         });
-        $('#logo').click(function(){
+        $('#logo').on(MOUSE_CLICK,function(){
             openSlide("dasigna_cycle1_cardio_01");
         });
-        $('.toslide2').click(function(){openSlide("dasigna_cycle1_cardio_02");});
-        $('.toslide7').click(function(){openSlide("dasigna_cycle1_cardio_07");});
-        $('.toslide3').click(function(){openSlide("dasigna_cycle1_cardio_03");});
-        $('.toslide8').click(function(){openSlide("dasigna_cycle1_cardio_08");});
-        $('.toslide4').click(function(){openSlide("dasigna_cycle1_cardio_04");});
-        $('.toslide19').click(function(){openSlide("dasigna_cycle1_cardio_09");});
-        $('.toslide5').click(function(){openSlide("dasigna_cycle1_cardio_05");});
-        $('.toslide21').click(function(){openSlide("dasigna_cycle1_cardio_10");});
-        $('.toslide6').click(function(){openSlide("dasigna_cycle1_cardio_06");});
+        $('.toslide2').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_cardio_02");});
+        $('.toslide7').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_cardio_07");});
+        $('.toslide3').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_cardio_03");});
+        $('.toslide8').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_cardio_08");});
+        $('.toslide4').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_cardio_04");});
+        $('.toslide19').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_cardio_09");});
+        $('.toslide5').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_cardio_05");});
+        $('.toslide21').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_cardio_10");});
+        $('.toslide6').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_cardio_06");});
 		 
 		/* ******************** */
 		}

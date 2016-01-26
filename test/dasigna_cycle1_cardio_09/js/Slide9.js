@@ -23,7 +23,7 @@ function Slide9(){
                 elements[i].delay(100*i).transition({opacity: 1, y: 0}, 500);
             }
         }
-        $('#selected_b').click(function(){
+        $('#selected_b').on(MOUSE_CLICK,function(){
             $("#selected_b select").change(function() {
                 $("#selected_b select option:selected").each(function() {
                     var selectVal = $(this).val();
@@ -48,7 +48,7 @@ function Slide9(){
         
           
 
-        $('#logo').click(function(){
+        $('#logo').on(MOUSE_CLICK,function(){
             openSlide("dasigna_cycle1_cardio_01");
         });
 		 
