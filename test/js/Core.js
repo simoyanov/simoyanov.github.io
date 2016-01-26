@@ -8,41 +8,43 @@ if  ("ontouchstart" in window || window.DocumentTouch && document instanceof Doc
 	MOUSE_DOWN = "touchstart";
 	MOUSE_UP = "touchend";
 	isTouch = true;
-	alert('touch!');
 }	
+
+
 
 window.onload = Boot;
 
 function Boot() {
 		
 			
-		var slide = new Slide1();
+		var slide = new Slide9();
 		slide.activate();
 		
 		document.ontouchmove = function(event){
 			event.preventDefault();
 		}
-var scrollable = document.getElementById("content");
-
-// set up touchStart event handler
-var onTouchStartScrollable = function(e) {
-    // listen to when the user moves finger
-    this.addEventListener("touchMove" onTouchMoveScrollable);
-    // add listener to when touch end occurs
-    this.addEventListener("touchEnd", onTouchEndScrollable);
-};
-// when the user swipes, update element positions to swipe
-var onTouchMoveScrollable = function(e) {
-    // ... do your scrolling here
-};
-// this is what is executed when the user stops the movement
-var onTouchEndScrollable = function(e) {
-    // clean up event listeners
-    this.removeEventListener("touchMove" onTouchMoveScrollable);
-    this.removeEventListener("touchEnd", onTouchEndScrollable);
-};
-scrollable.addEventListener("touchStart", onTouchStartScrollable);
 		
+        var scrollable = document.getElementById("content");
+
+        // set up touchStart event handler
+        var onTouchStartScrollable = function(e) {
+            // listen to when the user moves finger
+            this.addEventListener("touchMove", onTouchMoveScrollable);
+            // add listener to when touch end occurs
+            this.addEventListener("touchEnd", onTouchEndScrollable);
+        };
+        // when the user swipes, update element positions to swipe
+        var onTouchMoveScrollable = function(e) {
+            // ... do your scrolling here
+        };
+        // this is what is executed when the user stops the movement
+        var onTouchEndScrollable = function(e) {
+            // clean up event listeners
+            this.removeEventListener("touchMove", onTouchMoveScrollable);
+            this.removeEventListener("touchEnd", onTouchEndScrollable);
+        };
+        scrollable.addEventListener("touchStart", onTouchStartScrollable);
+        
 		$("#dinamiko_pharm_v1_package").on(MOUSE_UP, openInstruction);
 		
  
