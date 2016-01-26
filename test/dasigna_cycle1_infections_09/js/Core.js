@@ -19,10 +19,21 @@ function Boot() {
 			
 		var slide = new Slide9();
 		slide.activate();
+    
+    document.ontouchmove = function(e) {
+        var target = e.currentTarget;
+        while(target) {
+            if(checkIfElementShouldScroll(target))
+                return;
+            target = target.parentNode;
+        }
+
+        e.preventDefault();
+    };
 		
-		getElementById("display").ontouchmove = function(event){
-			event.preventDefault();
-		}
+//		getElementById("display").ontouchmove = function(event){
+//			event.preventDefault();
+//		}
         
 //		getElementById("display").ontouchmove = function(e) {
 //            e.stopPropagation();
