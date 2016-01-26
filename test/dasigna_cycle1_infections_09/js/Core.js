@@ -20,7 +20,7 @@ function Boot() {
 		var slide = new Slide9();
 		slide.activate();
 		
-		getElementById("#display").ontouchmove = function(event){
+		getElementById("#content").ontouchmove = function(event){
 			event.preventDefault();
 		}
 		
