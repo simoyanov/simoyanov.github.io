@@ -1,0 +1,120 @@
+body {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	maring: 0;
+}
+
+#display{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	overflow: hidden;
+}
+/**************************************************************/
+#background{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	background-image: url("../images/bg.jpg");
+}
+
+.invisible{
+    opacity: 0;
+}
+
+#display div{
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+}
+
+.scale{
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+}
+.left{
+    -webkit-transform: translate(-1580px, 0px);
+    -moz-transform: translate(-1580px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+.right{
+    -webkit-transform: translate(3580px, 0px);
+    -moz-transform: translate(3580px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+/*******************************************************/
+
+
+#icon {
+  background-image: url("../images/icon.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 266px;
+  height: 243px;
+  z-index: 8;
+}
+#head {
+  background-image: url("../images/head.png");
+  position: absolute;
+  left: 247px;
+  top: 90px;
+  width: 1138px;
+  height: 56px;
+  z-index: 7;
+}
+#logo {
+  background-image: url("../images/logo.jpg");
+  position: absolute;
+  left: 1905px;
+  top: 0px;
+  width: 143px;
+  height: 143px;
+  z-index: 6;
+}
+#table1 {
+  background-image: url("../images/table1.png");
+  position: absolute;
+  left: 239px;
+  top: 236px;
+  width: 1629px;
+  height: 681px;
+  z-index: 4;
+}
+#table2 {
+  background-image: url("../images/table2.png");
+  position: absolute;
+  left: 239px;
+  top: 949px;
+  width: 1629px;
+  height: 482px;
+  z-index: 3;
+}
+#product_id_shared_vis_ {
+  background-image: url("../images/product_id_shared_vis_.png");
+  position: absolute;
+  left: 29px;
+  top: 1492px;
+  width: 277px;
+  height: 15px;
+  z-index: 3;
+}
+#bg {
+  background-image: url("../images/bg.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 2048px;
+  height: 1536px;
+  z-index: 2;
+}
+
+
+
+
+

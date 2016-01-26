@@ -1,0 +1,333 @@
+body {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	maring: 0;
+}
+
+#display{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	overflow: hidden;
+}
+/**************************************************************/
+#background{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	background-image: url("../images/bg.jpg");
+}
+
+.invisible{
+    opacity: 0;
+}
+
+#display div{
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+}
+/*******************************************************/
+.scale{
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+}
+.left{
+    -webkit-transform: translate(-1580px, 0px);
+    -moz-transform: translate(-1580px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+.right{
+    -webkit-transform: translate(3580px, 0px);
+    -moz-transform: translate(3580px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+#logo {
+  background-image: url("../images/logo.jpg");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 199px;
+  height: 199px;
+  z-index: 33;
+}
+#head {
+  background-image: url("../images/head.png");
+  position: absolute;
+  left: 269px;
+  top: 56px;
+  width: 1658px;
+  height: 122px;
+  z-index: 32;
+}
+#icon1 {
+  background-image: url("../images/icon1.png");
+  position: absolute;
+  left: 240px;
+  top: 321px;
+  width: 199px;
+  height: 92px;
+  z-index: 31;
+}
+#icon2 {
+  background-image: url("../images/icon2.png");
+  position: absolute;
+  left: 1155px;
+  top: 308px;
+  width: 170px;
+  height: 108px;
+  z-index: 30;
+}
+#icon3 {
+  background-image: url("../images/icon3.png");
+  position: absolute;
+  left: 257px;
+  top: 536px;
+  width: 167px;
+  height: 130px;
+  z-index: 29;
+}
+#icon4 {
+  background-image: url("../images/icon4.png");
+  position: absolute;
+  left: 1156px;
+  top: 524px;
+  width: 178px;
+  height: 154px;
+  z-index: 28;
+}
+#icon5 {
+  background-image: url("../images/icon5.png");
+  position: absolute;
+  left: 249px;
+  top: 790px;
+  width: 175px;
+  height: 120px;
+  z-index: 27;
+}
+#icon6 {
+  background-image: url("../images/icon6.png");
+  position: absolute;
+  left: 1139px;
+  top: 764px;
+  width: 199px;
+  height: 170px;
+  z-index: 26;
+}
+#icon7 {
+  background-image: url("../images/icon7.png");
+  position: absolute;
+  left: 234px;
+  top: 1025px;
+  width: 211px;
+  height: 129px;
+  z-index: 25;
+}
+#icon8 {
+  background-image: url("../images/icon8.png");
+  position: absolute;
+  left: 1136px;
+  top: 1023px;
+  width: 197px;
+  height: 147px;
+  z-index: 24;
+}
+#icon9 {
+  background-image: url("../images/icon9.png");
+  position: absolute;
+  left: 248px;
+  top: 1278px;
+  width: 175px;
+  height: 103px;
+  z-index: 23;
+}
+#rectangle10 {
+  background-image: url("../images/rectangle10.png");
+  position: absolute;
+  left: 1065px;
+  top: 1212px;
+  width: 885px;
+  height: 253px;
+  z-index: 22;
+}
+#rectangle1 {
+  background-image: url("../images/rectangle1.png");
+  position: absolute;
+  left: 189px;
+  top: 237px;
+  width: 884px;
+  height: 254px;
+  z-index: 21;
+}
+#rectangle2 {
+  background-image: url("../images/rectangle2.png");
+  position: absolute;
+  left: 1065px;
+  top: 237px;
+  width: 885px;
+  height: 254px;
+  z-index: 20;
+}
+#rectangle3 {
+  background-image: url("../images/rectangle3.png");
+  position: absolute;
+  left: 190px;
+  top: 482px;
+  width: 882px;
+  height: 250px;
+  z-index: 19;
+}
+#rectangle4 {
+  background-image: url("../images/rectangle4.png");
+  position: absolute;
+  left: 1067px;
+  top: 482px;
+  width: 882px;
+  height: 250px;
+  z-index: 18;
+}
+#rectangle5 {
+  background-image: url("../images/rectangle5.png");
+  position: absolute;
+  left: 189px;
+  top: 725px;
+  width: 884px;
+  height: 253px;
+  z-index: 17;
+}
+#rectangle6 {
+  background-image: url("../images/rectangle6.png");
+  position: absolute;
+  left: 1065px;
+  top: 725px;
+  width: 885px;
+  height: 253px;
+  z-index: 16;
+}
+#rectangle7 {
+  background-image: url("../images/rectangle7.png");
+  position: absolute;
+  left: 190px;
+  top: 969px;
+  width: 882px;
+  height: 250px;
+  z-index: 15;
+}
+#rectangle8 {
+  background-image: url("../images/rectangle8.png");
+  position: absolute;
+  left: 1067px;
+  top: 969px;
+  width: 882px;
+  height: 250px;
+  z-index: 14;
+}
+#rectangle9 {
+  background-image: url("../images/rectangle9.png");
+  position: absolute;
+  left: 189px;
+  top: 1212px;
+  width: 884px;
+  height: 253px;
+  z-index: 13;
+}
+#text1 {
+  background-image: url("../images/text1.png");
+  position: absolute;
+  left: 475px;
+  top: 297px;
+  width: 518px;
+  height: 128px;
+  z-index: 12;
+}
+#text2 {
+  background-image: url("../images/text2.png");
+  position: absolute;
+  left: 1422px;
+  top: 337px;
+  width: 203px;
+  height: 43px;
+  z-index: 11;
+}
+#text3 {
+  background-image: url("../images/text3.png");
+  position: absolute;
+  left: 473px;
+  top: 541px;
+  width: 549px;
+  height: 116px;
+  z-index: 10;
+}
+#text4 {
+  background-image: url("../images/text4.png");
+  position: absolute;
+  left: 1425px;
+  top: 585px;
+  width: 221px;
+  height: 56px;
+  z-index: 9;
+}
+#text5 {
+  background-image: url("../images/text5.png");
+  position: absolute;
+  left: 469px;
+  top: 781px;
+  width: 569px;
+  height: 130px;
+  z-index: 8;
+}
+#text6 {
+  background-image: url("../images/text6.png");
+  position: absolute;
+  left: 1421px;
+  top: 785px;
+  width: 339px;
+  height: 125px;
+  z-index: 7;
+}
+#text7 {
+  background-image: url("../images/text7.png");
+  position: absolute;
+  left: 468px;
+  top: 996px;
+  width: 537px;
+  height: 201px;
+  z-index: 6;
+}
+#text8 {
+  background-image: url("../images/text8.png");
+  position: absolute;
+  left: 1419px;
+  top: 1030px;
+  width: 373px;
+  height: 115px;
+  z-index: 5;
+}
+#text9 {
+  background-image: url("../images/text9.png");
+  position: absolute;
+  left: 466px;
+  top: 1274px;
+  width: 301px;
+  height: 116px;
+  z-index: 4;
+}
+#product_id_shared_vis_ {
+  background-image: url("../images/product_id_shared_vis_.png");
+  position: absolute;
+  left: 30px;
+  top: 1493px;
+  width: 276px;
+  height: 15px;
+  z-index: 3;
+}
+
+
+
+
+
