@@ -3,13 +3,13 @@ var MOUSE_DOWN = "mousedown";
 var MOUSE_UP = "mouseup";
 var isTouch = false;
 
-//if  ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch) {
-//	MOUSE_CLICK = "touchstart";
-//	MOUSE_DOWN = "touchstart";
-//	MOUSE_UP = "touchend";
-//	isTouch = true;
-//alert('touch!');
-//}	
+if  ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch) {
+	MOUSE_CLICK = "touchstart";
+	MOUSE_DOWN = "touchstart";
+	MOUSE_UP = "touchend";
+	isTouch = true;
+	alert('touch!');
+}	
 
 window.onload = Boot;
 
