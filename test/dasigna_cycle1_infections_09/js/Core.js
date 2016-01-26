@@ -20,10 +20,13 @@ function Boot() {
 		var slide = new Slide9();
 		slide.activate();
 		
-		getElementById("#content").ontouchmove = function(event){
+		window.ontouchmove = function(event){
 			event.preventDefault();
 		}
-		
+        
+		getElementById("display").ontouchmove = function(e) {
+            e.stopPropagation();
+        };
         
         
 //		$("#dinamiko_pharm_v1_package").on(MOUSE_UP, openInstruction);
