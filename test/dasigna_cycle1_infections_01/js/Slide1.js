@@ -49,21 +49,21 @@ function Slide1(){
                 elements[i].delay(50*i).transition({opacity: 1}, 500);
             }
         }
-        $('#logo').click(function(){
+        $('#logo').on(MOUSE_CLICK,function(){
             openSlide("dasigna_cycle1_infections_01");
         });
-        $('#logo').click(function(){
+        $('#logo').on(MOUSE_CLICK,function(){
             openSlide("dasigna_cycle1_infections_01");
         });
-        $('.toslide2').click(function(){openSlide("dasigna_cycle1_infections_02");});
-        $('.toslide7').click(function(){openSlide("dasigna_cycle1_infections_07");});
-        $('.toslide3').click(function(){openSlide("dasigna_cycle1_infections_03");});
-        $('.toslide8').click(function(){openSlide("dasigna_cycle1_infections_08");});
-        $('.toslide4').click(function(){openSlide("dasigna_cycle1_infections_04");});
-        $('.toslide19').click(function(){openSlide("dasigna_cycle1_infections_09");});
-        $('.toslide5').click(function(){openSlide("dasigna_cycle1_infections_05");});
-        $('.toslide21').click(function(){openSlide("dasigna_cycle1_infections_10");});
-        $('.toslide6').click(function(){openSlide("dasigna_cycle1_infections_06");});
+        $('.toslide2').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_infections_02");});
+        $('.toslide7').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_infections_07");});
+        $('.toslide3').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_infections_03");});
+        $('.toslide8').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_infections_08");});
+        $('.toslide4').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_infections_04");});
+        $('.toslide19').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_infections_09");});
+        $('.toslide5').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_infections_05");});
+        $('.toslide21').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_infections_10");});
+        $('.toslide6').on(MOUSE_CLICK,function(){openSlide("dasigna_cycle1_infections_06");});
 		 
 		/* ******************** */
 		}

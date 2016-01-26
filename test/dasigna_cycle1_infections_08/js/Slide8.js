@@ -55,7 +55,7 @@ function Slide8(){
             }
         }
         for ( var i = 2; i < 13; i++ ) {
-            elements[i].click(function(){
+            elements[i].on(MOUSE_CLICK,function(){
                 $('.menu').removeClass('active');
                 $(this).addClass('active');
                 var elId = $(this).attr('id');
@@ -73,7 +73,7 @@ function Slide8(){
         }
         
 
-        $('#logo').click(function(){
+        $('#logo').on(MOUSE_CLICK,function(){
             openSlide("dasigna_cycle1_infections_01");
         });
 		 

@@ -38,35 +38,35 @@ body {
 .left{
     -webkit-transform: translate(-1580px, 0px);
     -moz-transform: translate(-1580px, 0px);
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
 }
 .right{
     -webkit-transform: translate(3580px, 0px);
     -moz-transform: translate(3580px, 0px);
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
 }
 .fadeUp{
     -webkit-transform: translate(0px, 100px);
     -moz-transform: translate(0px, 100px);
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
     opacity: 0;
 }
 .hide{
     -webkit-transform: translate(100px, 0px);
     -moz-transform: translate(100px, 0px);
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
     opacity: 0;
 }
 .menu{
     opacity: 0;
     -webkit-transform: translate(0px, 100px);
     -moz-transform: translate(0px, 100px);
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
 }
 .active{
     opacity: 1 !important;
@@ -75,15 +75,30 @@ body {
     opacity: 0.2;
 }
 .win{
-    opacity: 0;
+    -webkit-transition: all ease-in-out 0s;
+    -moz-transition: all ease-in-out 0s;
 }
 .winActive{
     opacity: 1;
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
     z-index: 200 !important;
+/*    opacity: 1;*/
+}
+#modal{
+    display: none;
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 210;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    
 }
 /*******************************************************/
 
@@ -319,7 +334,10 @@ body {
   top: 616px;
   width: 1959px;
   height: 304px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, -470px) scale(0.25);
+    -moz-transform: translate(160px, -470px) scale(0.25);
+*/
 }
 #win2 {
   background-image: url("../images/win2.png");
@@ -328,7 +346,10 @@ body {
   top: 616px;
   width: 1959px;
   height: 304px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, -385px) scale(0.25);
+    -moz-transform: translate(160px, -385px) scale(0.25);
+*/
 }
 #win3 {
   background-image: url("../images/win3.png");
@@ -337,7 +358,10 @@ body {
   top: 616px;
   width: 1959px;
   height: 303px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, -305px) scale(0.25);
+    -moz-transform: translate(160px, -305px) scale(0.25);
+*/
 }
 #win4 {
   background-image: url("../images/win4.png");
@@ -346,7 +370,10 @@ body {
   top: 676px;
   width: 1959px;
   height: 184px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, -240px) scale(0.25);
+    -moz-transform: translate(160px, -240px) scale(0.25);
+*/
 }
 #win5 {
   background-image: url("../images/win5.png");
@@ -355,7 +382,10 @@ body {
   top: 674px;
   width: 1959px;
   height: 188px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, -180px) scale(0.25);
+    -moz-transform: translate(160px, -180px) scale(0.25);
+*/
 }
 #win6 {
   background-image: url("../images/win6.png");
@@ -364,7 +394,10 @@ body {
   top: 626px;
   width: 1959px;
   height: 284px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, -120px) scale(0.25);
+    -moz-transform: translate(160px, -120px) scale(0.25);
+*/
 }
 #win7 {
   background-image: url("../images/win7.png");
@@ -373,7 +406,10 @@ body {
   top: 692px;
   width: 1959px;
   height: 152px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, -60px) scale(0.25);
+    -moz-transform: translate(160px, -60px) scale(0.25);
+*/
 }
 #win8 {
   background-image: url("../images/win8.png");
@@ -382,7 +418,10 @@ body {
   top: 692px;
   width: 1959px;
   height: 152px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, -20px) scale(0.25);
+    -moz-transform: translate(160px, -20px) scale(0.25);
+*/
 }
 #win9 {
   background-image: url("../images/win9.png");
@@ -391,7 +430,10 @@ body {
   top: 602px;
   width: 1959px;
   height: 331px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, 50px) scale(0.25);
+    -moz-transform: translate(160px, 50px) scale(0.25);
+*/
 }
 #win10 {
   background-image: url("../images/win10.png");
@@ -400,7 +442,10 @@ body {
   top: 628px;
   width: 1959px;
   height: 280px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, 130px) scale(0.25);
+    -moz-transform: translate(160px, 130px) scale(0.25);
+*/
 }
 #win11 {
   background-image: url("../images/win11.png");
@@ -409,7 +454,10 @@ body {
   top: 660px;
   width: 1959px;
   height: 216px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, 200px) scale(0.25);
+    -moz-transform: translate(160px, 200px) scale(0.25);
+*/
 }
 #win12 {
   background-image: url("../images/win12.png");
@@ -418,7 +466,10 @@ body {
   top: 662px;
   width: 1959px;
   height: 212px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, 260px) scale(0.25);
+    -moz-transform: translate(160px, 260px) scale(0.25);
+*/
 }
 #win13 {
   background-image: url("../images/win13.png");
@@ -427,7 +478,10 @@ body {
   top: 660px;
   width: 1959px;
   height: 216px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, 320px) scale(0.25);
+    -moz-transform: translate(160px, 320px) scale(0.25);
+*/
 }
 #win14 {
   background-image: url("../images/win14.png");
@@ -437,6 +491,10 @@ body {
   width: 1959px;
   height: 319px;
   z-index: 1;
+/*
+    -webkit-transform: translate(160px, 390px) scale(0.25);
+    -moz-transform: translate(160px, 390px) scale(0.25);
+*/
 }
 #win15 {
   background-image: url("../images/win15.png");
@@ -445,7 +503,10 @@ body {
   top: 660px;
   width: 1959px;
   height: 216px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, 470px) scale(0.25);
+    -moz-transform: translate(160px, 470px) scale(0.25);
+*/
 }
 #win16 {
   background-image: url("../images/win16.png");
@@ -454,7 +515,10 @@ body {
   top: 662px;
   width: 1959px;
   height: 212px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(180px, 530px) scale(0.25);
+    -moz-transform: translate(180px, 530px) scale(0.25);
+*/
 }
 #win17 {
   background-image: url("../images/win17.png");
@@ -463,7 +527,10 @@ body {
   top: 662px;
   width: 1959px;
   height: 212px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, 590px) scale(0.25);
+    -moz-transform: translate(160px, 590px) scale(0.25);
+*/
 }
 #win18 {
   background-image: url("../images/win18.png");
@@ -472,7 +539,10 @@ body {
   top: 660px;
   width: 1959px;
   height: 216px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, 650px) scale(0.25);
+    -moz-transform: translate(160px, 650px) scale(0.25);
+*/
 }
 #win19 {
   background-image: url("../images/win19.png");
@@ -481,7 +551,10 @@ body {
   top: 662px;
   width: 1959px;
   height: 211px;
-  z-index: 1;
+/*
+    -webkit-transform: translate(160px, 710px) scale(0.25);
+    -moz-transform: translate(160px, 710px) scale(0.25);
+*/
 }
 
 

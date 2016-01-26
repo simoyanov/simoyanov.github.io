@@ -34,7 +34,7 @@ function Slide7(){
                 elements[i].delay(100*i).transition({opacity: 1, y: 0}, 500);
             }
         }
-        $("#box1").click(function(){
+        $("#box1").on(MOUSE_CLICK,function(){
             if($(this).attr('resize') == 0){
                 $("#group1").transition({scale:1.2, y: -20, x: -5}, 500);
                 $("#group3").transition({scale:0.9, y: 160}, 500);
@@ -49,7 +49,7 @@ function Slide7(){
         });
         
         
-        $("#box2").click(function(){
+        $("#box2").on(MOUSE_CLICK,function(){
             if($(this).attr('resize') == 0){
                 $("#group2").transition({scale:1.2, y: -150, x: -5}, 500);
                 $("#group3").transition({scale:0.9, y: 160}, 500);
@@ -63,7 +63,7 @@ function Slide7(){
             }
         });
         
-        $("#box3").click(function(){
+        $("#box3").on(MOUSE_CLICK,function(){
             if($(this).attr('resize') == 0){
                 $("#group3").transition({scale:1.2, y: -280, x: -5}, 500);
                 $("#group2").transition({scale:0.9, y: -20}, 500);
@@ -78,7 +78,7 @@ function Slide7(){
         });
         
         
-        $('#logo').click(function(){
+        $('#logo').on(MOUSE_CLICK,function(){
             openSlide("dasigna_cycle1_infections_01");
         });
 		 

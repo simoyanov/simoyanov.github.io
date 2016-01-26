@@ -38,14 +38,14 @@ body {
 .left{
     -webkit-transform: translate(-1580px, 0px);
     -moz-transform: translate(-1580px, 0px);
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
 }
 .right{
     -webkit-transform: translate(3580px, 0px);
     -moz-transform: translate(3580px, 0px);
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
 }
 /*******************************************************/
 

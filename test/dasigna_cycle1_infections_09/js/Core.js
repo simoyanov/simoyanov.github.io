@@ -16,29 +16,12 @@ window.onload = Boot;
 
 function Boot() {
 		
-			
 		var slide = new Slide9();
 		slide.activate();
-    
-    
-		
 		document.getElementById("display").ontouchmove = function(event){
 			event.preventDefault();
 		}
         
-//		getElementById("display").ontouchmove = function(e) {
-//            e.stopPropagation();
-//        };
-        
-        
-//		$("#dinamiko_pharm_v1_package").on(MOUSE_UP, openInstruction);
-//		
-// 
-//		
-//	function openInstruction(e){		
-//		openSlide("dasigna_dinamiko_pharm_v2_pdf1");		 
-//	}
-//	
 }
 	
 function openSlide(url){

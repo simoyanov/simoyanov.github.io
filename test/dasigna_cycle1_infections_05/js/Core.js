@@ -22,13 +22,6 @@ function Boot() {
 			event.preventDefault();
 		}
 		
-		$("#dinamiko_pharm_v1_package").on(MOUSE_UP, openInstruction);
-		
- 
-		
-	function openInstruction(e){		
-		openSlide("dasigna_dinamiko_pharm_v2_pdf1");		 
-	}
 	
 }
 	

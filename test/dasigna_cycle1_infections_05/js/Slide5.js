@@ -38,7 +38,7 @@ function Slide5(){
                 elements[i].delay(100*i).transition({opacity: 1, y: 0}, 500);
             }
         }
-        $('#logo').click(function(){
+        $('#logo').on(MOUSE_CLICK,function(){
             openSlide("dasigna_cycle1_infections_01");
         });
 		 
