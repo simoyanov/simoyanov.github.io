@@ -20,20 +20,20 @@ function Boot() {
 		var slide = new Slide9();
 		slide.activate();
 		
-		$('#display').ontouchmove = function(event){
+		getElementById("#display").ontouchmove = function(event){
 			event.preventDefault();
 		}
 		
         
         
-		$("#dinamiko_pharm_v1_package").on(MOUSE_UP, openInstruction);
-		
- 
-		
-	function openInstruction(e){		
-		openSlide("dasigna_dinamiko_pharm_v2_pdf1");		 
-	}
-	
+//		$("#dinamiko_pharm_v1_package").on(MOUSE_UP, openInstruction);
+//		
+// 
+//		
+//	function openInstruction(e){		
+//		openSlide("dasigna_dinamiko_pharm_v2_pdf1");		 
+//	}
+//	
 }
 	
 function openSlide(url){
