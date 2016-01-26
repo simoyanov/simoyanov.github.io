@@ -32,7 +32,7 @@ function Slide7(){
                 elements[i].delay(100*i).transition({opacity: 1, y: 0}, 500);
             }
         }
-        $("#group1").on(MOUSE_CLICK,function(){
+        $("#box1").on(MOUSE_CLICK,function(){
             if($(this).attr('resize') == 0){
                 $("#group1").transition({scale:1.17, y: -20}, 500);
                 $("#group2").transition({scale:0.9, y: 170}, 500);
@@ -45,7 +45,7 @@ function Slide7(){
         });
         
         
-        $("#group2").on(MOUSE_CLICK,function(){
+        $("#box2").on(MOUSE_CLICK,function(){
             if($(this).attr('resize') == 0){
                 $("#group2").transition({scale:1.17, y: -200}, 500);
                 $("#group1").transition({scale:0.9, y: 0}, 500);

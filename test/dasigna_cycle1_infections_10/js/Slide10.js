@@ -31,47 +31,25 @@ function Slide10(){
                 $(menuArray[1][k]).delay(100*k).transition({opacity: 1, x: 0}, 500);
             }
         }
-//        for(var k = 4; k < 23; k++){
-//            $(menuArray[1][k]).on(MOUSE_CLICK,function(){
-//                if($(this).attr('clk') == 0){
-//                    $('#modal').show(300);
-//                    $('.win').removeClass('winActive');
-//                    var elId = $(this).attr('id');
-//                    elId = elId.slice(6,9);
-//                    elId = parseInt(elId);
-//                    $('#win'+ elId +'').addClass('winActive');
-//                    $(this).attr('clk',0);
-//                } else {
-//                    $('.win').removeClass('winActive');
-//                    $(this).attr('clk',1);
-//                }
-//            });
-//        }
         for(var k = 4; k < 23; k++){
             $(menuArray[1][k]).on(MOUSE_CLICK,function(){
-                    $('#modal').show(200);
+                    $('#modal').fadeIn();
                     $('.win').hide();
                     var elId = $(this).attr('id');
                     elId = elId.slice(6,9);
                     elId = parseInt(elId);
-                    $('#modal #win'+ elId +'').show();
-                
+                    $('#modal #win'+ elId +'').fadeIn();
             });
         }
         
         
-//        if($('.tab2').is(":visible") || $('.tab3').is(":visible")){
-//            $('#col21').hide;
-//        }
+
         
         
         $('#modal').on(MOUSE_CLICK,function(){
-            $('#modal').hide(300);
+            $('#modal').fadeOut();
         })
         
-        $('.win').on(MOUSE_CLICK,function(){
-            $(this).removeClass('winActive');
-        });   
         
         function menu1(){
             $('#menu1').addClass('active');
@@ -110,21 +88,18 @@ function Slide10(){
                 for(var k = 0; k < menuArray[elId].length; k++){
                     if (elId == 1 && k > 2 && k < 23){
                             $(menuArray[1][k]).delay(300).transition({opacity: 1, x: 0}, 500);
-                        $(menuArray[1][k]).css('visibility','visible');
+                            $(menuArray[1][k]).css('visibility','visible');
                         } else if(elId == 1 && k > 22){
                             var l = k - 19;
                             $(menuArray[1][k]).delay(100*l).transition({opacity: 1, x: 0}, 500);
                             $(menuArray[1][k]).css('visibility','visible');
                         } else {
-                    $(menuArray[elId][k]).delay(100*k).transition({opacity: 1, x: 0}, 500);
+                            $(menuArray[elId][k]).delay(100*k).transition({opacity: 1, x: 0}, 500);
                             $(menuArray[elId][k]).css('visibility','visible');
                         }
                 }
             });
         }
-        
-
-        
 		 
 		/* ******************** */
 		}

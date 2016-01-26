@@ -92,12 +92,12 @@ body {
     position: absolute;
 	top: 0px;
 	left: 0px;
+/*    right: 0px;*/
+/*    bottom: 0px;*/
 	width: 2048px;
 	height: 1536px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 210;
-    -webkit-transition: all ease-in-out 0.5s;
-    -moz-transition: all ease-in-out 0.5s;
     
 }
 /*******************************************************/

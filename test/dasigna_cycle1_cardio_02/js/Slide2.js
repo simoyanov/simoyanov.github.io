@@ -18,7 +18,6 @@ function Slide2(){
         for ( var i = 0; i < elements.length; i++ ) {
             if (i == 1) {
                 elements[i].delay(100*i).transition({opacity: 1}, 500);
-//                elements[i].delay(100*i).transition({x:0}, 500);
             } else if(i == 0){
                 elements[i].delay(100*i).transition({scale:1.2}, 500);
                 elements[i].transition({scale:1}, 500);      
