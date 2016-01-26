@@ -1,0 +1,230 @@
+body {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	maring: 0;
+}
+
+#display{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	overflow: hidden;
+}
+/**************************************************************/
+#background{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	background-image: url("../images/bg.jpg");
+}
+
+.invisible{
+    opacity: 0;
+}
+
+#display div{
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+}
+
+.scale{
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+}
+.left{
+    -webkit-transform: translate(-1580px, 0px);
+    -moz-transform: translate(-1580px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+.right{
+    -webkit-transform: translate(3580px, 0px);
+    -moz-transform: translate(3580px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+.fadeUp{
+    -webkit-transform: translate(0px, 100px);
+    -moz-transform: translate(0px, 100px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    opacity: 0;
+}
+/*******************************************************/
+
+
+
+#head {
+  background-image: url("../images/head.png");
+  position: absolute;
+  left: 246px;
+  top: 60px;
+  width: 1460px;
+  height: 142px;
+  z-index: 20;
+}
+#icon {
+  background-image: url("../images/icon.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 266px;
+  height: 243px;
+  z-index: 19;
+}
+#logo {
+  background-image: url("../images/logo.jpg");
+  position: absolute;
+  left: 1906px;
+  top: 0px;
+  width: 143px;
+  height: 143px;
+  z-index: 18;
+}
+#text1 {
+  background-image: url("../images/text1.png");
+  position: absolute;
+  left: 303px;
+  top: 403px;
+  width: 667px;
+  height: 41px;
+  z-index: 17;
+}
+#text2 {
+  background-image: url("../images/text2.png");
+  position: absolute;
+  left: 347px;
+  top: 516px;
+  width: 584px;
+  height: 82px;
+  z-index: 16;
+}
+#text3 {
+  background-image: url("../images/text3.png");
+  position: absolute;
+  left: 274px;
+  top: 710px;
+  width: 657px;
+  height: 78px;
+  z-index: 15;
+}
+#text4 {
+  background-image: url("../images/text4.png");
+  position: absolute;
+  left: 266px;
+  top: 928px;
+  width: 667px;
+  height: 38px;
+  z-index: 14;
+}
+#text5 {
+  background-image: url("../images/text5.png");
+  position: absolute;
+  left: 262px;
+  top: 1079px;
+  width: 670px;
+  height: 99px;
+  z-index: 13;
+}
+#table1 {
+  background-image: url("../images/table1.png");
+  position: absolute;
+  left: 197px;
+  top: 386px;
+  width: 828px;
+  height: 808px;
+  z-index: 12;
+}
+#text6 {
+  background-image: url("../images/text6.png");
+  position: absolute;
+  left: 1178px;
+  top: 403px;
+  width: 665px;
+  height: 41px;
+  z-index: 11;
+}
+#text7 {
+  background-image: url("../images/text7.png");
+  position: absolute;
+  left: 1178px;
+  top: 497px;
+  width: 626px;
+  height: 75px;
+  z-index: 10;
+}
+#text8 {
+  background-image: url("../images/text8.png");
+  position: absolute;
+  left: 1161px;
+  top: 662px;
+  width: 642px;
+  height: 41px;
+  z-index: 9;
+}
+#text9 {
+  background-image: url("../images/text9.png");
+  position: absolute;
+  left: 1159px;
+  top: 807px;
+  width: 644px;
+  height: 41px;
+  z-index: 8;
+}
+#text10 {
+  background-image: url("../images/text10.png");
+  position: absolute;
+  left: 1131px;
+  top: 952px;
+  width: 672px;
+  height: 38px;
+  z-index: 7;
+}
+#text11 {
+  background-image: url("../images/text11.png");
+  position: absolute;
+  left: 1136px;
+  top: 1079px;
+  width: 662px;
+  height: 99px;
+  z-index: 6;
+}
+#table2 {
+  background-image: url("../images/table2.png");
+  position: absolute;
+  left: 1071px;
+  top: 386px;
+  width: 828px;
+  height: 808px;
+  z-index: 5;
+}
+#text12 {
+  background-image: url("../images/text12.png");
+  position: absolute;
+  left: 197px;
+  top: 1241px;
+  width: 1704px;
+  height: 42px;
+  z-index: 4;
+}
+#product_id_shared_vis_ {
+  background-image: url("../images/product_id_shared_vis_.png");
+  position: absolute;
+  left: 30px;
+  top: 1493px;
+  width: 277px;
+  height: 15px;
+  z-index: 3;
+}
+
+
+
+
+
+
+
+

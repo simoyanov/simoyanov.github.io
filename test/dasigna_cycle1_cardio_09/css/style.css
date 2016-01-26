@@ -1,0 +1,228 @@
+body {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	maring: 0;
+}
+
+#display{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	overflow: hidden;
+}
+/**************************************************************/
+#background{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	background-image: url("../images/bg.jpg");
+}
+
+.invisible{
+    opacity: 0;
+}
+
+#display div{
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+}
+
+.scale{
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+}
+.left{
+    -webkit-transform: translate(-1580px, 0px);
+    -moz-transform: translate(-1580px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+.right{
+    -webkit-transform: translate(3580px, 0px);
+    -moz-transform: translate(3580px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+.fadeUp{
+    -webkit-transform: translate(0px, 100px);
+    -moz-transform: translate(0px, 100px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    opacity: 0;
+}
+.hide{
+    -webkit-transform: translate(100px, 0px);
+    -moz-transform: translate(100px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    opacity: 0;
+}
+.menu{
+    opacity: 0;
+    -webkit-transform: translate(0px, 100px);
+    -moz-transform: translate(0px, 100px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+.active{
+    opacity: 1 !important;
+}
+.notActive{
+    opacity: 0.2;
+}
+.win{
+    opacity: 0;
+}
+.winActive{
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    z-index: 200 !important;
+}
+/*******************************************************/
+
+
+/*****************************************************/
+#content {
+    overflow-y: scroll;
+  position: absolute;
+  left: 89px;
+  top: 241px;
+  width: 1895px;
+  height: 1196px;
+  z-index: 5;
+}
+#content div{
+    display: block;
+    position: relative
+}
+::-webkit-scrollbar {
+    width: 42px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    background-color: #9cc8cb;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: url("../images/thmb.png") center no-repeat, #2ca1a7;
+    height: 78px;
+}
+
+#selected_b {
+  background-image: url("../images/selected_b.png");
+  position: absolute;
+  left: 90px;
+  top: 240px;
+  width: 120px;
+  height: 128px;
+  z-index: 36;
+}
+#selected_b select {
+   background: transparent;
+   width: 100%;
+    height: 128px;
+   font-size: 30px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+    color: transparent;
+   -webkit-appearance: none;
+   }
+select option{
+    color: #000;
+}
+
+
+content{height: 126px;width: 100%; display: block;}
+/**************************************/
+
+
+
+#lay1 {
+  background-image: url("../images/lay1.png");
+  width: 1850px;
+  height: 449px;
+  z-index: 4;
+}
+#lay2 {
+  background-image: url("../images/lay2.png");
+  width: 1850px;
+  height: 252px;
+  z-index: 3;
+}
+#lay3 {
+  background-image: url("../images/lay3.png");
+  width: 1850px;
+  height: 491px;
+  z-index: 2;
+}
+
+#icon {
+  background-image: url("../images/icon.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 266px;
+  height: 243px;
+  z-index: 39;
+}
+#head {
+  background-image: url("../images/head.png");
+  position: absolute;
+  left: 234px;
+  top: 68px;
+  width: 884px;
+  height: 87px;
+  z-index: 38;
+}
+#logo {
+  background-image: url("../images/logo.png");
+  position: absolute;
+  left: 1905px;
+  top: 0px;
+  width: 143px;
+  height: 143px;
+  z-index: 37;
+}
+
+#head_box {
+  background-image: url("../images/head_box.png");
+  position: absolute;
+  left: 90px;
+  top: 240px;
+  width: 1851px;
+  height: 128px;
+  z-index: 35;
+}
+#product_id_shared_vis_ {
+  background-image: url("../images/product_id_shared_vis_.png");
+  position: absolute;
+  left: 29px;
+  top: 1493px;
+  width: 277px;
+  height: 15px;
+  z-index: 34;
+}
+
+
+
+
+
+
+
+
+
+
+
+

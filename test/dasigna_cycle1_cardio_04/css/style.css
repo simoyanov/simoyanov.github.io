@@ -1,0 +1,193 @@
+body {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	maring: 0;
+}
+
+#display{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	overflow: hidden;
+}
+/**************************************************************/
+#background{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	background-image: url("../images/bg.jpg");
+}
+
+.invisible{
+    opacity: 0;
+}
+
+#display div{
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+}
+
+.scale{
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+}
+.left{
+    -webkit-transform: translate(-1580px, 0px);
+    -moz-transform: translate(-1580px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+.right{
+    -webkit-transform: translate(3580px, 0px);
+    -moz-transform: translate(3580px, 0px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+}
+.fadeUp{
+    -webkit-transform: translate(0px, 100px);
+    -moz-transform: translate(0px, 100px);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    opacity: 0;
+}
+/*******************************************************/
+
+
+#head {
+  background-image: url("../images/head.png");
+  position: absolute;
+  left: 245px;
+  top: 57px;
+  width: 1213px;
+  height: 144px;
+  z-index: 16;
+}
+#icon {
+  background-image: url("../images/icon.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 266px;
+  height: 243px;
+  z-index: 15;
+}
+#logo {
+  background-image: url("../images/logo.jpg");
+  position: absolute;
+  left: 1905px;
+  top: 0px;
+  width: 143px;
+  height: 143px;
+  z-index: 14;
+}
+#text1 {
+  background-image: url("../images/text1.png");
+  position: absolute;
+  left: 527px;
+  top: 244px;
+  width: 1311px;
+  height: 47px;
+  z-index: 13;
+}
+#text2 {
+  background-image: url("../images/text2.png");
+  position: absolute;
+  left: 605px;
+  top: 362px;
+  width: 1229px;
+  height: 38px;
+  z-index: 12;
+}
+#text3 {
+  background-image: url("../images/text3.png");
+  position: absolute;
+  left: 579px;
+  top: 511px;
+  width: 1255px;
+  height: 40px;
+  z-index: 11;
+}
+#text4 {
+  background-image: url("../images/text4.png");
+  position: absolute;
+  left: 590px;
+  top: 658px;
+  width: 1244px;
+  height: 39px;
+  z-index: 10;
+}
+#text5 {
+  background-image: url("../images/text5.png");
+  position: absolute;
+  left: 223px;
+  top: 419px;
+  width: 1611px;
+  height: 426px;
+  z-index: 9;
+}
+#text6 {
+  background-image: url("../images/text6.png");
+  position: absolute;
+  left: 451px;
+  top: 975px;
+  width: 1383px;
+  height: 41px;
+  z-index: 8;
+}
+#text7 {
+  background-image: url("../images/text7.png");
+  position: absolute;
+  left: 355px;
+  top: 1101px;
+  width: 1143px;
+  height: 88px;
+  z-index: 7;
+}
+#text8 {
+  background-image: url("../images/text8.png");
+  position: absolute;
+  left: 223px;
+  top: 963px;
+  width: 1611px;
+  height: 370px;
+  z-index: 6;
+}
+#text9 {
+  background-image: url("../images/text9.png");
+  position: absolute;
+  left: 590px;
+  top: 1392px;
+  width: 643px;
+  height: 34px;
+  z-index: 5;
+}
+#table {
+  background-image: url("../images/table.png");
+  position: absolute;
+  left: 194px;
+  top: 230px;
+  width: 1706px;
+  height: 1229px;
+  z-index: 4;
+}
+#product_id_shared_vis_ {
+  background-image: url("../images/product_id_shared_vis_.png");
+  position: absolute;
+  left: 29px;
+  top: 1493px;
+  width: 277px;
+  height: 15px;
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
