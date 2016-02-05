@@ -1,0 +1,108 @@
+body {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	user-select: none;
+	margin: 0;
+	
+}
+ 
+#display{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	overflow: hidden;
+}
+
+
+
+
+#logo_top {
+  position: absolute;
+  left: 0px;
+  top: 49px;
+  width: 400px;
+  height: 200px;
+    opacity: 0;
+}
+
+
+#logo_bottom {
+  position: absolute;
+  left: 47px;
+  top: 1245px;
+  width: 558px;
+  height: 247px;
+
+}
+#key_message{
+  background-image: url("../images/global/key_message.png");
+  position: absolute;
+  left: 49px;
+  top: 49px;
+  width: 1948px;
+  height: 410px;
+    display: none;
+
+}
+
+#bg {
+  background-image: url("../images/global/bg.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 2048px;
+  height: 1536px;
+}
+
+
+#button_info {
+  background-image: url("../images/global/info.png");
+  position: absolute;
+  left: 0px;
+  top: 1088px;
+  width: 134px;
+  height: 112px;
+    -webkit-transform: translate(-134px,0px);
+	-moz-transform: translate(-134px,0px);
+}
+
+#id_share {
+  background-image: url("../images/global/id_share.png");
+  position: absolute;
+  left: 1505px;
+  top: 1467px;
+  width: 278px;
+  height: 19px;
+}
+
+
+
+#modal{
+    display: none;
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+#km{
+    display: none;
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+    
+}
+
+
+
+
+
+
+
+

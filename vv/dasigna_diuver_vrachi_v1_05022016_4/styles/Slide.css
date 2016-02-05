@@ -1,0 +1,326 @@
+/*
+-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+-webkit-transition: .5s;
+	-moz-transition: .5s; 
+*/
+
+
+
+
+
+#content{display: none;}
+
+
+#title {
+  background-image: url("../images/title.png");
+  position: absolute;
+  left: 788px;
+  top: 77px;
+  width: 681px;
+  height: 151px;
+  opacity: 0;
+}
+#circle1 {
+  background-image: url("../images/circle1.png");
+  position: absolute;
+  left: 171px;
+  top: 634px;
+  width: 327px;
+  height: 328px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#arrow1 {
+  background-image: url("../images/arrow1.png");
+  position: absolute;
+  left: 485px;
+  top: 443px;
+  width: 262px;
+  height: 720px;
+  opacity: 0;
+    -webkit-transform: translate(-200px,0px);
+	-moz-transform: translate(-200px,0px);
+}
+#circle1_1 {
+  background-image: url("../images/circle1_1.png");
+  position: absolute;
+  left: 768px;
+  top: 1027px;
+  width: 255px;
+  height: 255px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#circle1_2 {
+  background-image: url("../images/circle1_2.png");
+  position: absolute;
+  left: 768px;
+  top: 677px;
+  width: 256px;
+  height: 255px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#circle1_3 {
+  background-image: url("../images/circle1_3.png");
+  position: absolute;
+  left: 768px;
+  top: 324px;
+  width: 256px;
+  height: 255px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#val1_1 {
+  background-image: url("../images/val1_1.png");
+  position: absolute;
+  left: 1051px;
+  top: 411px;
+  width: 158px;
+  height: 82px;
+  opacity: 0;
+}
+#val1_2 {
+  background-image: url("../images/val1_2.png");
+  position: absolute;
+  left: 1049px;
+  top: 762px;
+  width: 138px;
+  height: 89px;
+  opacity: 0;
+}
+#val1_3 {
+  background-image: url("../images/val1_3.png");
+  position: absolute;
+  left: 1068px;
+  top: 1142px;
+  width: 102px;
+  height: 30px;
+  opacity: 0;
+}
+#plate1_1 {
+  background-image: url("../images/plate1_1.png");
+  position: absolute;
+  left: 1270px;
+  top: 380px;
+  width: 728px;
+  height: 156px;
+  opacity: 0;
+    -webkit-transform: translate(0px,100px);
+	-moz-transform: translate(0px,100px);
+}
+#plate1_2 {
+  background-image: url("../images/plate1_2.png");
+  position: absolute;
+  left: 1269px;
+  top: 634px;
+  width: 728px;
+  height: 337px;
+  opacity: 0;
+    -webkit-transform: translate(0px,100px);
+	-moz-transform: translate(0px,100px);
+}
+#plate1_3 {
+  background-image: url("../images/plate1_3.png");
+  position: absolute;
+  left: 1269px;
+  top: 1072px;
+  width: 728px;
+  height: 224px;
+  opacity: 0;
+    -webkit-transform: translate(0px,100px);
+	-moz-transform: translate(0px,100px);
+}
+#drug {
+  background-image: url("../images/drug.png");
+  position: absolute;
+  left: 1860px;
+  top: 1289px;
+  width: 142px;
+  height: 141px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+
+#text {
+  background-image: url("../images/text.png");
+  position: absolute;
+  left: 603px;
+  top: 1377px;
+  width: 1123px;
+  height: 62px;
+  opacity: 0;
+}
+
+#circle2 {
+  background-image: url("../images/circle2.png");
+  position: absolute;
+  left: 171px;
+  top: 634px;
+  width: 327px;
+  height: 328px;
+   -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#arrow2 {
+  background-image: url("../images/arrow2.png");
+  position: absolute;
+  left: 485px;
+  top: 443px;
+  width: 262px;
+  height: 720px;
+    opacity: 0;
+  -webkit-transform: translate(-200px,0px);
+	-moz-transform: translate(-200px,0px);
+}
+#val2 {
+  background-image: url("../images/val2.png");
+  position: absolute;
+  left: 214px;
+  top: 1026px;
+  width: 320px;
+  height: 109px;
+  opacity: 0;
+}
+#val2_1 {
+  background-image: url("../images/val2_1.png");
+  position: absolute;
+  left: 1051px;
+  top: 411px;
+  width: 158px;
+  height: 82px;
+    opacity: 0;
+  
+}
+#val2_2 {
+  background-image: url("../images/val2_2.png");
+  position: absolute;
+  left: 1049px;
+  top: 762px;
+  width: 138px;
+  height: 89px;
+    opacity: 0;
+  
+}
+#val2_3 {
+  background-image: url("../images/val2_3.png");
+  position: absolute;
+  left: 1068px;
+  top: 1142px;
+  width: 102px;
+  height: 30px;
+    opacity: 0;
+  
+}
+#circle2_1 {
+  background-image: url("../images/circle2_1.png");
+  position: absolute;
+  left: 768px;
+  top: 324px;
+  width: 256px;
+  height: 255px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#circle2_2 {
+  background-image: url("../images/circle2_2.png");
+  position: absolute;
+  left: 768px;
+  top: 677px;
+  width: 256px;
+  height: 255px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#circle2_3 {
+  background-image: url("../images/circle2_3.png");
+  position: absolute;
+  left: 768px;
+  top: 1027px;
+  width: 255px;
+  height: 255px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#plate2_1 {
+  background-image: url("../images/plate2_1.png");
+  position: absolute;
+  left: 1270px;
+  top: 380px;
+  width: 728px;
+  height: 156px;
+  opacity: 0;
+    -webkit-transform: translate(0px,100px);
+	-moz-transform: translate(0px,100px);
+}
+#plate2_2 {
+  background-image: url("../images/plate2_2.png");
+  position: absolute;
+  left: 1269px;
+  top: 634px;
+  width: 728px;
+  height: 337px;
+  opacity: 0;
+    -webkit-transform: translate(0px,100px);
+	-moz-transform: translate(0px,100px);
+}
+#plate2_3 {
+  background-image: url("../images/plate2_3.png");
+  position: absolute;
+  left: 1269px;
+  top: 1072px;
+  width: 728px;
+  height: 224px;
+  opacity: 0;
+    -webkit-transform: translate(0px,100px);
+	-moz-transform: translate(0px,100px);
+}
+#text2 {
+  background-image: url("../images/text2.png");
+  position: absolute;
+  left: 603px;
+  top: 1377px;
+  width: 1123px;
+  height: 95px;
+  opacity: 0;
+}
+
+
+#step1_plate {
+  background-image: url("../images/step1_plate.png");
+  position: absolute;
+  left: 1267px;
+  top: 619px;
+  width: 507px;
+  height: 363px;
+}
+
+#step1 {
+  background-image: url("../images/step1.png");
+  position: absolute;
+  left: 171px;
+  top: 323px;
+  width: 854px;
+  height: 960px;
+}
+#step2_plate {
+  background-image: url("../images/step2_plate.png");
+  position: absolute;
+  left: 1267px;
+  top: 619px;
+  width: 507px;
+  height: 363px;
+    display: none;
+}
+#step2 {
+  background-image: url("../images/step2.png");
+  position: absolute;
+  left: 171px;
+  top: 323px;
+  width: 854px;
+  height: 960px;
+    display: none;
+}

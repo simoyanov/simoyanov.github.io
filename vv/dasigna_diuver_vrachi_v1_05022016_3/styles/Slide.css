@@ -1,0 +1,317 @@
+/*
+-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+-webkit-transition: .5s;
+	-moz-transition: .5s; 
+*/
+
+#title {
+  background-image: url("../images/title.png");
+  position: absolute;
+  left: 683px;
+  top: 85px;
+  width: 902px;
+  height: 138px;
+    opacity: 0;
+}
+
+
+#text1 {
+  background-image: url("../images/text1.png");
+  position: absolute;
+  left: 847px;
+  top: 264px;
+  width: 106px;
+  height: 26px;
+  opacity:0;
+}
+#text2 {
+  background-image: url("../images/text2.png");
+  position: absolute;
+  left: 790px;
+  top: 624px;
+  width: 222px;
+  height: 33px;
+  opacity:0;
+}
+#text4 {
+  background-image: url("../images/text4.png");
+  position: absolute;
+  left: 1745px;
+  top: 548px;
+  width: 198px;
+  height: 32px;
+  opacity:0;
+}
+#text3 {
+  background-image: url("../images/text3.png");
+  position: absolute;
+  left: 789px;
+  top: 883px;
+  width: 230px;
+  height: 32px;
+  opacity:0;
+}
+#circle1_1 {
+  background-image: url("../images/circle1_1.png");
+  position: absolute;
+  left: 750px;
+  top: 304px;
+  width: 307px;
+  height: 307px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#circle2_5 {
+  background-image: url("../images/circle2_5.png");
+  position: absolute;
+  left: 751px;
+  top: 934px;
+  width: 307px;
+  height: 307px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#circle3_5 {
+  background-image: url("../images/circle3_5.png");
+  position: absolute;
+  left: 1693px;
+  top: 594px;
+  width: 307px;
+  height: 307px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#arrow1_2 {
+  background-image: url("../images/arrow1_2.png");
+  position: absolute;
+  left: 522px;
+  top: 436px;
+  width: 230px;
+  height: 13px;
+  opacity:0;
+}
+#arrow2_2 {
+  background-image: url("../images/arrow2_2.png");
+  position: absolute;
+  left: 1055px;
+  top: 437px;
+  width: 209px;
+  height: 13px;
+  opacity:0;
+}
+#arrow3_4 {
+  background-image: url("../images/arrow3_4.png");
+  position: absolute;
+  left: 330px;
+  top: 504px;
+  width: 12px;
+  height: 487px;
+  opacity:0;
+}
+#arrow4_4 {
+  background-image: url("../images/arrow4_4.png");
+  position: absolute;
+  left: 443px;
+  top: 504px;
+  width: 303px;
+  height: 431px;
+  opacity:0;
+}
+#arrow5_4 {
+  background-image: url("../images/arrow5_4.png");
+  position: absolute;
+  left: 1180px;
+  top: 503px;
+  width: 148px;
+  height: 168px;
+  opacity:0;
+}
+#arrow6_4 {
+  background-image: url("../images/arrow6_4.png");
+  position: absolute;
+  left: 1440px;
+  top: 504px;
+  width: 13px;
+  height: 169px;
+  opacity:0;
+}
+#arrow7_4 {
+  background-image: url("../images/arrow7_4.png");
+  position: absolute;
+  left: 1558px;
+  top: 503px;
+  width: 148px;
+  height: 168px;
+  opacity:0;
+}
+#arrow8_6 {
+  background-image: url("../images/arrow8_6.png");
+  position: absolute;
+  left: 1190px;
+  top: 727px;
+  width: 66px;
+  height: 14px;
+  opacity:0;
+}
+#arrow9_6 {
+  background-image: url("../images/arrow9_6.png");
+  position: absolute;
+  left: 1612px;
+  top: 727px;
+  width: 66px;
+  height: 14px;
+  opacity:0;
+}
+#arrow10_6 {
+  background-image: url("../images/arrow10_6.png");
+  position: absolute;
+  left: 1444px;
+  top: 775px;
+  width: 12px;
+  height: 209px;
+  opacity:0;
+}
+#arrow11_6 {
+  background-image: url("../images/arrow11_6.png");
+  position: absolute;
+  left: 1835px;
+  top: 901px;
+  width: 12px;
+  height: 81px;
+  opacity:0;
+}
+#arrow12_8 {
+  background-image: url("../images/arrow12_8.png");
+  position: absolute;
+  left: 1072px;
+  top: 1061px;
+  width: 212px;
+  height: 13px;
+  opacity:0;
+}
+#arrow13_8 {
+  background-image: url("../images/arrow13_8.png");
+  position: absolute;
+  left: 1076px;
+  top: 1130px;
+  width: 773px;
+  height: 66px;
+  opacity:0;
+}
+#box1_3 {
+  background-image: url("../images/box1_3.png");
+  position: absolute;
+  left: 174px;
+  top: 378px;
+  width: 337px;
+  height: 130px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#box2_3 {
+  background-image: url("../images/box2_3.png");
+  position: absolute;
+  left: 1280px;
+  top: 377px;
+  width: 337px;
+  height: 130px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#box3_5 {
+  background-image: url("../images/box3_5.png");
+  position: absolute;
+  left: 174px;
+  top: 1003px;
+  width: 337px;
+  height: 130px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#box4_5 {
+  background-image: url("../images/box4_5.png");
+  position: absolute;
+  left: 1043px;
+  top: 688px;
+  width: 150px;
+  height: 90px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#box5_5 {
+  background-image: url("../images/box5_5.png");
+  position: absolute;
+  left: 1279px;
+  top: 688px;
+  width: 334px;
+  height: 90px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#box6_7 {
+  background-image: url("../images/box6_7.png");
+  position: absolute;
+  left: 1279px;
+  top: 1004px;
+  width: 337px;
+  height: 130px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#box7_7 {
+  background-image: url("../images/box7_7.png");
+  position: absolute;
+  left: 1665px;
+  top: 1004px;
+  width: 337px;
+  height: 130px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#text {
+  background-image: url("../images/text.png");
+  position: absolute;
+  left: 584px;
+  top: 1365px;
+  width: 1201px;
+  height: 63px;
+  opacity:0;
+}
+
+#circle1 {
+  background-image: url("../images/circle1.png");
+  position: absolute;
+  left: 749px;
+  top: 303px;
+  width: 309px;
+  height: 309px;
+}
+#circle2 {
+  background-image: url("../images/circle2.png");
+  position: absolute;
+  left: 750px;
+  top: 933px;
+  width: 309px;
+  height: 308px;
+}
+#circle3 {
+  background-image: url("../images/circle3.png");
+  position: absolute;
+  left: 1692px;
+  top: 593px;
+  width: 309px;
+  height: 309px;
+}
+#plate {
+  background-image: url("../images/plate.png");
+  position: absolute;
+  left: 258px;
+  top: 579px;
+  width: 507px;
+  height: 363px;
+}
+#content{display: none;}
+
