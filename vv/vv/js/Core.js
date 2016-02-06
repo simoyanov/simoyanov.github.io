@@ -39,10 +39,10 @@ function Boot() {
         Touchy(touchMe, {
             two: function (hand, finger1, finger2) {
                 $('#modal').fadeIn();
-                $("#learning").fadeIn();
+                $("#content").fadeIn();
                 $('#modal').on(MOUSE_CLICK,function(){
                     $('#modal').fadeOut();
-                    $("#learning").fadeOut();
+                    $("#content").fadeOut();
                 });
             }
         });
