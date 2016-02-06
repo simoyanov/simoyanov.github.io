@@ -1,0 +1,226 @@
+/*
+-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+-webkit-transition: .5s;
+	-moz-transition: .5s; 
+*/
+
+#content{display: none;}
+
+
+
+
+#text {
+  background-image: url("../images/text.png");
+  position: absolute;
+  left: 330px;
+  top: 217px;
+  width: 1448px;
+  height: 137px;
+  opacity: 0;
+}
+
+
+#ver_light {
+  background-image: url("../images/ver_light.png");
+  position: absolute;
+  left: 599px;
+  top: 411px;
+  width: 76px;
+  height: 429px;
+    opacity: 0;
+    -webkit-transform: translate(0px,-200px);
+	-moz-transform: translate(0px,-200px);
+}
+#hor_light {
+  background-image: url("../images/hor_light.png");
+  position: absolute;
+  left: 0px;
+  top: 534px;
+  width: 1496px;
+  height: 122px;
+    opacity: 0;
+    -webkit-transform: translate(-600px,0px);
+	-moz-transform: translate(-600px,0px);
+}
+
+#hour {
+  background-image: url("../images/hour.png");
+  position: absolute;
+  left: 766px;
+  bottom: 623px;
+  width: 40px;
+  height: 66px;
+  opacity: 0;
+    -webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+}
+#min {
+  background-image: url("../images/min.png");
+  position: absolute;
+  left: 784px;
+  top: 824px;
+  width: 3px;
+  height: 112px;
+  opacity: 0;
+    -webkit-transform: rotate(-140deg);
+	-moz-transform: rotate(-140deg);
+}
+#clock {
+  background-image: url("../images/clock.png");
+  position: absolute;
+  left: 714px;
+  top: 760px;
+  width: 148px;
+  height: 214px;
+  opacity: 0;
+}
+#night {
+  background-image: url("../images/night.png");
+  position: absolute;
+  left: 654px;
+  top: 622px;
+  width: 762px;
+  height: 537px;
+  opacity: 0;
+}
+#day {
+  background-image: url("../images/day.png");
+  position: absolute;
+  left: 654px;
+  top: 622px;
+  width: 762px;
+  height: 537px;
+  opacity: 0;
+}
+#morning {
+  background-image: url("../images/morning.png");
+  position: absolute;
+  left: 654px;
+  top: 622px;
+  width: 763px;
+  height: 537px;
+  opacity: 0;
+}
+#plate {
+  background-image: url("../images/plate.png");
+  position: absolute;
+  left: 630px;
+  top: 598px;
+  width: 808px;
+  height: 588px;
+  opacity: 0;
+    
+}
+#day_light {
+  background-image: url("../images/day_light.png");
+  position: absolute;
+  left: 149px;
+  top: 851px;
+  width: 429px;
+  height: 76px;
+  opacity: 0;
+    -webkit-transform: translate(400px,0px);
+	-moz-transform: translate(400px,0px);
+}
+#day_plate {
+  background-image: url("../images/day_plate.png");
+  position: absolute;
+  left: 99px;
+  top: 775px;
+  width: 674px;
+  height: 100px;
+    opacity: 0;
+    -webkit-transform: translate(400px,0px);
+	-moz-transform: translate(400px,0px);
+  
+}
+#day_title {
+  background-image: url("../images/day_title.png");
+  position: absolute;
+  left: 226px;
+  top: 640px;
+  width: 316px;
+  height: 111px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#day_value {
+  background-image: url("../images/day_value.png");
+  position: absolute;
+  left: 99px;
+  top: 894px;
+  width: 674px;
+  height: 246px;
+  opacity: 0;
+    -webkit-transform: translate(400px,0px);
+	-moz-transform: translate(400px,0px);
+}
+#night_title {
+  background-image: url("../images/night_title.png");
+  position: absolute;
+  left: 1511px;
+  top: 640px;
+  width: 395px;
+  height: 107px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#night_light {
+  background-image: url("../images/night_light.png");
+  position: absolute;
+  left: 1592px;
+  top: 861px;
+  width: 429px;
+  height: 76px;
+  opacity: 0;
+    -webkit-transform: translate(-400px,0px);
+	-moz-transform: translate(-400px,0px);
+}
+#night_plate {
+  background-image: url("../images/night_plate.png");
+  position: absolute;
+  left: 1286px;
+  top: 779px;
+  width: 674px;
+  height: 100px;
+  opacity: 0;
+    -webkit-transform: translate(-400px,0px);
+	-moz-transform: translate(-400px,0px);
+}
+#night_value {
+  background-image: url("../images/night_value.png");
+  position: absolute;
+  left: 1286px;
+  top: 898px;
+  width: 674px;
+  height: 246px;
+  opacity: 0;
+    -webkit-transform: translate(-400px,0px);
+	-moz-transform: translate(-400px,0px);
+}
+
+
+#shadow {
+  background-image: url("../images/shadow.png");
+  position: absolute;
+  left: 206px;
+  top: 1318px;
+  width: 1683px;
+  height: 79px;
+  opacity: 0;
+}
+
+#learning {
+  background-image: url("../images/learning.png");
+  position: absolute;
+  left: 237px;
+  top: 252px;
+  width: 1594px;
+  height: 1121px;
+}
+
