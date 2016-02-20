@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Exo 2', sans-serif;
+    color: #fff;
+    background: url(http://www.free-patterns.info/wp-content/uploads/2015/02/futuristic-deep-purple-wall-22214.png) repeat 0 0;
+}
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    width: 600px;
+}
+
+.block {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
