@@ -1,0 +1,76 @@
+body {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	user-select: none;
+	margin: 0;
+}
+#display{	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+	overflow: hidden;
+}
+#links{
+    position: absolute;
+    left: 1260px;
+      top: 1403px;
+      width: 180px;
+      height: 135px;
+}
+#logo_bottom {
+  position: absolute;
+  left: 95px;
+  top: 1403px;
+  width: 270px;
+  height: 130px;
+}
+#button_left {
+    -webkit-transform: translate(-300px,0px);
+    -moz-transform: translate(-300px,0px);
+  background-image: url("../images/global/button_left.png");
+  position: absolute;
+  left: 0px;
+  top: 755px;
+  width: 87px;
+  height: 159px;
+}
+#button_right {
+    -webkit-transform: translate(300px,0px);
+    -moz-transform: translate(300px,0px);
+  background-image: url("../images/global/button_right.png");
+  position: absolute;
+  right: 0px;
+  top: 755px;
+  width: 86px;
+  height: 159px;
+}
+#bg {
+  background-image: url("../images/global/bg1.jpg");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 2048px;
+  height: 1536px;
+}
+#modal{
+    display: none;
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2048px;
+	height: 1536px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+

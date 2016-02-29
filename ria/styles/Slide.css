@@ -1,0 +1,141 @@
+/*
+-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+-webkit-transition: .5s;
+	-moz-transition: .5s; 
+*/
+
+
+@font-face {
+    font-family: 'Avenir Next Regular'; /* Имя шрифта */
+    src: url(../fonts/avenir.otf); /* Путь к файлу со шрифтом */
+}
+.link {
+    font-family: 'Avenir Next Regular';
+    font-size: 23px;
+    color: #21bde3; 
+    margin-top: 0px;
+    margin-bottom: 1em;
+    
+}
+.link span{
+    font-size: 25px;
+    font-weight: 600;
+    color: #4e819e;
+}
+.link .column-2{
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-gap: 0px;
+    -moz-column-gap: 0px;
+/*    display: inline;*/
+}
+.link .column-2 p{
+    vertical-align: top;
+    margin-top: 0;
+}
+.link .column-2 p:nth-child(2){
+    margin-left: 40px;
+}
+
+.blink{
+    text-shadow: 1px 1px 12px rgba(77, 198, 228, 1);
+    -webkit-transition: .5s;
+	-moz-transition: .5s; 
+}
+
+#btn_up {
+  background-image: url("../images/btn_up.png");
+  position: absolute;
+  left: 324px;
+  top: 254px;
+  width: 64px;
+  height: 40px;
+    opacity: 0;
+}
+#btn_down {
+  background-image: url("../images/btn_down.png");
+  position: absolute;
+  left: 324px;
+  top: 1137px;
+  width: 64px;
+  height: 40px;
+    opacity: 0;
+}
+
+#link_over {
+  position: absolute;
+  left: 457px;
+  top: 285px;
+  width: 1420px;
+  height: 855px;
+    overflow-y: scroll;
+    -webkit-transition: .5s;
+	-moz-transition: .5s; 
+}
+#link_over_top{
+    position: relative;
+    width: 100%;
+} 
+#link1 {
+  background-image: url("../images/link1.png");
+  position: absolute;
+  left: 457px;
+  top: 285px;
+  width: 1385px;
+  height: 839px;
+    opacity: 0;
+}
+#title {
+  background-image: url("../images/title.png");
+  position: absolute;
+  left: 913px;
+  top: 90px;
+  width: 213px;
+  height: 49px;
+    opacity: 0;
+}
+
+#link2 {
+  background-image: url("../images/link2.png");
+  position: absolute;
+  left: 456px;
+  top: 285px;
+  width: 1364px;
+  height: 759px;
+  display: none;
+}
+
+#link3 {
+  background-image: url("../images/link3.png");
+  position: absolute;
+  left: 456px;
+  top: 285px;
+  width: 1333px;
+  height: 843px;
+  display: none;
+}
+
+#link4 {
+  background-image: url("../images/link4.png");
+  position: absolute;
+  left: 456px;
+  top: 285px;
+  width: 1376px;
+  height: 850px;
+  display: none;
+}
+
+#link5 {
+  background-image: url("../images/link5.png");
+  position: absolute;
+  left: 457px;
+  top: 285px;
+  width: 1282px;
+  height: 229px;
+  display: none;
+}
