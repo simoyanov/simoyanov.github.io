@@ -43,7 +43,8 @@
 }
 
 .blink{
-    text-shadow: 1px 1px 12px rgba(77, 198, 228, 1);
+/*    text-shadow: 1px 1px 20px rgb(0, 226, 255);*/
+    text-shadow: 1px 1px 8px rgb(0, 255, 245);
     -webkit-transition: .5s;
 	-moz-transition: .5s; 
 }
