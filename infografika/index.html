@@ -404,7 +404,7 @@
         
         
         
-        $('#rate-box-scroll').perfectScrollbar();
+        $('#rate-box-scroll').perfectScrollbar({suppressScrollX:true});
         
         $(".rate-box-btn-back").on(MOUSE_CLICK, function(){
             $('#rate-box-scroll').css({'width':'275px'});
@@ -413,7 +413,7 @@
         });
         
         $(".rate-box-btn-table").on(MOUSE_CLICK, function(){
-            $('#rate-box-scroll').css({'width':'855px'});
+            $('#rate-box-scroll').css({'width':'856px'});
             $('.rate-box-scroll-box span:not(:nth-child(1))').css({'width':'90px','height':'20px'});
             $('.rate-box-right-thead').fadeIn();
         });
