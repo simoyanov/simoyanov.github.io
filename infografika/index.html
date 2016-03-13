@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="rate-box">
+        <div class="rate-box-title">Рейтинг управляющих организаций города Москвы*</div>
+        <div class="rate-box-subtitle">* Рейтинг составлен на основе отзывов пользователей в соцмедиа</div>
+        <div class="rate-box-left">
+           <div class="rate-box-subplate">Выберите УК*</div>
+            <div class="rate-box-scroll" id="rate-box-scroll">
+               <div class="rate-box-scroll-wrap">
+                   <div id="container-table">
+                   <div class="table" id="table">
+<!--
+                       <div class="rate-box-scroll-box">
+                                  <span class="">ГрадСервис</span>
+                                  <span>-8,7</span>
+                                  <span>-8,7</span>
+                                  <span>-8,7</span>
+                                  <span>-8,7</span>
+                                  <span>-8,7</span>
+                                  <span>-8,7</span>
+                                  <span></span>
+                              </div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                           <div class="rate-box-scroll-box"><span class="">ГрадСервис</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span><span>-8,7</span></div>
+                       
+-->
+                   </div>
+<!--
+                   <table>
+                       
+                       <tbody>
+                              <tr class="rate-box-scroll-box">
+                                  <td class="">ГрадСервис</td>
+                                  <td>-8,7</td>
+                                  <td>-8,7</td>
+                                  <td>-8,7</td>
+                                  <td>-8,7</td>
+                                  <td>-8,7</td>
+                                  <td>-8,7</td>
+                                  <td></td>
+                              </tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                           <tr class="rate-box-scroll-box"><td class="">ГрадСервис</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td><td>-8,7</td<td><td/></tr>
+                       </tbody>
+                   </table>
+-->
+                   
+<!--
+                       <div class="rate-box-scroll-box">ГрадСервис</div>
+                        <div class="rate-box-scroll-box">Комфорт-Сити</div>
+                        <div class="rate-box-scroll-box">Авилон-м</div>
+                        <div class="rate-box-scroll-box">Аргонавто</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Даниловского района</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Бирюлево</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Богородское</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Жулебино</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Крылатское</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Люблино</div>
+                        <div class="rate-box-scroll-box">ГрадСервис</div>
+                        <div class="rate-box-scroll-box">Комфорт-Сити</div>
+                        <div class="rate-box-scroll-box">Авилон-м</div>
+                        <div class="rate-box-scroll-box">Аргонавто</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Даниловского района</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Бирюлево</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Богородское</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Жулебино</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Крылатское</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Люблино</div>
+                        <div class="rate-box-scroll-box">ГрадСервис</div>
+                        <div class="rate-box-scroll-box">Комфорт-Сити</div>
+                        <div class="rate-box-scroll-box">Авилон-м</div>
+                        <div class="rate-box-scroll-box">Аргонавто</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Даниловского района</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Бирюлево</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Богородское</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Жулебино</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Крылатское</div>
+                        <div class="rate-box-scroll-box">ГБУ Жилищник Люблино</div>
+-->
+                   </div>
+                   
+                   
+               </div>
+            </div>
+        </div>
+        <div class="rate-box-right">
+            <div class="rate-box-subplate">Показатели рейтинга</div>
+            <div class="rate-box-btn-table">таблица</div>
+            <div class="rate-box-right-thead">
+                <div class="sort-col" id="sort-col1">Устранение проблем</div>
+                <div class="sort-col" id="sort-col2">Прозрачность работы</div>
+                <div class="sort-col" id="sort-col3">Квалификация струдников</div>
+                <div class="sort-col" id="sort-col4">Повседневная работа</div>
+                <div class="sort-col" id="sort-col5">Прочее</div>
+                <div class="sort-col" id="sort-col6">Итого</div>
+                <div class="rate-box-btn-back">назад</div>
+            </div>
+<!--
+            <thead>
+                           <tr>
+                               <th></th>
+                               <th></th>
+                               <th></th>
+                               <th></th>
+                               <th></th>
+                               <th></th>
+                               <th></th>
+                           </tr>
+                       </thead>
+-->
+            <div class="rate-box-right-data" id="rate-box-right-data-1">
+                <div class="rate-box-right-data-quad"><img src="images/icon1.png" alt=""></div>
+                <div class="rate-box-right-data-num">0,04</div>
+                <div class="rate-box-right-data-name">Устранение проблем</div>
+            </div>
+            <div class="rate-box-right-data"  id="rate-box-right-data-2">
+                <div class="rate-box-right-data-quad"><img src="images/icon2.png" alt=""></div>
+                <div class="rate-box-right-data-num">0,04</div>
+                <div class="rate-box-right-data-name">Прозрачность работы</div>
+            </div>
+            <div class="rate-box-right-data" id="rate-box-right-data-3">
+                <div class="rate-box-right-data-quad"><img src="images/icon3.png" alt=""></div>
+                <div class="rate-box-right-data-num">0,04</div>
+                <div class="rate-box-right-data-name">Квалификация струдников</div>
+            </div>
+            <div class="rate-box-right-data" id="rate-box-right-data-4">
+                <div class="rate-box-right-data-quad"><img src="images/icon4.png" alt=""></div>
+                <div class="rate-box-right-data-num">0,04</div>
+                <div class="rate-box-right-data-name">Повседневная работа</div>
+            </div>
+            <div class="rate-box-right-data"  id="rate-box-right-data-5">
+                <div class="rate-box-right-data-quad"><img src="images/icon5.png" alt=""></div>
+                <div class="rate-box-right-data-num">0,04</div>
+                <div class="rate-box-right-data-name">Прочее</div>
+            </div>
+            <div class="rate-box-right-data" id="rate-box-right-data-6">
+                <div class="rate-box-right-data-quad"><img src="images/icon6.png" alt=""></div>
+                <div class="rate-box-right-data-num">0,04</div>
+                <div class="rate-box-right-data-name">Итого</div>
+            </div>
+            <div class="rate-box-right-plate">
+                
+                <div class="rate-box-right-plate-lay" id="lay2"></div>
+                <div class="rate-box-right-plate-lay" id="lay3"></div>
+                <div class="rate-box-right-plate-lay" id="lay4"></div>
+                <div class="rate-box-right-plate-lay" id="lay5"></div>
+                <div class="rate-box-right-plate-lay" id="lay1"></div>
+                <div class="rate-box-right-plate-lay" id="lay6"></div>
+                <div class="rate-box-right-plate-lay" id="lay7"></div>
+                <div class="rate-box-right-plate-lay" id="lay8"></div>
+                <div class="rate-box-right-plate-lay" id="lay9"></div>
+                <div class="rate-box-right-plate-lay" id="lay10"></div>
+                <div class="rate-box-right-plate-lay" id="lay11"></div>
+                <div class="rate-box-right-plate-lay" id="lay12"></div>
+                <div class="rate-box-right-plate-lay" id="lay13"></div>
+                <div class="rate-box-right-plate-lay" id="lay14"></div>
+                <div class="rate-box-right-plate-lay" id="lay15"></div>
+                <div class="rate-box-right-plate-lay" id="lay16"></div>
+                <div class="rate-box-right-plate-lay" id="lay17"></div>
+                <div class="rate-box-right-plate-lay" id="lay18"></div>
+                <div class="rate-box-right-info rate-box-right-info-first">Адрес<span>Новая ул.7</span></div>
+                <div class="rate-box-right-info">Телефон:<span>8 (499) 905-39-60</span></div>
+                <div class="rate-box-right-rate"><span>1</span>номер<br> в рейтинге</div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        
+        var MOUSE_CLICK = "click";
+        var MOUSE_DOWN = "mousedown";
+        var MOUSE_UP = "mouseup";
+        var isTouch = false;
+
+        if  ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch) {
+            MOUSE_CLICK = "touchstart";
+            MOUSE_DOWN = "touchstart";
+            MOUSE_UP = "touchend";
+            isTouch = true;
+        }
+        function chageDataPic(e,data){
+            $('.rate-box-right-rate span').text(data.companies[e].rate);
+            for(i = 6; i < 19;i++){
+                $('#lay'+i).fadeOut(0);
+            }
+            for(j = 0; j < 6; j++){
+                var num = j + 1;
+                $('#rate-box-right-data-'+ num +' .rate-box-right-data-num').text(data.companies[e].options[j]);
+            }
+            //устрание проблем
+            if (data.companies[e].options[1] > 0){
+                $('#lay11').fadeIn(0);
+            } else if(data.companies[e].options[1] == 0){
+                $('#lay11').fadeIn(0);
+                $('#lay12').fadeIn(0);
+            }else{
+                $('#lay10').fadeIn(0);
+                $('#lay11').fadeIn(0);
+                $('#lay12').fadeIn(0);
+            }
+            //прозрачность работы
+            if (data.companies[e].options[2] >= 0 ){
+                $('#lay13').fadeIn(0);
+            }
+            //квалификация сотрудников
+            if (data.companies[e].options[3] > 0){
+                $('#lay6').fadeIn(0);
+            } else if(data.companies[e].options[3] == 0){
+                $('#lay6').fadeIn(0);
+                $('#lay16').fadeIn(0);
+            }else{
+                $('#lay16').fadeIn(0);
+                $('#lay17').fadeIn(0);
+                $('#lay18').fadeIn(0);
+            }
+            //повседневняя работа
+            if (data.companies[e].options[4] > 0){
+                $('#lay7').fadeIn(0);
+                $('#lay8').fadeIn(0);
+                $('#lay9').fadeIn(0);
+            } else if(data.companies[e].options[4] == 0){
+                $('#lay15').fadeIn(0);
+                $('#lay7').fadeIn(0);
+                $('#lay9').fadeIn(0);
+            }else{
+                $('#lay14').fadeIn(0);
+                $('#lay15').fadeIn(0);
+                $('#lay7').fadeIn(0);
+            }
+        }
+        
+        function sortTable(e,data,boo){
+            var elements = $('.rate-box-scroll-box span[data-col='+e+']');
+            newArr = [];
+            for (i = 0; i < elements.length; i++){
+                newArr[newArr.length] = {data_id:parseInt(elements[i].outerHTML.slice(28,30)),val:elements[i].textContent};
+            }
+            function compareValUp(valA, valB) {
+              return valA.val - valB.val;
+            }
+            function compareValDown(valA, valB) {
+              return valB.val - valA.val;
+            }
+            
+            if (boo == 1){
+                newArr.sort(compareValUp);
+                $('#sort-col' + e + '').attr('data-sort', 0);
+            } else {
+                newArr.sort(compareValDown);
+                $('#sort-col' + e + '').attr('data-sort', 1);
+            }
+            
+            var newHtml = '';
+            for (j = 0; j < newArr.length; j++){
+                var html = '';
+                newRate = data.companies[newArr[j].data_id].rate - 1;
+                html += '<div class="rate-box-scroll-box" data-id='+newRate+' data-rate="';
+                html += data.companies[newArr[j].data_id].rate;
+                html += '"><span class="">';
+                html += data.companies[newArr[j].data_id].company;
+                for(k = 0; k < 6; k++){
+                    var data_col = k + 1; 
+                    html += '</span><span data-col='+data_col+' data-id='+newArr[j].data_id+'>' + data.companies[newArr[j].data_id].options[k];
+                }
+                html += '</span></div>'        
+                newHtml += html;
+            }
+            $('#table').html(newHtml);
+            hoverRow();
+            clickRow();
+        }
+        function hoverRow(){
+            $('.rate-box-scroll-box span:not(:nth-child(1))').hover(function(){
+                if ($(this).index() < 7){
+                    var tdId = $(this).index() + 1;
+                    $('.rate-box-scroll-box span:nth-child('+ tdId +')').css({'background-color':'rgba(106, 106, 106, 0.3)'});
+                    $('#sort-col'+ $(this).index() +'').css({'background-color':'rgba(106, 106, 106, 0.3)'});
+                }
+            },function(){
+                if ($(this).index() < 7){
+                    var tdId = $(this).index() + 1;
+                    $('.rate-box-scroll-box span:nth-child('+ tdId +')').css({'background-color':'rgba(106, 106, 106, 0)'});
+                    $('#sort-col'+ $(this).index() +'').css({'background-color':'rgba(106, 106, 106, 0)'});
+                }
+            });
+        }
+        function clickRow(){
+            $(".rate-box-scroll-box").on(MOUSE_CLICK, function(){
+                chageDataPic($(this).attr('data-id'),dataJson);
+            });
+        }
+        
+        var dataJson = {};
+        
+        for(k = 1; k < 7;k++){
+            $('#sort-col' + k + '').attr('data-sort',1);
+        }
+        
+        $.getJSON('company.json', function(data){
+            dataJson = data;
+            chageDataPic(0,dataJson);            
+            var rateHtml = '';
+            for (i =0; i < data.companies.length; i++){
+                var html = '';
+                html += '<div class="rate-box-scroll-box" data-id='+i+' data-rate="';
+                html += data.companies[i].rate;
+                html += '"><span class="">';
+                html += data.companies[i].company;
+                for(j = 0; j < 6; j++){
+                    var data_col = j + 1; 
+                    html += '</span><span data-col='+data_col+' data-id='+i+'>' + data.companies[i].options[j];
+                }
+                html += '</span></div>'        
+                rateHtml += html;
+            }
+            $('#table').html(rateHtml);
+            hoverRow();
+            clickRow();
+            
+            $('.sort-col').on(MOUSE_CLICK, function(){
+                var sortId = parseInt($(this).attr('id').slice(8));
+                sortTable(sortId, dataJson,$(this).attr('data-sort'));
+                $('.rate-box-scroll-box span:not(:nth-child(1))').css({'width':'90px','height':'20px'});
+            });
+        });
+        
+        
+        
+        $('#rate-box-scroll').perfectScrollbar();
+        
+        $(".rate-box-btn-back").on(MOUSE_CLICK, function(){
+            $('#rate-box-scroll').css({'width':'275px'});
+            $('.rate-box-scroll-box span:not(:nth-child(1))').css({'width':'0px','display':'inline-block'});
+            $('.rate-box-right-thead').fadeOut();
+        });
+        
+        $(".rate-box-btn-table").on(MOUSE_CLICK, function(){
+            $('#rate-box-scroll').css({'width':'855px'});
+            $('.rate-box-scroll-box span:not(:nth-child(1))').css({'width':'90px','height':'20px'});
+            $('.rate-box-right-thead').fadeIn();
+        });
+        
+        
+    
+    </script>
+</body>
+</html>
