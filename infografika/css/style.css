@@ -42,7 +42,7 @@
     font-family: 'PTSans';
     font-size: 16px;
     margin-top: 20px;
-    height: 553px;
+    height: 557px;
     position: relative;
     width: 275px;
     -webkit-transition: .5s;
@@ -69,7 +69,7 @@
 }
 
 .rate-box-right-data-num {
-    font-size: 28px;
+    font-size: 21pt;
     font-weight: bold;
     letter-spacing: normal;
     margin-top: 15px;
@@ -100,6 +100,7 @@
     width: 575px;
     position: relative;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .rate-box-right-data {
@@ -109,6 +110,23 @@
     margin-right: 0px;
     letter-spacing: -0.3em;
     margin-top: 20px;
+    position: relative;
+}
+.rate-box-right-data:hover .rate-box-right-data-descript{opacity: 1;}
+.rate-box-right-data:nth-child(9) .rate-box-right-data-descript{right: -14px;}
+.rate-box-right-data:nth-child(8) .rate-box-right-data-descript{right: -14px;}
+.rate-box-right-data-descript{
+    position: absolute;
+    letter-spacing: normal;
+    z-index: 2;
+    background-color: #fff;
+    border: 1px solid #333;
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: .5s;
+	-moz-transition: .5s;
 }
 
 .rate-box-right-plate {
@@ -116,7 +134,7 @@
     position: relative;
     width: 576px;
     height: 390px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 .rate-box-right-plate-lay{
     position: absolute;
@@ -177,8 +195,10 @@
 
 .rate-box-scroll-box {
     letter-spacing: -0.3em;
-    max-height: 20px;
+    max-height: 40px;
+/*    height: 20px;*/
     cursor: pointer;
+    position: relative;
 }
 
 
@@ -188,9 +208,11 @@
     display: inline-block;
 }
 .rate-box-scroll-box span:nth-child(1){
-    width: 264px;
+    width: 250px;
     text-align: left;
     padding-left: 15px;
+/*    margin-right: 34px;*/
+    line-height: 1;
 }
 .rate-box-scroll-box span:nth-child(8){
     width: 30px;
