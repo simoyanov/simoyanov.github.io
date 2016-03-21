@@ -1,0 +1,77 @@
+/*
+-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+-webkit-transition: .5s;
+	-moz-transition: .5s; 
+*/
+
+
+
+
+
+#vicks_19_logo {
+  background-image: url("../images/logo.png");
+  position: absolute;
+  left: 1857px;
+  top: 27px;
+  width: 84px;
+  height: 81px;
+  opacity: 0;
+}
+#vicks_19_logo_blink {
+  background-image: url("../images/logo_blink.png");
+  position: absolute;
+  left: 1828px;
+  top: 0px;
+  width: 141px;
+  height: 137px;
+  opacity: 0;
+    -webkit-transition: .5s;
+	-moz-transition: .5s; 
+}
+
+#vicks_19_bg {
+  background-image: url("../images/bg1.jpg");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 2048px;
+  height: 1536px;
+}
+/***************************************************/
+
+
+
+#vicks_19_text1 {
+  background-image: url("../images/vicks_19/text1.png");
+  position: absolute;
+  left: 98px;
+  top: 61px;
+  width: 727px;
+  height: 31px;
+  opacity: 0;
+}
+#vicks_19_title {
+  background-image: url("../images/vicks_19/title.png");
+  position: absolute;
+  left: 111px;
+  top: 508px;
+  width: 1753px;
+  height: 402px;
+  opacity: 0;
+    -webkit-transform: translate(100px,0px);
+	-moz-transform: translate(100px,0px);
+}
+
+
+#vicks_19_text2 {
+  background-image: url("../images/vicks_19/text2.png");
+  position: absolute;
+  left: 92px;
+  top: 1433px;
+  width: 1833px;
+  height: 35px;
+  opacity: 0;
+}

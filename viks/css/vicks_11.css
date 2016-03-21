@@ -1,0 +1,195 @@
+/*
+-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+-webkit-transition: .5s;
+	-moz-transition: .5s; 
+*/
+
+
+
+
+
+
+#vicks_11_logo {
+  background-image: url("../images/logo.png");
+  position: absolute;
+  left: 1857px;
+  top: 27px;
+  width: 84px;
+  height: 81px;
+  opacity: 0;
+}
+#vicks_11_logo_blink {
+  background-image: url("../images/logo_blink.png");
+  position: absolute;
+  left: 1828px;
+  top: -3px;
+  width: 141px;
+  height: 140px;
+  opacity: 0;
+    -webkit-transition: .5s;
+	-moz-transition: .5s; 
+}
+
+#vicks_11_pack_text {
+  background-image: url("../images/pack_text.png");
+  position: absolute;
+  left: 1598px;
+  top: 1318px;
+  width: 311px;
+  height: 172px;
+  opacity: 0;
+}
+
+#vicks_11_sm1 {
+  background-image: url("../images/sm1.png");
+  position: absolute;
+  left: 1765px;
+  top: 696px;
+  width: 205px;
+  height: 273px;
+  opacity: 0;
+    -webkit-transform: translate(0px,100px);
+	-moz-transform: translate(0px,100px);
+}
+#vicks_11_sm2 {
+  background-image: url("../images/sm2.png");
+  position: absolute;
+  left: 1724px;
+  top: 646px;
+  width: 189px;
+  height: 248px;
+  opacity: 0;
+    -webkit-transform: translate(0px,100px);
+	-moz-transform: translate(0px,100px);
+}
+#vicks_11_sm3 {
+  background-image: url("../images/sm3.png");
+  position: absolute;
+  left: 1682px;
+  top: 603px;
+  width: 173px;
+  height: 225px;
+  opacity: 0;
+    -webkit-transform: translate(0px,100px);
+	-moz-transform: translate(0px,100px);
+}
+#vicks_11_pack {
+  background-image: url("../images/pack.png");
+  position: absolute;
+  left: 1510px;
+  top: 837px;
+  width: 480px;
+  height: 699px;
+  opacity: 0;
+    -webkit-transform: translate(0px,200px);
+	-moz-transform: translate(0px,200px);
+}
+
+#vicks_11_bg {
+  background-image: url("../images/vicks_11/bg.jpg");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 2048px;
+  height: 1536px;
+}
+
+/*****************************************************/
+
+
+
+
+#vicks_11_title {
+  background-image: url("../images/vicks_11/title.png");
+  position: absolute;
+  left: 96px;
+  top: 55px;
+  width: 432px;
+  height: 36px;
+  opacity: 0;
+}
+#vicks_11_li2 {
+  background-image: url("../images/vicks_11/li2.png");
+  position: absolute;
+  left: 405px;
+  top: 1143px;
+  width: 521px;
+  height: 129px;
+    opacity: 0;
+  -webkit-transform: translate(100px,0px);
+	-moz-transform: translate(100px,0px);
+}
+#vicks_11_p2 {
+  background-image: url("../images/vicks_11/p2.png");
+  position: absolute;
+  left: 178px;
+  top: 1131px;
+  width: 105px;
+  height: 135px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#vicks_11_c2 {
+  background-image: url("../images/vicks_11/c2.png");
+  position: absolute;
+  left: 99px;
+  top: 1064px;
+  width: 263px;
+  height: 263px;
+    opacity: 0;
+  -webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+}
+#vicks_11_li1 {
+  background-image: url("../images/vicks_11/li1.png");
+  position: absolute;
+  left: 408px;
+  top: 540px;
+  width: 547px;
+  height: 200px;
+  opacity: 0;
+    -webkit-transform: translate(100px,0px);
+	-moz-transform: translate(100px,0px);
+}
+#vicks_11_p1 {
+  background-image: url("../images/vicks_11/p1.png");
+  position: absolute;
+  left: 197px;
+  top: 569px;
+  width: 76px;
+  height: 135px;
+  -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+}
+#vicks_11_c1 {
+  background-image: url("../images/vicks_11/c1.png");
+  position: absolute;
+  left: 102px;
+  top: 500px;
+  width: 267px;
+  height: 267px;
+    opacity: 0;
+  -webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+}
+#vicks_11_sub {
+  background-image: url("../images/vicks_11/sub.png");
+  position: absolute;
+  left: 104px;
+  top: 224px;
+  width: 1329px;
+  height: 166px;
+  opacity: 0;
+}
+#vicks_11_text {
+  background-image: url("../images/vicks_11/text.png");
+  position: absolute;
+  left: 99px;
+  top: 1403px;
+  width: 1354px;
+  height: 74px;
+  opacity: 0;
+}
