@@ -7,7 +7,7 @@
 
 #rate-box {
     width: 960px;
-    height: 786px;
+/*    height: 786px;*/
     display: block;
     border: 1px solid #000;
     font-family: 'PTSans';
@@ -202,7 +202,7 @@
 }
 
 
-.rate-box-scroll-box span:not(:nth-child(1)){
+.rate-box-scroll-box span.rate-box-scroll-box-col{
     overflow: hidden;
     width: 0px;
     display: inline-block;
@@ -214,7 +214,7 @@
 /*    margin-right: 34px;*/
     line-height: 1;
 }
-.rate-box-scroll-box span:nth-child(8){
+.rate-box-scroll-box span:nth-child(9){
     width: 30px;
 }
 .rate-box-scroll-box span{
@@ -318,13 +318,72 @@ table {
 }
 
 .rate-box-btn-back {
+    border: 1px solid #000;
+    width: 33px;
+    height: 33px;
     display: block;
     position: absolute;
     text-transform: uppercase;
     top: 0;
     left: 540px;
-    background-color: #f5c33c;
-    padding: 10px;
+    background: url(../images/cross.png) center no-repeat,#f5c33c;
+/*    background-color: #f5c33c;*/
+/*    padding: 10px;*/
     cursor: pointer;
     font-size: 12px;
+}
+.rate-box-right-comments {
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    margin-right: 0px;
+    letter-spacing: -0.3em;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+#rate-box-right-data-6 {
+    width: 45px;
+    
+}
+
+.rate-box-right-comments-name {
+    font-size: 14px;
+    letter-spacing: normal;
+}
+
+.rate-box-right-comments-num {
+    font-size: 21pt;
+    font-weight: bold;
+    letter-spacing: normal;
+    margin-top: 13px;
+}
+span.rate-box-scroll-box-rate{
+    width: 0px;
+    font-weight: bold;
+    overflow: hidden;
+}
+.rate-box-comments {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    padding-right: 35px;
+    width: 840px;
+    max-height: 600px;
+    position: relative;
+}
+
+.rate-box-comment-date {
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.rate-box-comment-link {
+    color: #000;
+}
+
+.rate-box-comment-text {
+    margin-bottom: 10px;
 }
