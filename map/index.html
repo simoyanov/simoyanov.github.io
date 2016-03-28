@@ -1026,7 +1026,32 @@
             var deps = data.deputies;
             
             //средние значения подписчиков соц.сетей
-            
+            var edrosNum = 0;
+            var ldprNum = 0;
+            var sprNum = 0;
+            var kprfNum = 0;
+            var appleNum = 0;
+            var greenNum = 0;
+            var samNum = 0;
+
+//                if(e == 'Единая Россия'){
+//                    return '#5e3dff';
+//                } else if(e == 'ЛДПР'){
+//                    return '#f9b233';
+//                } else if(e == 'Справедливая Россия'){
+//                    return '#e94e1b';
+//                } else if(e == 'КПРФ'){
+//                    return '#ff0d8b';
+//                } else if(e == 'Самовыдвижение'){
+//                    return '#2cdddd';
+//                } else if(e == 'Яблоко'){
+//                    return '#33f440';
+//                } else if(e == 'Альянс Зеленых'){
+//                    return '#35ce40';
+//                } else{
+//                    console.log('!!!not work!!!');
+//                    console.log(e);
+//                }
             
             
             var midFbPub = 0;
@@ -1042,12 +1067,77 @@
 //                console.log(deps[k].youtube_num);
 //                console.log(deps[k].twit_num);
                 
-                if(deps[k].fb_pub_num !== ""){midFbPub += deps[k].fb_pub_num;}
-                if(deps[k].fb_per_num !== ""){midFbPer += deps[k].fb_per_num;}
-                if(deps[k].vk_num !== ""){midVk += deps[k].vk_num;}
-                if(deps[k].youtube_num !== ""){midYoutube += deps[k].youtube_num;}
-                if(deps[k].twit_num !== ""){midTwit += deps[k].twit_num;}
+                var numFbPub = deps[k].fb_pub_num;
+                var numFbPer = deps[k].fb_per_num;
+                var numVk = deps[k].vk_num;
+                var numYoutube = deps[k].youtube_num;
+                var numTwit = deps[k].twit_num;
+                
+                if(deps[k].party == 'Единая Россия'){
+                    if(numFbPub !== ""){edrosNum += numFbPub;}
+                    if(numFbPer !== ""){edrosNum += numFbPer;}
+                    if(numVk !== ""){edrosNum += numVk;}
+                    if(numYoutube !== ""){edrosNum += numYoutube;}
+                    if(numTwit !== ""){edrosNum += numTwit;} 
+                }
+                if(deps[k].party == 'ЛДПР'){
+                    if(numFbPub !== ""){ldprNum += numFbPub;}
+                    if(numFbPer !== ""){ldprNum += numFbPer;}
+                    if(numVk !== ""){ldprNum += numVk;}
+                    if(numYoutube !== ""){ldprNum += numYoutube;}
+                    if(numTwit !== ""){ldprNum += numTwit;} 
+                }
+                if(deps[k].party == 'Справедливая Россия'){
+                    if(numFbPub !== ""){sprNum += numFbPub;}
+                    if(numFbPer !== ""){sprNum += numFbPer;}
+                    if(numVk !== ""){sprNum+= numVk;}
+                    if(numYoutube !== ""){sprNum += numYoutube;}
+                    if(numTwit !== ""){sprNum+= numTwit;} 
+                }
+                if(deps[k].party == 'КПРФ'){
+                    if(numFbPub !== ""){kprfNum += numFbPub;}
+                    if(numFbPer !== ""){kprfNum += numFbPer;}
+                    if(numVk !== ""){kprfNum += numVk;}
+                    if(numYoutube !== ""){kprfNum += numYoutube;}
+                    if(numTwit !== ""){kprfNum += numTwit;} 
+                }
+                if(deps[k].party == 'Самовыдвижение'){
+                    if(numFbPub !== ""){samNum += numFbPub;}
+                    if(numFbPer !== ""){samNum += numFbPer;}
+                    if(numVk !== ""){samNum += numVk;}
+                    if(numYoutube !== ""){samNum += numYoutube;}
+                    if(numTwit !== ""){samNum += numTwit;} 
+                }
+                if(deps[k].party == 'Яблоко'){
+                    if(numFbPub !== ""){appleNum += numFbPub;}
+                    if(numFbPer !== ""){appleNum += numFbPer;}
+                    if(numVk !== ""){appleNum += numVk;}
+                    if(numYoutube !== ""){applesNum += numYoutube;}
+                    if(numTwit !== ""){appleNum += numTwit;} 
+                }
+                if(deps[k].party == 'Альянс Зеленых'){
+                    if(numFbPub !== ""){greenNum += numFbPub;}
+                    if(numFbPer !== ""){greenNum += numFbPer;}
+                    if(numVk !== ""){greenNum += numVk;}
+                    if(numYoutube !== ""){greenNum += numYoutube;}
+                    if(numTwit !== ""){greenNum += numTwit;} 
+                }
+                
+                
+                if(numFbPub !== ""){midFbPub += numFbPub;}
+                if(numFbPer !== ""){midFbPer += numFbPer;}
+                if(numVk !== ""){midVk += numVk;}
+                if(numYoutube !== ""){midYoutube += numYoutube;}
+                if(numTwit !== ""){midTwit += numTwit;}
             }
+            
+            $('#edros .citiindex_map_party_plate_row_likes').text(edrosNum);
+            $('#ldpr .citiindex_map_party_plate_row_likes').text(ldprNum);
+            $('#spros .citiindex_map_party_plate_row_likes').text(sprNum);
+            $('#kprf  .citiindex_map_party_plate_row_likes').text(kprfNum);
+            $('#apple .citiindex_map_party_plate_row_likes').text(appleNum);
+            $('#greenparty .citiindex_map_party_plate_row_likes').text(greenNum);
+            $('#noparty .citiindex_map_party_plate_row_likes').text(samNum);
             
             console.log(midFbPub);
             console.log(midFbPer);
@@ -1086,6 +1176,9 @@
                         $('#'+pathIdArr[k].pathid+'').css({"fill":''+changeColor(returnMostEllement(pathIdArr[k].party_arr))+''});
                     }
                 }
+                
+
+                
                 function showPlateRegion(e){
                     $('.citiindex_map_plate_row').remove();
                     var okrug = '';
@@ -1102,10 +1195,21 @@
                         if(deps[i].region == e){
                             //заполнение строки
                             var htmlRow = '';
+                            
+                            
+                            var likesNum = 0;
+                            
+                            
+                            if(deps[i].twit_num !== ""){likesNum += deps[i].twit_num;}
+                            if(deps[i].vk_num !== ""){likesNum += deps[i].vk_num;}
+                            if(deps[i].fb_per_num !== ""){likesNum += deps[i].fb_per_num;}
+                            if(deps[i].fb_pub_num !== ""){likesNum += deps[i].fb_pub_num;}
+                            if(deps[i].youtube_num !== ""){likesNum += deps[i].youtube_num;}
+                            
                             htmlRow += '<div class="citiindex_map_plate_row">';
                             htmlRow += '<div class="citiindex_map_plate_row_cube" style="background-color:'+ changeColor(deps[i].party) +'"></div>';
                             htmlRow += '<div class="citiindex_map_plate_row_name">'+ deps[i].name +'</div>';
-                            htmlRow += '<div class="citiindex_map_plate_row_likes">None</div>';
+                            htmlRow += '<div class="citiindex_map_plate_row_likes">' + likesNum + '</div>';
                             htmlRow += '<div class="citiindex_map_plate_row_links">';
                             
                             if(deps[i].twit !== ""){
