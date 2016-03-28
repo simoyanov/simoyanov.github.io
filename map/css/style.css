@@ -1,0 +1,217 @@
+@font-face {font-family: 'RobotoSlab-Bold'; src: url(../fonts/RobotoSlab-Bold.ttf); }
+@font-face {font-family: 'Roboto-Regular'; src: url(../fonts/Roboto-Regular.ttf); }
+@font-face {font-family: 'Roboto-Bold'; src: url(../fonts/Roboto-Bold.ttf); }
+@font-face {font-family: 'PTSans'; src: url(../fonts/PTSans.ttc); }
+@font-face {font-family: 'Calibri'; src: url(../fonts/Calibri.ttf); }
+
+#citiindex_map {
+    width: 960px;
+/*     height: 786px; */
+    display: block;
+    border: 1px solid #000;
+    overflow: hidden;
+    font-family: 'Roboto-Regular';
+}
+
+#citiindex_map_wrap {
+    display: block;
+    width: 940px;
+    margin: 10px;
+    border: 1px solid #959595;
+    height: 97%;
+    position: relative;
+}
+
+#svg2{
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.st0{
+/*
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+*/
+    cursor: pointer;
+}
+.st0:hover{
+    stroke: #333;
+    stroke-width: 4;
+/*    fill: #ffff00;*/
+}
+#citiindex_map_plate {
+    position: absolute;
+    background-color: #fff;
+    top: 500px;
+    right: 50px;
+/*    width: 270px;*/
+/*    height: 500px;*/
+    -webkit-box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
+    padding: 15px;
+    display: none;
+}
+
+#citiindex_map_plate_title {
+    font-weight: bold;
+    font-size: 12pt;
+    
+}
+#citiindex_map_plate_title span{
+    display: block;
+    font-size: 10pt;
+    color: #aaa;
+}
+
+.citiindex_map_plate_head_row {
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5PX;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+.citiindex_map_plate_head_row span:nth-child(2){
+    margin-left: 175px;
+    margin-right: 20px;
+}
+.citiindex_map_plate_row {
+    font-size: 10pt;
+    letter-spacing: -0.3em;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 2px;
+}
+
+.citiindex_map_plate_row div {
+    display: inline-block;
+    letter-spacing: normal;
+    vertical-align: top;
+}
+
+.citiindex_map_plate_row_cube {
+    width: 14px;
+    height: 14px;
+    background-color: cadetblue;
+    margin-top: 5px;
+}
+
+.citiindex_map_plate_row_name {
+    margin-top: 4px;
+    margin-left: 4px;
+    width: 240px;
+}
+
+.citiindex_map_plate_row_likes {
+    margin-top: 4px;
+    margin-left: 4px;
+    width: 50px;
+    
+}
+
+.citiindex_map_plate_row .citiindex_map_plate_row_links {
+    margin-top: 5px;
+    margin-left: 4px;
+    width: 100px;
+    letter-spacing: -0.3em;
+}
+.citiindex_map_plate_row_links a{
+    margin-right: 2px;
+    letter-spacing: normal;
+}
+
+.citiindex_map_plate_close {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/cross.png');
+    top: 14px;
+    right: 14px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.citiindex_map_party_plate_head_row {
+        color: #aaa;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5PX;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+.citiindex_map_party_plate_head_row span:nth-child(2){
+    margin-left: 115px;
+}
+
+#citiindex_map_party_plate {
+    position: absolute;
+    background-color: #fff;
+    top: 50px;
+    left: 50px;
+    /* width: 270px; */
+    /* height: 500px; */
+    -webkit-box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
+    padding: 15px;
+}
+
+.citiindex_map_party_plate_row {
+        font-size: 10pt;
+    letter-spacing: -0.3em;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 2px;
+}
+.citiindex_map_party_plate_row div {
+    display: inline-block;
+    letter-spacing: normal;
+    vertical-align: top;
+}
+
+.citiindex_map_party_plate_row_cube {
+        width: 14px;
+    height: 14px;
+    background-color: cadetblue;
+    margin-top: 5px;
+}
+
+.citiindex_map_party_plate_row_party {
+    margin-top: 4px;
+    margin-left: 4px;
+    width: 150px;
+}
+
+.citiindex_map_party_plate_row_likes {
+        margin-top: 4px;
+    margin-left: 4px;
+    width: 50px;
+}
+
+#edros .citiindex_map_party_plate_row_cube{
+    background-color: #5e3dff;
+}
+
+#ldpr .citiindex_map_party_plate_row_cube{
+    background-color: #f9b233;
+}
+
+#spros .citiindex_map_party_plate_row_cube{
+    background-color: #e94e1b;
+}
+
+#kprf .citiindex_map_party_plate_row_cube{
+    background-color: #ff0d8b;
+}
+
+#apple .citiindex_map_party_plate_row_cube{
+    background-color: #33f440;
+}
+
+#greenparty .citiindex_map_party_plate_row_cube{
+    background-color: #35ce40;
+}
+
+#noparty .citiindex_map_party_plate_row_cube{
+    background-color: #2cdddd;
+}
