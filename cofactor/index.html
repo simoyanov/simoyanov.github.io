@@ -36,22 +36,18 @@
     </nav>
     <header>
         <div class="header-content">
-            <div class="header-content-inner"> <img id="homeHeading" src="assets/images/big_logo_title.png" alt="">
-                <!--                <h1 id="homeHeading"><img src="assets/images/big_logo_title.png" alt=""></h1>-->
-                <!--                <hr>-->
-                <!--                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>-->
-            </div>
+            <div class="header-content-inner"> <img id="homeHeading" src="assets/images/big_logo_title.png" alt=""> </div>
         </div>
         <div class="header-desc">
             <h2 class="cw">ПЕРВОЕ B2P АГЕНТСТВО</h2>
             <h3>Business to patients</h3> </div>
     </header>
-    <section id="mission">
+    <section id="mission" class="bg-primary">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center text-left-xs">
                     <h2 class="section-heading">миссия</h2>
-                    <p class="text-muted">Мы работаем для того, чтобы актуальная информация о медицинских решениях максимально быстро попадала к пациентам, которые в ней нуждаются</p>
+                    <p class="">Мы&nbsp;работаем для того, чтобы актуальная информация о&nbsp;медицинских решениях максимально быстро попадала к&nbsp;пациентам, которые в&nbsp;ней нуждаются</p>
                 </div>
             </div>
         </div>
@@ -59,84 +55,56 @@
     <section id="man">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center-not-xs man-content">
+                <div class="col-lg-12 text-left man-content">
                     <h2 class="section-heading">ПРЕДЛОЖИТЬ РЕШЕНИЕ ТОМУ, КТО ЕГО ИЩЕТ ИМЕННО СЕЙЧАС</h2>
-                    <p class="text-muted">Создадим и проведем эффективную многоканальную информационную кампанию для пациентов, врачей и фармацевтов</p>
+                    <p class="text-muted text-global">Создадим и проведем эффективную многоканальную информационную кампанию для пациентов, врачей и фармацевтов</p>
                 </div>
             </div>
         </div>
     </section>
     <section id="questions" class="bg-primary questions">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 questions__content">
-                    <div class="container no-padding" id="quests">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 text-center quest-block" id="quest1">
-                                <div class="service-box-mini">
-                                    <h3>Пациенты еще не знают о вашей новинке?</h3>
-                                    <div href="#services" class="page-scroll btn btn-default btn-xl sr-button btn-custom">подробнее</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 text-center quest-block" id="quest2">
-                                <div class="service-box-mini">
-                                    <h3>Врачи назначают препарат конкурента?</h3>
-                                    <div href="#services" class="page-scroll btn btn-default btn-xl sr-button btn-custom">подробнее</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 text-center quest-block" id="quest3">
-                                <div class="service-box-mini">
-                                    <h3>Фармацевты переключают покупателя?</h3>
-                                    <div href="#services" class="page-scroll btn btn-default btn-xl sr-button btn-custom">подробнее</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="questions__content__box text-center hidden-block" id="change">
-                        <div class="service-box-mini">
-                            <h3>Препарат зарегистрирован?</h3>
-                            <div href="#services" class="page-scroll btn btn-default btn-xl btn-custom btn-yes">да</div>
-                            <div href="#services" class="page-scroll btn btn-default btn-xl btn-custom btn-no">нет</div>
-                        </div>
-                    </div>
-                    <div class="questions__content__box text-center hidden-block" id="change_yes">
-                        <div class="service-box-mini">
-                            <h3>Проведем эффективную многоканальную кампанию</h3> </div>
-                    </div>
-                    <div class="questions__content__box text-center hidden-block" id="change_no">
-                        <div class="service-box-mini">
-                            <h3>Поможем в регистрации и получении доступа на рынок</h3> </div>
-                    </div>
-                </div>
-                <!--
-                <div class="col-lg-4 col-md-4 text-center quest-block hidden" id="quest1">
+        <div class="container-fluid no-padding">
+            <div class="row questions__content">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center quest-block" id="quest1">
                     <div class="service-box-mini">
                         <h3>Пациенты еще не знают о вашей новинке?</h3>
-                        <div href="#services" class="page-scroll btn btn-default btn-xl sr-button btn-custom">подробнее</div>
+                        <div class="page-scroll btn btn-default btn-xl sr-button btn-custom hidden visible-xs">подробнее</div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 text-center quest-block hidden" id="quest2">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center quest-block" id="quest2">
                     <div class="service-box-mini">
                         <h3>Врачи назначают препарат конкурента?</h3>
-                        <div href="#services" class="page-scroll btn btn-default btn-xl sr-button btn-custom">подробнее</div>
+                        <div class="page-scroll btn btn-default btn-xl sr-button btn-custom hidden visible-xs">подробнее</div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 text-center quest-block hidden" id="quest3">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center quest-block" id="quest3">
                     <div class="service-box-mini">
                         <h3>Фармацевты переключают покупателя?</h3>
-                        <div href="#services" class="page-scroll btn btn-default btn-xl sr-button btn-custom">подробнее</div>
+                        <div class="page-scroll btn btn-default btn-xl sr-button btn-custom hidden visible-xs">подробнее</div>
                     </div>
                 </div>
--->
-                <!--
-                <div class="col-lg-12 col-md-12 text-center hidden-block" id="change">
-                    <div class="service-box-mini">
-                        <h3>Препарат зарегистрирован?</h3>
-                        <div href="#services" class="page-scroll btn btn-default btn-xl btn-custom">да</div>
-                        <div href="#services" class="page-scroll btn btn-default btn-xl btn-custom">нет</div>
+                <div class="" id="change">
+                    <div class="questions__content__box text-center">
+                        <div class="service-box-mini">
+                            <h3>Препарат зарегистрирован?</h3>
+                        </div>
                     </div>
                 </div>
--->
+                <div class="btn-yes" id="">
+                    <div class="questions__content__box text-center">
+                        <div class="service-box-mini">
+                            <h3>Да</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-no" id="">
+                    <div class="questions__content__box text-center">
+                        <div class="service-box-mini">
+                            <h3>Нет</h3>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-lg-12 col-md-12 text-center hidden-block" id="change_yes">
                     <div class="service-box-mini">
                         <h3>Проведем эффективную многоканальную кампанию</h3> </div>
@@ -158,36 +126,33 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ РАБОТЫ С ПАЦИЕНТАМИ</h3>
-                    <div class="animated-block">
+                    <div class="animated-block block1_1 hidden-xs">
                         <div id="block1_1_center"></div>
-                        <div id="block1_1_plus_1" class="block_plus bp_left"><span>Портрет пациента</span></div>
-                        <div id="block1_1_plus_2" class="block_plus bp_left"><span>Основные точки влияния</span></div>
-                        <div id="block1_1_plus_3" class="block_plus bp_left"><span>Эффективная многоканальная кампания</span></div>
-                        <div id="block1_1_plus_4" class="block_plus bp_right"><span>Путь принятия решения</span></div>
-                        <div id="block1_1_plus_5" class="block_plus bp_right"><span>План с количественными инструментами контроля</span></div>
-                        <div id="block1_1_plus_6" class="block_plus bp_right"><span>Система оценки эффективности</span></div>
-                    </div>
-                </div>
+                        <div id="block1_1_plus_1" class="block_plus bp_left"><span>Портрет<br> пациента</span></div>
+                        <div id="block1_1_plus_2" class="block_plus bp_left"><span>Основные точки<br> влияния</span></div>
+                        <div id="block1_1_plus_3" class="block_plus bp_left"><span>Эффективная<br> многоканальная кампания</span></div>
+                        <div id="block1_1_plus_4" class="block_plus bp_right"><span>Путь принятия<br> решения</span></div>
+                        <div id="block1_1_plus_5" class="block_plus bp_right"><span>План<br> с количественными<br> инструментами<br> контроля</span></div>
+                        <div id="block1_1_plus_6" class="block_plus bp_right"><span>Система оценки<br> эффективности</span></div>
+                    </div> <img src="assets/images/block1_1_m.png" class="hidden visible-xs" alt=""> </div>
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>КАК ПАЦИЕНТЫ УЗНАЮТ О ВАС?</h3>
-                    <div class="animated-block">
+                    <div class="animated-block block1_2 hidden-xs">
                         <div class="block1_2_center">
                             <div class="border-left"></div>
-                            <div class="border-right"></div> <span class="v-top">Контент маркетинг</span> <span class="v-left">Школы для пациентов</span> <span class="v-right">Промо-акции и спецпроекты</span> <span class="v-bottom">Горячие линии</span> <span class="v-desc">многоканальная кампания</span> </div>
-                    </div>
-                </div>
+                            <div class="border-right"></div> <span class="v-top">Контент маркетинг</span> <span class="v-left">Школы<br> для пациентов</span> <span class="v-right">Промо-акции<br> и спецпроекты</span> <span class="v-bottom">Горячие линии</span> <span class="v-desc">многоканальная кампания</span> </div>
+                    </div> <img src="assets/images/block1_2_m.png" class="hidden visible-xs" alt=""> </div>
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>КАК ПОДДЕРЖАТЬ ТЕХ, КТО НАЧАЛ ЛЕЧЕНИЕ?</h3>
-                    <div class="animated-block">
+                    <div class="animated-block block1_3 hidden-xs">
                         <div class="block1_3_center"> <span class="v-left">программы поддержки пациентов</span> <span class="v-right">Программы лояльности</span> <span class="v-bottom">Мобильные приложения</span> </div>
-                    </div>
-                </div>
+                    </div> <img src="assets/images/block1_3_m.png" class="hidden visible-xs" alt=""> </div>
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>КОНТЕНТ МАРКЕТИНГ</h3>
-                    <div class="container no-padding">
+                    <div class="container-fluid no-padding list-content">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 text-right"> <img src="assets/images/block1_4.png" alt=""> </div>
-                            <div class="col-lg-8 col-md-8 text-left">
+                            <div class="col-lg-2 col-lg-offset-2 col-md-4 col-sm-3 text-right-not-sm text-center-sm text-right-not-xs"> <img src="assets/images/block1_4.png" alt=""> </div>
+                            <div class="col-lg-6 col-md-6 col-sm-9 text-left">
                                 <ul>
                                     <li>Контент маркетинг, или входящий маркетинг—это самый современный и эффективный инструмент продвижения</li>
                                     <li>Суть подхода состоит в создании и размещении в интернете материалов, отвечающих на конкретный запрос Вашего клиента</li>
@@ -200,10 +165,10 @@
                 </div>
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>ПРОМО-АКЦИИ И СПЕЦПРОЕКТЫ</h3>
-                    <div class="container no-padding">
+                    <div class="container-fluid no-padding list-content">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 text-right"> <img src="assets/images/block1_5.png" alt=""> </div>
-                            <div class="col-lg-6 col-md-6 text-left">
+                            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-4 text-right-not-sm text-right-not-xs"> <img src="assets/images/block1_5.png" alt=""> </div>
+                            <div class="col-lg-4 col-md-5 col-sm-8 text-left">
                                 <ul>
                                     <li>Разработка креативных акций и мероприятий в Интернете и офф-лайн</li>
                                     <li>Стимулирование ранней диагностики</li>
@@ -215,10 +180,10 @@
                 </div>
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>ГОРЯЧИЕ ЛИНИИ</h3>
-                    <div class="container no-padding">
+                    <div class="container-fluid no-padding list-content">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 text-right"> <img src="assets/images/block1_6.png" alt=""> </div>
-                            <div class="col-lg-6 col-md-6 text-left">
+                            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-4 text-right-not-sm text-right-not-xs"> <img src="assets/images/block1_6.png" alt=""> </div>
+                            <div class="col-lg-4 col-md-5 col-sm-8 text-left">
                                 <ul>
                                     <li>Информационная поддержка пациентов</li>
                                     <li>Входящие и исходящие звонки</li>
@@ -230,26 +195,27 @@
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 text-center">
-                    <h3>ШКОЛЫ ДЛЯ ПАЦИЕНТОВ</h3> </div>
-                <div class="container no-padding">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 text-right"> <img src="assets/images/block1_7.png" alt=""> </div>
-                        <div class="col-lg-6 col-md-6 text-left">
-                            <ul>
-                                <li>Очные образовательные мероприятия для пациентов и их родственников на базах различных клиник</li>
-                                <li>Разработка программы</li>
-                                <li>Работа со специалистами</li>
-                                <li>Набор участников и логистика мероприятий</li>
-                            </ul>
+                    <h3>ШКОЛЫ ДЛЯ ПАЦИЕНТОВ</h3>
+                    <div class="container-fluid no-padding list-content">
+                        <div class="row">
+                            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-4 text-right-not-sm text-right-not-xs"> <img src="assets/images/block1_7.png" alt=""> </div>
+                            <div class="col-lg-4 col-md-5 col-sm-8 text-left">
+                                <ul>
+                                    <li>Очные образовательные мероприятия для пациентов и их родственников на базах различных клиник</li>
+                                    <li>Разработка программы</li>
+                                    <li>Работа со специалистами</li>
+                                    <li>Набор участников и логистика мероприятий</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>ПРОГРАММЫ ПОДДЕРЖКИ ПАЦИЕНТОВ</h3>
-                    <div class="container no-padding">
+                    <div class="container-fluid no-padding list-content">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 text-right"> <img src="assets/images/block1_8.png" alt=""> </div>
-                            <div class="col-lg-6 col-md-6 text-left">
+                            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-4 text-right-not-sm text-right-not-xs"> <img src="assets/images/block1_8.png" alt=""> </div>
+                            <div class="col-lg-4 col-md-5 col-sm-8 text-left">
                                 <ul>
                                     <li>Цифровые решения</li>
                                     <li>Промо-сайты</li>
@@ -271,31 +237,29 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ РАБОТЫ С ВРАЧАМИ И АПТЕКАМИ</h3>
-                    <div class="animated-block">
+                    <div class="animated-block block2_1 hidden-xs">
                         <div id="block2_1_center"></div>
-                        <div id="block2_1_plus_1" class="block_plus bp_left"><span>Портрет пациента</span></div>
-                        <div id="block2_1_plus_2" class="block_plus bp_left"><span>Основные точки влияния</span></div>
-                        <div id="block2_1_plus_3" class="block_plus bp_left"><span>Эффективная многоканальная кампания</span></div>
-                        <div id="block2_1_plus_4" class="block_plus bp_right"><span>Путь принятия решения</span></div>
-                        <div id="block2_1_plus_5" class="block_plus bp_right"><span>План с количественными инструментами контроля</span></div>
-                        <div id="block2_1_plus_6" class="block_plus bp_right"><span>Система оценки эффективности</span></div>
-                    </div>
-                </div>
+                        <div id="block2_1_plus_1" class="block_plus bp_left"><span>Портрет врача<br> или провизора</span></div>
+                        <div id="block2_1_plus_2" class="block_plus bp_left"><span>Конкурентный<br> анализ</span></div>
+                        <div id="block2_1_plus_3" class="block_plus bp_left"><span>План<br> с количественными<br> инструментами контроля</span></div>
+                        <div id="block2_1_plus_4" class="block_plus bp_right"><span>Путь принятия<br> решения</span></div>
+                        <div id="block2_1_plus_5" class="block_plus bp_right"><span>Основные<br> точки влияния</span></div>
+                        <div id="block2_1_plus_6" class="block_plus bp_right"><span>Эффективная<br> многоканальная<br> кампания</span></div>
+                        <div id="block2_1_plus_7" class="block_plus bp_center"><span>Система оценки<br> эффективности</span></div>
+                    </div> <img src="assets/images/block2_1_m.png" class="hidden visible-xs" alt=""> </div>
                 <div class="col-lg-12 col-md-12 text-center">
-                    <h3>КАК ПРОФЕССИОНАЛЫ УЗНАЮТ О ВАС?
-КАК УВЕЛИЧИТЬ КОЛИЧЕСТВО РЕКОМЕНДАЦИЙ?</h3>
-                    <div class="animated-block">
-                        <div class="block1_2_center">
+                    <h3>КАК ПРОФЕССИОНАЛЫ УЗНАЮТ О ВАС? <br>КАК УВЕЛИЧИТЬ КОЛИЧЕСТВО РЕКОМЕНДАЦИЙ?</h3>
+                    <div class="animated-block block2_1 hidden-xs">
+                        <div class="block2_2_center">
                             <div class="border-left"></div>
                             <div class="border-right"></div> <span class="v-left">Контент маркетинг</span> <span class="v-right">Расширение возможностей отдела продаж</span> <span class="v-bottom">Образовательные программы</span> <span class="v-desc">многоканальная кампания</span> </div>
-                    </div>
-                </div>
+                    </div> <img src="assets/images/block2_2_m.png" class="hidden visible-xs" alt=""> </div>
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>КОНТЕНТ МАРКЕТИНГ</h3>
-                    <div class="container no-padding">
+                    <div class="container-fluid no-padding list-content">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 text-right"> <img src="assets/images/block2_3.png" alt=""> </div>
-                            <div class="col-lg-6 col-md-6 text-left">
+                            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-4 text-right-not-sm text-right-not-xs"> <img src="assets/images/block2_3.png" alt=""> </div>
+                            <div class="col-lg-4 col-md-5 col-sm-8 text-left">
                                 <ul>
                                     <li>Широкое покрытие и вовлечение врачей, через регулярные рассылки с различным контентом</li>
                                     <li>Образовательные и новостные дайджесты, клинические случаи, клинические задачи с тестами</li>
@@ -308,10 +272,10 @@
                 </div>
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>ТЕЛЕ ДИТЕЙЛИНГ</h3>
-                    <div class="container no-padding">
+                    <div class="container-fluid no-padding list-content">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 text-right"> <img src="assets/images/block2_4.png" alt=""> </div>
-                            <div class="col-lg-6 col-md-6 text-left">
+                            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-sm-4 col-md-offset-1 text-right-not-sm  text-right-not-xs"> <img src="assets/images/block2_4.png" alt=""> </div>
+                            <div class="col-lg-4 col-md-5 col-sm-8 text-left">
                                 <ul>
                                     <li>Расширение охвата и частоты взаимодействия с врачами через телефонные визиты</li>
                                     <li>Разработка сценария работы теле- представителей</li>
@@ -324,10 +288,10 @@
                 <div class="col-lg-12 col-md-12 text-center">
                     <h3>ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</h3>
                     <h4>ОНЛАЙН ОБРАЗОВАНИЕ</h4>
-                    <div class="container no-padding">
+                    <div class="container-fluid no-padding list-content">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 text-right"> <img src="assets/images/block2_5.png" alt=""> </div>
-                            <div class="col-lg-6 col-md-6 text-left">
+                            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-4 text-right-not-sm text-right-not-xs"> <img src="assets/images/block2_5.png" alt=""> </div>
+                            <div class="col-lg-4 col-md-5 col-sm-8 text-left">
                                 <ul>
                                     <li>Вебинары</li>
                                     <li>Видео-конференции</li>
@@ -339,14 +303,12 @@
                         </div>
                     </div>
                     <h4>ШКОЛЫ, СЕМИНАРЫ И КОНФЕРЕНЦИИ</h4>
-                    <div class="container no-padding">
+                    <div class="container-fluid no-padding list-content">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 text-right"> <img src="assets/images/block2_6.png" alt=""> </div>
-                            <div class="col-lg-6 col-md-6 text-left">
+                            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-4 text-right-not-sm text-right-not-xs"> <img src="assets/images/block2_6.png" alt=""> </div>
+                            <div class="col-lg-4 col-md-5 col-sm-8 text-left">
                                 <ul>
-                                    <li>Полный цикл услуг
-по организации образовательных
-м ероприятий в регионах РФ</li>
+                                    <li>Полный цикл услуг по организации образовательных м ероприятий в регионах РФ</li>
                                     <li>Разработка контента</li>
                                     <li>Работа с ведущими специалистами</li>
                                     <li>Приглашение аудитории</li>
@@ -357,25 +319,19 @@
                         </div>
                     </div>
                     <h4>ЗАРУБЕЖНЫЕ ОНЛАЙН ЦИКЛЫ</h4>
-                    <div class="container no-padding">
+                    <div class="container-fluid no-padding list-content">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 text-right"> <img src="assets/images/block2_7.png" alt=""> </div>
-                            <div class="col-lg-6 col-md-6 text-left">
+                            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-sm-4 col-md-offset-1 text-right-not-sm text-right-not-xs"> <img src="assets/images/block2_7.png" alt=""> </div>
+                            <div class="col-lg-4 col-md-5 col-sm-8 text-left">
                                 <ul>
-                                    <li>Повышение квалификации
-на базе ведущих
-зарубежных ВУЗов</li>
-                                    <li>Harvard University, John Hopkins,
-New York University</li>
-                                    <li>На русском языке
-с возможностью добавления лекций
-российских специалистов</li>
+                                    <li>Повышение квалификации на базе ведущих зарубежных ВУЗов</li>
+                                    <li>Harvard University, John Hopkins, New York University</li>
+                                    <li>На русском языке с возможностью добавления лекций российских специалистов</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -482,21 +438,50 @@ New York University</li>
     </footer>
     <script src="assets/js/main.js"></script>
     <script>
-        $("#quest1 .btn").on(MOUSE_CLICK, function () {
+        $("#quest1").on(MOUSE_CLICK, function () {
             $("#block2").addClass('closed');
-            $('#quests').transition({
-                x: -500
-                , y: 0
-                , opacity: 0
+            $('#quest1').transition({
+                x: 0
+                , y: -200
+                , opacity: 1
             }, 500, function () {
-                $('#quests').fadeOut(0);
-                $('#change').fadeIn(300);
+                $('#quest1').fadeOut(0);
             });
-        });
-        $("#change .btn-yes").on(MOUSE_CLICK, function () {
+            $('#quest2').transition({
+                x: 0
+                , y: -200
+                , opacity: 1
+            }, 500, function () {
+                $('#quest2').fadeOut(0);
+            });
+            $('#quest3').transition({
+                x: 0
+                , y: -200
+                , opacity: 1
+            }, 500, function () {
+                $('#quest3').fadeOut(0);
+                
+            });
             $('#change').transition({
-                x: -500
+                x: 0
                 , y: 0
+                , opacity: 1
+            }, 500);
+            $('.btn-yes').transition({
+                x: 0
+                , y: 0
+                , opacity: 1
+            }, 500);
+            $('.btn-no').transition({
+                x: 0
+                , y: 0
+                , opacity: 1
+            }, 500);
+        });
+        $(".btn-yes").on(MOUSE_CLICK, function () {
+            $('#change').transition({
+                x: 0
+                , y: -200
                 , opacity: 0
             }, 500, function () {
                 $('#change').fadeOut(0);
@@ -508,11 +493,21 @@ New York University</li>
                 }, 500);
                 $("#block1").removeClass('closed');
             });
+            $('.btn-yes').transition({
+                x: 0
+                , y: -200
+                , opacity: 1
+            }, 500);
+            $('.btn-no').transition({
+                x: 0
+                , y: -200
+                , opacity: 1
+            }, 500);
         });
-        $("#change .btn-no").on(MOUSE_CLICK, function () {
+        $(".btn-no").on(MOUSE_CLICK, function () {
             $('#change').transition({
-                x: -500
-                , y: 0
+                x: 0
+                , y: -200
                 , opacity: 0
             }, 500, function () {
                 $('#change').fadeOut(0);
@@ -523,12 +518,21 @@ New York University</li>
                     , opacity: 1
                 }, 500);
             });
+            $('.btn-yes').transition({
+                x: 0
+                , y: -200
+                , opacity: 1
+            }, 500);
+            $('.btn-no').transition({
+                x: 0
+                , y: -200
+                , opacity: 1
+            }, 500);
         });
-        
-        $("#quest2 .btn").on(MOUSE_CLICK, function () {
+        $("#quest2").on(MOUSE_CLICK, function () {
             $("#block2").removeClass('closed');
         });
-        $("#quest3 .btn").on(MOUSE_CLICK, function () {
+        $("#quest3").on(MOUSE_CLICK, function () {
             $("#block2").removeClass('closed');
         });
     </script>
