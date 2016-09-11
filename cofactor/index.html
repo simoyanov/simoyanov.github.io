@@ -23,9 +23,9 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li> <a class="page-scroll" href="#about">О нас</a> </li>
-                        <li> <a class="page-scroll" href="#services">Услуги</a> </li>
-                        <li> <a class="page-scroll" href="#decision">Подобрать решение</a> </li>
+                        <li> <a class="page-scroll" href="#mission">миссия</a> </li>
+                        <li> <a class="page-scroll" href="#man">решения</a> </li>
+<!--                        <li> <a class="page-scroll" href="#decision">Подобрать решение</a> </li>-->
                         <li> <a class="page-scroll" href="#contact">Контакты</a> </li>
                     </ul>
                 </div>
@@ -65,19 +65,20 @@
     <section id="questions" class="bg-primary questions">
         <div class="container-fluid no-padding">
             <div class="row questions__content">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center quest-block" id="quest1">
+               <div class="questions__content__btn-back">назад</div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center quest-block hvr-sweep-to-right " id="quest1">
                     <div class="service-box-mini">
                         <h3>Пациенты еще не знают о вашей новинке?</h3>
                         <div class="page-scroll btn btn-default btn-xl sr-button btn-custom hidden visible-xs">подробнее</div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center quest-block" id="quest2">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center quest-block hvr-sweep-to-right" id="quest2">
                     <div class="service-box-mini">
                         <h3>Врачи назначают препарат конкурента?</h3>
                         <div class="page-scroll btn btn-default btn-xl sr-button btn-custom hidden visible-xs">подробнее</div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center quest-block" id="quest3">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center quest-block hvr-sweep-to-right" id="quest3">
                     <div class="service-box-mini">
                         <h3>Фармацевты переключают покупателя?</h3>
                         <div class="page-scroll btn btn-default btn-xl sr-button btn-custom hidden visible-xs">подробнее</div>
@@ -90,14 +91,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn-yes" id="">
+                <div class="btn-yes hvr-underline-from-left" id="">
                     <div class="questions__content__box text-center">
                         <div class="service-box-mini">
                             <h3>Да</h3>
                         </div>
                     </div>
                 </div>
-                <div class="btn-no" id="">
+                <div class="btn-no hvr-underline-from-right" id="">
                     <div class="questions__content__box text-center">
                         <div class="service-box-mini">
                             <h3>Нет</h3>
@@ -119,7 +120,7 @@
                 </div>
             </div>
         </div>
-        <div id="call"> <a href="">позвонить в кофактор!</a> </div>
+        <div id="call"> <span>позвонить в кофактор!</span> </div>
     </section>
     <section id="block1" class="afterChangeContent closed">
         <div class="container">
@@ -438,103 +439,7 @@
     </footer>
     <script src="assets/js/main.js"></script>
     <script>
-        $("#quest1").on(MOUSE_CLICK, function () {
-            $("#block2").addClass('closed');
-            $('#quest1').transition({
-                x: 0
-                , y: -200
-                , opacity: 1
-            }, 500, function () {
-                $('#quest1').fadeOut(0);
-            });
-            $('#quest2').transition({
-                x: 0
-                , y: -200
-                , opacity: 1
-            }, 500, function () {
-                $('#quest2').fadeOut(0);
-            });
-            $('#quest3').transition({
-                x: 0
-                , y: -200
-                , opacity: 1
-            }, 500, function () {
-                $('#quest3').fadeOut(0);
-                
-            });
-            $('#change').transition({
-                x: 0
-                , y: 0
-                , opacity: 1
-            }, 500);
-            $('.btn-yes').transition({
-                x: 0
-                , y: 0
-                , opacity: 1
-            }, 500);
-            $('.btn-no').transition({
-                x: 0
-                , y: 0
-                , opacity: 1
-            }, 500);
-        });
-        $(".btn-yes").on(MOUSE_CLICK, function () {
-            $('#change').transition({
-                x: 0
-                , y: -200
-                , opacity: 0
-            }, 500, function () {
-                $('#change').fadeOut(0);
-                $('#change_yes').fadeIn(300);
-                $('#call').transition({
-                    x: 0
-                    , y: 0
-                    , opacity: 1
-                }, 500);
-                $("#block1").removeClass('closed');
-            });
-            $('.btn-yes').transition({
-                x: 0
-                , y: -200
-                , opacity: 1
-            }, 500);
-            $('.btn-no').transition({
-                x: 0
-                , y: -200
-                , opacity: 1
-            }, 500);
-        });
-        $(".btn-no").on(MOUSE_CLICK, function () {
-            $('#change').transition({
-                x: 0
-                , y: -200
-                , opacity: 0
-            }, 500, function () {
-                $('#change').fadeOut(0);
-                $('#change_no').fadeIn(300);
-                $('#call').transition({
-                    x: 0
-                    , y: 0
-                    , opacity: 1
-                }, 500);
-            });
-            $('.btn-yes').transition({
-                x: 0
-                , y: -200
-                , opacity: 1
-            }, 500);
-            $('.btn-no').transition({
-                x: 0
-                , y: -200
-                , opacity: 1
-            }, 500);
-        });
-        $("#quest2").on(MOUSE_CLICK, function () {
-            $("#block2").removeClass('closed');
-        });
-        $("#quest3").on(MOUSE_CLICK, function () {
-            $("#block2").removeClass('closed');
-        });
+        
     </script>
 </body>
 

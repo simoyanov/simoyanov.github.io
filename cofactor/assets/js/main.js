@@ -13441,3 +13441,170 @@ if  ("ontouchstart" in window || window.DocumentTouch && document instanceof Doc
     });
 
 })(jQuery); // End of use strict
+
+
+
+function scrollToDiv(e,t){
+  var o = $(e).offset();
+  var ot = o.top;
+  var ts = ot - t;
+  $('body,html').stop().animate({ scrollTop: ts }, 500);
+   return false;
+}
+
+$('.questions__content__btn-back').on(MOUSE_CLICK, function () {
+    
+    if ($(window).width() <= '768'){
+        
+        $("#block2").addClass('closed');
+        $("#block1").addClass('closed');
+        $('#change_no').fadeOut(300);
+        $('#change_yes').fadeOut(300);
+        $('#call').transition({x: 0, y: 85, opacity: 1}, 500);
+        $('#quest1').fadeIn(0);
+        $('#quest2').fadeIn(0);
+        $('#quest3').fadeIn(0);
+        $('#change').transition({x: 768, y: 0, opacity: 1}, 500);
+        $('.btn-yes').transition({x: 768, y: 0, opacity: 1}, 500);
+        $('.btn-no').transition({x: 768, y: 0, opacity: 1}, 500);
+        $('#quest1').transition({x: 0, y: 0, opacity: 1}, 500, function(){
+            $('.questions').css({'height':'600px'});
+        });
+        $('#quest2').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('#quest3').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.questions__content__btn-back').transition({x: -100, y: 0, opacity: 1}, 500);
+    } else {
+        $("#block2").addClass('closed');
+        $("#block1").addClass('closed');
+        $('#change_no').fadeOut(300);
+        $('#change_yes').fadeOut(300);
+        $('#call').transition({x: 0, y: 85, opacity: 1}, 500);
+        $('#quest1').fadeIn(0);
+        $('#quest2').fadeIn(0);
+        $('#quest3').fadeIn(0);
+        $('#change').transition({x: 0, y: 200, opacity: 1}, 500);
+        $('.btn-yes').transition({x: 0, y: 200, opacity: 1}, 500);
+        $('.btn-no').transition({x: 0, y: 200, opacity: 1}, 500);
+        $('#quest1').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('#quest2').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('#quest3').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.questions__content__btn-back').transition({x: -100, y: 0, opacity: 1}, 500);
+    }
+});
+
+$("#quest1").on(MOUSE_CLICK, function () {
+    if ($(window).width() <= '768'){
+        $('.questions').css({'height':'200px'});
+        $("#block2").addClass('closed');
+        $('#quest1').transition({x: -768, y: 0, opacity: 1}, 500, function () {
+            $('#quest1').fadeOut(0);
+        });
+        $('#quest2').transition({x: -768, y: 0, opacity: 1}, 500, function () {
+            $('#quest2').fadeOut(0);
+        });
+        $('#quest3').transition({x: -768, y: 0, opacity: 1}, 500, function () {
+            $('#quest3').fadeOut(0);
+        });
+        $('#change').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.btn-yes').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.btn-no').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.questions__content__btn-back').transition({x: 0, y: 0, opacity: 1}, 500);
+    }else{
+        $("#block2").addClass('closed');
+        $('#quest1').transition({x: 0, y: -200, opacity: 1}, 500, function () {
+            $('#quest1').fadeOut(0);
+        });
+        $('#quest2').transition({x: 0, y: -200, opacity: 1}, 500, function () {
+            $('#quest2').fadeOut(0);
+        });
+        $('#quest3').transition({x: 0, y: -200, opacity: 1}, 500, function () {
+            $('#quest3').fadeOut(0);
+        });
+        $('#change').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.btn-yes').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.btn-no').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.questions__content__btn-back').transition({x: 0, y: 0, opacity: 1}, 500);
+    }
+    
+    
+});
+
+$(".btn-yes").on(MOUSE_CLICK, function () {
+    if ($(window).width() <= '768'){
+        $('#change').transition({x: -768, y: 0, opacity: 0}, 500, function () {
+            $('#change_yes').fadeIn(300);
+            $('#call').transition({x: 0, y: 0, opacity: 1}, 500);
+            $("#block1").removeClass('closed');
+        });
+        $('.btn-yes').transition({x: -768, y: 0, opacity: 1}, 500);
+        $('.btn-no').transition({x: -768, y: 0, opacity: 1}, 500, function(){
+            scrollToDiv("#questions",50);
+        });
+    }else{
+        $('#change').transition({x: 0, y: -200, opacity: 0}, 500, function () {
+            $('#change_yes').fadeIn(300);
+            $('#call').transition({x: 0, y: 0, opacity: 1}, 500);
+            $("#block1").removeClass('closed');
+        });
+        $('.btn-yes').transition({x: 0, y: -200, opacity: 1}, 500);
+        $('.btn-no').transition({x: 0, y: -200, opacity: 1}, 500, function(){
+            scrollToDiv("#questions",50);
+        });
+    }
+    
+
+});
+$(".btn-no").on(MOUSE_CLICK, function () {
+    if ($(window).width() <= '768'){
+        $('#change').transition({x: -768, y: 0, opacity: 0}, 500, function () {
+            $('#change_no').fadeIn(300);
+            $('#call').transition({x: 0, y: 0, opacity: 1}, 500);
+        });
+        $('.btn-yes').transition({x: -768, y: 0, opacity: 1}, 500);
+        $('.btn-no').transition({x: -768, y: 0, opacity: 1}, 500, function(){
+            scrollToDiv("#questions",50);
+        });
+    }else{
+        $('#change').transition({x: 0, y: -200, opacity: 0}, 500, function () {
+            $('#change_no').fadeIn(300);
+            $('#call').transition({x: 0, y: 0, opacity: 1}, 500);
+        });
+        $('.btn-yes').transition({x: 0, y: -200, opacity: 1}, 500);
+        $('.btn-no').transition({x: 0, y: -200, opacity: 1}, 500, function(){
+            scrollToDiv("#questions",50);
+        });
+    }
+    
+
+});
+$("#quest2").on(MOUSE_CLICK, function () {
+    $("#block2").removeClass('closed');
+    scrollToDiv("#block2",0);
+});
+$("#quest3").on(MOUSE_CLICK, function () {
+    $("#block2").removeClass('closed');
+    scrollToDiv("#block2",0);
+});
+
+
+$('#quest1').hover(function () {
+    $('#quest3').addClass('hovered');
+}, function () {
+    $('#quest3').removeClass('hovered');
+});
+
+$('#quest2').hover(function () {
+    $('#quest1').addClass('hovered');
+}, function () {
+    $('#quest1').removeClass('hovered');
+});
+
+$('#quest3').hover(function () {
+    $('#quest2').addClass('hovered');
+}, function () {
+    $('#quest2').removeClass('hovered');
+});
+
+$('#call').on(MOUSE_CLICK, function () {
+    scrollToDiv("#contact",50);
+});
