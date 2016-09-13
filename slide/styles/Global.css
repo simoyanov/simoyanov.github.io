@@ -1,0 +1,110 @@
+body {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    user-select: none;
+    margin: 0;
+}
+
+#display {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2048px;
+    height: 1536px;
+    overflow: hidden;
+}
+
+#logo {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 200px;
+    height: 200px;
+    /*    background-color: rgba(255, 0, 0, 0.5);*/
+}
+
+#bg {
+    background-image: url("../images/bg.jpg");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 2048px;
+    height: 1536px;
+}
+
+
+
+#btn_link {
+    transition: all ease-in-out 0.3s;
+}
+
+#btn_link.active {
+  background-image: url("../images/btn_link_active.png");
+}
+
+#btn_info {
+    transition: all ease-in-out 0.3s;
+}
+
+#btn_info.active {
+  background-image: url("../images/btn_info_active.png");
+}
+
+#button_list {
+/*        background-color: rgba(255, 0, 0, 0.5);*/
+    position: absolute;
+    left: 300px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+#button_links {
+    /*    background-color: rgba(255, 0, 0, 0.5);*/
+    position: absolute;
+    left: 95px;
+    bottom: 30px;
+    width: 155px;
+    height: 50px;
+}
+
+#button_instruc {
+    /*    background-color: rgba(255, 0, 0, 0.5);*/
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    width: 400px;
+    height: 180px;
+}
+
+#button_back{
+    position: absolute;
+    right: 95px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+#modal {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2048px;
+    height: 1536px;
+    /*    background-color: rgba(0, 0, 0, 0.4);*/
+}
+
+
+
+#content {display: none;}
+#content_btns {display: none;}
+
+
+
+#instruction {
+    display: none;
+}
+
