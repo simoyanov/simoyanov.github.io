@@ -13493,23 +13493,8 @@ $('.questions__content__btn-back').on(MOUSE_CLICK, function () {
 });
 
 $("#quest1").on(MOUSE_CLICK, function () {
-    if ($(window).width() <= '768'){
-        $('.questions').css({'height':'200px'});
-        $("#block2").addClass('closed');
-        $('#quest1').transition({x: -768, y: 0, opacity: 1}, 500, function () {
-            $('#quest1').fadeOut(0);
-        });
-        $('#quest2').transition({x: -768, y: 0, opacity: 1}, 500, function () {
-            $('#quest2').fadeOut(0);
-        });
-        $('#quest3').transition({x: -768, y: 0, opacity: 1}, 500, function () {
-            $('#quest3').fadeOut(0);
-        });
-        $('#change').transition({x: 0, y: 0, opacity: 1}, 500);
-        $('.btn-yes').transition({x: 0, y: 0, opacity: 1}, 500);
-        $('.btn-no').transition({x: 0, y: 0, opacity: 1}, 500);
-        $('.questions__content__btn-back').transition({x: 0, y: 0, opacity: 1}, 500);
-    }else{
+    if ($(window).width() > '768'){
+    
         $("#block2").addClass('closed');
         $('#quest1').transition({x: 0, y: -200, opacity: 1}, 500, function () {
             $('#quest1').fadeOut(0);
@@ -13527,6 +13512,26 @@ $("#quest1").on(MOUSE_CLICK, function () {
     }
     
     
+});
+
+$("#quest1 .btn").on(MOUSE_CLICK, function () {
+    if ($(window).width() <= '768'){
+        $('.questions').css({'height':'200px'});
+        $("#block2").addClass('closed');
+        $('#quest1').transition({x: -768, y: 0, opacity: 1}, 500, function () {
+            $('#quest1').fadeOut(0);
+        });
+        $('#quest2').transition({x: -768, y: 0, opacity: 1}, 500, function () {
+            $('#quest2').fadeOut(0);
+        });
+        $('#quest3').transition({x: -768, y: 0, opacity: 1}, 500, function () {
+            $('#quest3').fadeOut(0);
+        });
+        $('#change').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.btn-yes').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.btn-no').transition({x: 0, y: 0, opacity: 1}, 500);
+        $('.questions__content__btn-back').transition({x: 0, y: 0, opacity: 1}, 500);
+    }
 });
 
 $(".btn-yes").on(MOUSE_CLICK, function () {
@@ -13578,14 +13583,32 @@ $(".btn-no").on(MOUSE_CLICK, function () {
 
 });
 $("#quest2").on(MOUSE_CLICK, function () {
-    $("#block2").removeClass('closed');
-    scrollToDiv("#block2",0);
-});
-$("#quest3").on(MOUSE_CLICK, function () {
-    $("#block2").removeClass('closed');
-    scrollToDiv("#block2",0);
+    if ($(window).width() > '768'){
+        $("#block2").removeClass('closed');
+        scrollToDiv("#block2",0);
+    }
 });
 
+$("#quest2 .btn").on(MOUSE_CLICK, function () {
+    if ($(window).width() <= '768'){
+        $("#block2").removeClass('closed');
+        scrollToDiv("#block2",0);
+    }
+});
+
+$("#quest3").on(MOUSE_CLICK, function () {
+    if ($(window).width() > '768'){
+        $("#block2").removeClass('closed');
+        scrollToDiv("#block2",0);
+    }
+});
+
+$("#quest3 .btn").on(MOUSE_CLICK, function () {
+    if ($(window).width() <= '768'){
+        $("#block2").removeClass('closed');
+        scrollToDiv("#block2",0);
+    }
+});
 
 $('#quest1').hover(function () {
     $('#quest3').addClass('hovered');
